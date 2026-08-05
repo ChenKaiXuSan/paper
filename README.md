@@ -26,7 +26,9 @@ The notes reflect my personal understanding at the time of reading. They are sum
 
 ## Recently Read / 最近阅读
 
-No reading notes have been added yet. / 暂未添加论文阅读笔记。
+| Date / 日期 | Paper / 论文 | Topic / 主题 | Status / 状态 |
+| --- | --- | --- | --- |
+| 2026-08-05 | [TROPHIES: Temporal Reconstruction of Places, Humans, and Cameras from Multi-view Videos](papers/multiview/2026-trophies.md) | Multiview / 多视角 | `read` |
 
 ## All Papers / 全部论文
 
@@ -36,7 +38,7 @@ The index will be updated as real reading notes are added. / 索引将在加入�
 | --- | --- |
 | 3D Human Pose / 三维人体姿态 | No notes yet / 暂无 |
 | 360° Vision / 360° 视觉 | No notes yet / 暂无 |
-| Multiview / 多视角学习 | No notes yet / 暂无 |
+| Multiview / 多视角学习 | [TROPHIES: Temporal Reconstruction of Places, Humans, and Cameras from Multi-view Videos](papers/multiview/2026-trophies.md) |
 | Medical AI / 医疗人工智能 | No notes yet / 暂无 |
 | Others / 其他 | No notes yet / 暂无 |
 
