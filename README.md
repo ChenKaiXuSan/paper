@@ -28,6 +28,8 @@ The notes reflect my personal understanding at the time of reading. They are sum
 
 | Date / 日期 | Paper / 论文 | Topic / 主题 | Status / 状态 |
 | --- | --- | --- | --- |
+| 2026-08-06 | [Calibrated Uncertainty for Trustworthy Clinical Gait Analysis Using Probabilistic Multiview Markerless Motion Capture](papers/medical-ai/2026-calibrated-uncertainty-clinical-gait.md) | Medical AI / 医疗人工智能 | `read` |
+| 2026-08-06 | [Gait assessment using a 2D video-based pose estimation app in comparison to a markerless motion capture system in subjects with osteoarthritis of the knee – a pilot study](papers/medical-ai/2026-video-pose-estimation-knee-oa.md) | Medical AI / 医疗人工智能 | `read` |
 | 2026-08-05 | [TROPHIES: Temporal Reconstruction of Places, Humans, and Cameras from Multi-view Videos](papers/multiview/2026-trophies.md) | Multiview / 多视角 | `read` |
 
 ## All Papers / 全部论文
@@ -39,7 +41,7 @@ The index will be updated as real reading notes are added. / 索引将在加入�
 | 3D Human Pose / 三维人体姿态 | No notes yet / 暂无 |
 | 360° Vision / 360° 视觉 | No notes yet / 暂无 |
 | Multiview / 多视角学习 | [TROPHIES: Temporal Reconstruction of Places, Humans, and Cameras from Multi-view Videos](papers/multiview/2026-trophies.md) |
-| Medical AI / 医疗人工智能 | No notes yet / 暂无 |
+| Medical AI / 医疗人工智能 | [Calibrated Uncertainty for Trustworthy Clinical Gait Analysis Using Probabilistic Multiview Markerless Motion Capture](papers/medical-ai/2026-calibrated-uncertainty-clinical-gait.md)<br>[Gait assessment using a 2D video-based pose estimation app in comparison to a markerless motion capture system in subjects with osteoarthritis of the knee – a pilot study](papers/medical-ai/2026-video-pose-estimation-knee-oa.md) |
 | Others / 其他 | No notes yet / 暂无 |
 
 ## Note Template / 笔记模板
