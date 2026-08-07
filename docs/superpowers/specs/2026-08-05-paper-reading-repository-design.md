@@ -1,21 +1,25 @@
-# Paper Reading Repository Design
+# Paper Reading Repository Design / 论文阅读仓库设计规范
 
-## Objective
+> 本规范自 2026-08-07 起替代初始版本中的“双语论文笔记”和“README 内维护完整论文列表”要求。当前维护细则同时见仓库根目录的 [`AGENTS.md`](../../../AGENTS.md)。
 
-Create a public GitHub repository named `paper` for Kaixu Chen's bilingual paper-reading notes. The repository must remain easy to maintain as the number of papers grows, while making the notes useful to both Chinese- and English-speaking readers.
+## 目标
 
-## Audience and Language
+维护公开 GitHub 仓库 `paper`，用于长期整理计算机视觉、3D 人体姿态、360° 视觉、多视角学习和医疗人工智能相关论文阅读笔记。随着论文数量增加，仓库仍应保持清晰、可搜索、易维护。
 
-- The repository is public.
-- Repository navigation, metadata labels, and section headings are bilingual or understandable in English without translation.
-- Each paper note includes both an English and a Chinese one-sentence takeaway.
-- Detailed analysis may use Chinese for efficiency, with English summaries preserving international readability.
+## 语言
 
-## Repository Structure
+- 新增论文笔记统一使用中文总结和分析。
+- 论文原标题、作者、venue、模型名、方法名、数据集名和指标名保留原始写法。
+- YAML front matter 字段名保持英文，以便程序化读取。
+- 2026-08-07 之前已经存在的双语笔记可继续保留，无需为了统一格式而回溯重写。
+
+## 仓库结构
 
 ```text
 paper/
 ├── README.md
+├── PAPER_INDEX.md
+├── AGENTS.md
 ├── LICENSE
 ├── templates/
 │   └── paper-note-template.md
@@ -27,59 +31,88 @@ paper/
     └── others/
 ```
 
-The repository uses one Markdown file per paper. Filenames follow `YYYY-short-paper-title.md`, use lowercase ASCII, and separate words with hyphens. A paper belongs to the most relevant primary topic folder; additional topics are represented by tags inside the note rather than duplicate files.
+每篇论文使用一个 Markdown 文件。文件名遵循 `YYYY-short-paper-title.md`，使用小写 ASCII 和连字符。论文只放入一个最相关的主主题目录，其他主题通过 `tags` 表示，不重复保存。
 
-## README Design
+## README 设计
 
-`README.md` serves as the public landing page and contains:
+`README.md` 仅作为仓库入口，保持简洁，包含：
 
-1. A bilingual repository introduction.
-2. A short explanation of the note format and reading-status labels.
-3. Topic links for the five initial categories.
-4. A "Recently Read / 最近阅读" table.
-5. An "All Papers / 全部论文" index grouped by topic.
-6. Instructions for creating a new note from the template.
+1. 仓库简介和语言说明；
+2. 五个主要研究主题入口；
+3. 独立论文索引 `PAPER_INDEX.md` 的入口；
+4. 阅读状态说明；
+5. 新增论文笔记的简要步骤；
+6. `AGENTS.md` 与笔记模板入口；
+7. License。
 
-The index is maintained manually in the first version. Automatic indexing, a documentation website, and GitHub API integration are intentionally excluded to keep maintenance simple.
+README 不再维护 `Recently Read` 或 `All Papers` 的逐篇论文表格，避免论文数量增加后主页失去可读性。
 
-## Paper Note Schema
+## 论文索引设计
 
-Every note created from `templates/paper-note-template.md` contains:
+`PAPER_INDEX.md` 是仓库中论文条目的唯一完整索引。
 
-- Title, authors, venue, publication year, and reading date.
-- Reading status: `skimmed`, `read`, or `deep-read`.
-- Topic tags.
-- Links to the paper, code, dataset, and project page when available.
-- One-sentence takeaway in English.
-- 一句话中文总结。
-- Research question and motivation.
-- Core method.
-- Datasets, evaluation metrics, and main results.
-- Strengths.
-- Limitations.
-- Personal assessment.
-- Relevance to current research.
-- Follow-up questions or papers.
+- 按主题分组；
+- 每个主题内部按 `reading_date` 从新到旧排列；
+- 每条至少记录阅读日期、论文年份、论文标题及链接、阅读状态；
+- 新增、移动、重命名或删除论文笔记时必须同步更新；
+- 第一阶段继续人工维护，不引入自动索引工作流。
 
-Unavailable external resources are written as `Not available / 暂无`, avoiding empty or misleading links.
+## 论文笔记格式
 
-## Licensing
+每篇新笔记至少包含 YAML 元数据：
 
-The repository uses the Creative Commons Attribution 4.0 International license (CC BY 4.0), which is appropriate for publicly shared written notes. Notes must summarize papers in the author's own words and must not reproduce substantial copyrighted passages, figures, or tables without permission.
+- `title`
+- `authors`
+- `venue`
+- `year`
+- `reading_date`
+- `status`
+- `tags`
 
-## Validation
+正文原则上包含：
 
-The initial repository is accepted when:
+- 基本信息；
+- 一句话总结；
+- 研究问题与动机；
+- 核心方法；
+- 数据集与评价指标；
+- 主要结果；
+- 优点；
+- 局限；
+- 个人评价；
+- 与我的研究关联；
+- 后续阅读。
 
-- All required directories and files exist.
-- README links to every topic directory and template using valid relative paths.
-- The template contains every required field in the paper-note schema.
-- English and Chinese takeaways are visibly separate.
-- No placeholders such as `TODO` or broken example links remain in the README.
-- Markdown renders cleanly on GitHub.
+外部资源链接包括论文、代码、数据集和项目主页；不存在时写“暂无”，不要创建空链接或虚构链接。
 
-No automated workflow is required for the first version. Validation is performed with local file checks and a Markdown link scan before publication.
+## 阅读状态
 
-## Initial Scope
+- `skimmed`：已浏览论文结构、核心方法和主要结果；
+- `read`：已完整阅读论文；
+- `deep-read`：已深入分析、复现或进行系统性实验比较。
 
-The first published version contains the repository structure, bilingual README, license, note template, and topic directories. It does not invent papers the owner has read. Real paper notes will be added only from user-provided titles, URLs, BibTeX, PDFs, or reading history.
+状态反映真实阅读深度，不根据笔记长度自动升级。
+
+## 来源与内容要求
+
+- 优先依据论文原文、出版方/arXiv 页面、作者项目主页、官方代码和官方数据集。
+- 关键数值、实验设置、单位、venue 和年份等事实必须可核验。
+- 作者原结论、自己的评价和根据方法推导出的判断必须清楚区分。
+- 推断内容使用“推断”“可能”等措辞，不能写成论文已验证事实。
+- 笔记必须用自己的语言总结，不大段复制受版权保护的论文原文。
+
+## 许可
+
+原创笔记继续采用 Creative Commons Attribution 4.0 International（CC BY 4.0）。被引用论文、代码、图表和其他第三方材料的权利归各自权利人所有。
+
+## 验证要求
+
+一次仓库维护修改至少应确认：
+
+- README 能正确链接到 `PAPER_INDEX.md`、`AGENTS.md`、模板和各主题目录；
+- 模板为中文正文结构，并包含全部必需 YAML 字段；
+- `PAPER_INDEX.md` 包含所有现有独立论文笔记；
+- README 不再逐篇维护论文列表；
+- 新笔记的索引条目、路径和阅读状态一致；
+- Markdown 相对链接有效；
+- 更新 `main` 前确认远程 HEAD 未发生并发变化，并禁止无必要的 force push。

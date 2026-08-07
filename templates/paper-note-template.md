@@ -1,81 +1,68 @@
 ---
-title: "Paper title / 论文题目"
-authors: "Author list / 作者列表"
-venue: "Venue / 会议或期刊"
+title: "论文原始标题"
+authors: "作者列表"
+venue: "会议、期刊或 arXiv"
 year: 2026
-reading_date: 2026-08-05
-status: read
+reading_date: 2026-08-07
+status: skimmed
 tags:
   - topic
 ---
 
-# Paper title / 论文题目
+# 论文原始标题
 
-## Metadata / 基本信息
+## 基本信息
 
-- **Authors / 作者：** Author list / 作者列表
-- **Venue / 会议或期刊：** Venue name / 会议或期刊名称
-- **Year / 年份：** 2026
-- **Reading date / 阅读日期：** 2026-08-05
-- **Reading status / 阅读状态：** `skimmed` / `read` / `deep-read`
-- **Tags / 标签：** `topic`
-- **Paper / 论文：** Not available / 暂无
-- **Code / 代码：** Not available / 暂无
-- **Dataset / 数据集：** Not available / 暂无
-- **Project page / 项目主页：** Not available / 暂无
+- **作者：** 作者列表
+- **会议/期刊：** 会议、期刊或 arXiv
+- **年份：** 2026
+- **阅读日期：** 2026-08-07
+- **阅读状态：** `skimmed` / `read` / `deep-read`
+- **标签：** `topic`
+- **论文：** 暂无
+- **代码：** 暂无
+- **数据集：** 暂无
+- **项目主页：** 暂无
 
-## Takeaway (English)
+## 一句话总结
 
-Write one sentence describing the paper's most important contribution.
+用一句话概括论文最重要的贡献、结论或方法价值。
 
-## 一句话总结（中文）
+## 研究问题与动机
 
-用一句话概括论文最重要的贡献。
+说明论文解决的核心问题、为什么重要，以及此前方法存在什么不足。
 
-## Research Question and Motivation / 研究问题与动机
+## 核心方法
 
-Describe the problem, why it matters, and the gap in previous work.
+总结论文的主要思想、模型结构、算法流程或理论贡献。必要时拆成若干子章节。
 
-说明论文解决的问题、研究意义以及现有工作的不足。
+## 数据集与评价指标
 
-## Core Method / 核心方法
+列出论文使用的数据集、实验设置、评价协议和主要指标。单位不明确时不要自行推断。
 
-Summarize the main idea, model, pipeline, or theoretical contribution.
+## 主要结果
 
-总结核心思想、模型、流程或理论贡献。
+记录直接支持论文核心结论的关键实验结果。优先保留与主要 baseline、消融实验和泛化能力有关的结果，不需要机械抄录所有表格。
 
-## Datasets and Metrics / 数据集与指标
+## 优点
 
-List the datasets, evaluation protocols, and metrics used in the paper.
+- 记录有论文证据支持的优点。
+- 区分作者声称的优势和自己的评价。
 
-列出论文使用的数据集、评估协议和指标。
+## 局限
 
-## Main Results / 主要结果
+- 记录论文明确指出的局限、方法假设和适用范围。
+- 如果是根据方法或实验推断出的局限，应明确标注为“推断”。
 
-Record the results that directly support the paper's central claims.
+## 个人评价
 
-记录直接支持论文核心结论的实验结果。
+说明哪些部分令人信服，哪些部分仍存在疑问，以及哪些实验或设计值得进一步验证。
 
-## Strengths / 优点
+## 与我的研究关联
 
-- Add evidence-backed strengths. / 记录有证据支持的优点。
+说明论文与当前研究项目、方法、数据集、实验设计或投稿方向的具体联系。尽量写出可以直接借鉴、比较或验证的内容。
 
-## Limitations / 局限
+## 后续阅读
 
-- Add limitations, assumptions, or risks. / 记录局限、假设或风险。
-
-## Personal Assessment / 个人评价
-
-Explain what is convincing, uncertain, or worth revisiting.
-
-说明令人信服、仍有疑问或值得进一步思考的内容。
-
-## Relevance to My Research / 与我的研究关联
-
-Describe how the paper connects to current projects, methods, datasets, or experiments.
-
-说明论文与当前研究项目、方法、数据集或实验的联系。
-
-## Follow-up Reading / 后续阅读
-
-- Add related papers or open questions. / 添加相关论文或待研究问题。
+- 添加值得继续阅读的相关论文。
+- 记录需要进一步核验的问题或计划进行的实验。
