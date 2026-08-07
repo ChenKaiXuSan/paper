@@ -8,6 +8,7 @@
 
 | 阅读日期 | 年份 | 论文 | 状态 |
 | --- | ---: | --- | --- |
+| 2026-08-08 | 2026 | [LAMP: Localization Aware Multi-camera People Tracking in Metric 3D World](papers/3d-human-pose/2026-lamp.md) | `skimmed` |
 | 2026-08-07 | 2026 | [SAM 3D Body: Robust Full-Body Human Mesh Recovery](papers/3d-human-pose/2026-sam-3d-body.md) | `skimmed` |
 
 ## 360° 视觉
@@ -18,6 +19,7 @@
 
 | 阅读日期 | 年份 | 论文 | 状态 |
 | --- | ---: | --- | --- |
+| 2026-08-08 | 2026 | [Flex4DHuman: Flexible Multi-view Video Diffusion for 4D Human Reconstruction](papers/multiview/2026-flex4dhuman.md) | `skimmed` |
 | 2026-08-07 | 2025 | [VGGT: Visual Geometry Grounded Transformer](papers/multiview/2025-vggt.md) | `skimmed` |
 | 2026-08-05 | 2026 | [TROPHIES: Temporal Reconstruction of Places, Humans, and Cameras from Multi-view Videos](papers/multiview/2026-trophies.md) | `read` |
 
