@@ -8,6 +8,7 @@
 
 | 阅读日期 | 年份 | 论文 | 状态 |
 | --- | ---: | --- | --- |
+| 2026-08-09 | 2026 | [Beyond Static Frames: Temporal Aggregate-and-Restore Vision Transformer for Human Pose Estimation](papers/3d-human-pose/2026-beyond-static-frames.md) | `skimmed` |
 | 2026-08-08 | 2026 | [LAMP: Localization Aware Multi-camera People Tracking in Metric 3D World](papers/3d-human-pose/2026-lamp.md) | `skimmed` |
 | 2026-08-07 | 2026 | [SAM 3D Body: Robust Full-Body Human Mesh Recovery](papers/3d-human-pose/2026-sam-3d-body.md) | `skimmed` |
 
@@ -27,6 +28,7 @@
 
 | 阅读日期 | 年份 | 论文 | 状态 |
 | --- | ---: | --- | --- |
+| 2026-08-09 | 2026 | [SIMSPINE: A Biomechanics-Aware Simulation Framework for 3D Spine Motion Annotation and Benchmarking](papers/medical-ai/2026-simspine.md) | `skimmed` |
 | 2026-08-06 | 2026 | [Calibrated Uncertainty for Trustworthy Clinical Gait Analysis Using Probabilistic Multiview Markerless Motion Capture](papers/medical-ai/2026-calibrated-uncertainty-clinical-gait.md) | `read` |
 | 2026-08-06 | 2026 | [Gait assessment using a 2D video-based pose estimation app in comparison to a markerless motion capture system in subjects with osteoarthritis of the knee – a pilot study](papers/medical-ai/2026-video-pose-estimation-knee-oa.md) | `read` |
 
