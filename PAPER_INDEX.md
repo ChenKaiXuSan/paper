@@ -20,6 +20,7 @@
 
 | 阅读日期 | 年份 | 论文 | 状态 |
 | --- | ---: | --- | --- |
+| 2026-08-10 | 2026 | [Human4K: A Large-Scale 4K Multi-View Mocap Dataset for Whole-Body 3D Human Reconstruction](papers/multiview/2026-human4k.md) | `skimmed` |
 | 2026-08-08 | 2026 | [Flex4DHuman: Flexible Multi-view Video Diffusion for 4D Human Reconstruction](papers/multiview/2026-flex4dhuman.md) | `skimmed` |
 | 2026-08-07 | 2025 | [VGGT: Visual Geometry Grounded Transformer](papers/multiview/2025-vggt.md) | `skimmed` |
 | 2026-08-05 | 2026 | [TROPHIES: Temporal Reconstruction of Places, Humans, and Cameras from Multi-view Videos](papers/multiview/2026-trophies.md) | `read` |
@@ -28,6 +29,7 @@
 
 | 阅读日期 | 年份 | 论文 | 状态 |
 | --- | ---: | --- | --- |
+| 2026-08-10 | 2025 | [CARE-PD: A Multi-Site Anonymized Clinical Dataset for Parkinson's Disease Gait Assessment](papers/medical-ai/2025-care-pd.md) | `skimmed` |
 | 2026-08-09 | 2026 | [SIMSPINE: A Biomechanics-Aware Simulation Framework for 3D Spine Motion Annotation and Benchmarking](papers/medical-ai/2026-simspine.md) | `skimmed` |
 | 2026-08-06 | 2026 | [Calibrated Uncertainty for Trustworthy Clinical Gait Analysis Using Probabilistic Multiview Markerless Motion Capture](papers/medical-ai/2026-calibrated-uncertainty-clinical-gait.md) | `read` |
 | 2026-08-06 | 2026 | [Gait assessment using a 2D video-based pose estimation app in comparison to a markerless motion capture system in subjects with osteoarthritis of the knee – a pilot study](papers/medical-ai/2026-video-pose-estimation-knee-oa.md) | `read` |
