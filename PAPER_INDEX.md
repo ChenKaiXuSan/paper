@@ -8,6 +8,8 @@
 
 | 阅读日期 | 年份 | 论文 | 状态 |
 | --- | ---: | --- | --- |
+| 2026-08-11 | 2026 | [Mocap-2-to-3: Multi-view Lifting for Monocular Motion Recovery with 2D Pretraining](papers/3d-human-pose/2026-mocap-2-to-3.md) | `skimmed` |
+| 2026-08-11 | 2026 | [Superman: Unifying Skeleton and Vision for Human Motion Perception and Generation](papers/3d-human-pose/2026-superman.md) | `skimmed` |
 | 2026-08-09 | 2026 | [Beyond Static Frames: Temporal Aggregate-and-Restore Vision Transformer for Human Pose Estimation](papers/3d-human-pose/2026-beyond-static-frames.md) | `skimmed` |
 | 2026-08-08 | 2026 | [LAMP: Localization Aware Multi-camera People Tracking in Metric 3D World](papers/3d-human-pose/2026-lamp.md) | `skimmed` |
 | 2026-08-07 | 2026 | [SAM 3D Body: Robust Full-Body Human Mesh Recovery](papers/3d-human-pose/2026-sam-3d-body.md) | `skimmed` |
