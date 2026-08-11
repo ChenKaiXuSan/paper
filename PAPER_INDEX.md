@@ -38,4 +38,7 @@
 
 ## 其他
 
-暂无已收录论文。
+| 阅读日期 | 年份 | 论文 | 状态 |
+| --- | ---: | --- | --- |
+| 2026-08-12 | 2026 | [Exploring Adaptive Masked Reconstruction for Self-Supervised Skeleton-Based Action Recognition](papers/others/2026-adaptive-masked-reconstruction.md) | `skimmed` |
+| 2026-08-12 | 2026 | [T-MOR: Learning Motion-Aware Skeleton Representations for Human Action Recognition](papers/others/2026-t-mor.md) | `skimmed` |
