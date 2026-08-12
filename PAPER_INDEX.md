@@ -8,6 +8,7 @@
 
 | 阅读日期 | 年份 | 论文 | 状态 |
 | --- | ---: | --- | --- |
+| 2026-08-13 | 2026 | [SKEL-CF: Coarse-to-Fine Biomechanical Skeleton and Surface Mesh Recovery](papers/3d-human-pose/2026-skel-cf.md) | `skimmed` |
 | 2026-08-11 | 2026 | [Mocap-2-to-3: Multi-view Lifting for Monocular Motion Recovery with 2D Pretraining](papers/3d-human-pose/2026-mocap-2-to-3.md) | `skimmed` |
 | 2026-08-11 | 2026 | [Superman: Unifying Skeleton and Vision for Human Motion Perception and Generation](papers/3d-human-pose/2026-superman.md) | `skimmed` |
 | 2026-08-09 | 2026 | [Beyond Static Frames: Temporal Aggregate-and-Restore Vision Transformer for Human Pose Estimation](papers/3d-human-pose/2026-beyond-static-frames.md) | `skimmed` |
@@ -40,5 +41,6 @@
 
 | 阅读日期 | 年份 | 论文 | 状态 |
 | --- | ---: | --- | --- |
+| 2026-08-13 | 2026 | [Action Motifs: Self-Supervised Hierarchical Representation of Human Body Movements](papers/others/2026-action-motifs.md) | `skimmed` |
 | 2026-08-12 | 2026 | [Exploring Adaptive Masked Reconstruction for Self-Supervised Skeleton-Based Action Recognition](papers/others/2026-adaptive-masked-reconstruction.md) | `skimmed` |
 | 2026-08-12 | 2026 | [T-MOR: Learning Motion-Aware Skeleton Representations for Human Action Recognition](papers/others/2026-t-mor.md) | `skimmed` |
