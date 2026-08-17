@@ -8,6 +8,7 @@
 
 | 阅读日期 | 年份 | 论文 | 状态 |
 | --- | ---: | --- | --- |
+| 2026-08-18 | 2026 | [OnlineHMR: Video-based Online World-Grounded Human Mesh Recovery](papers/3d-human-pose/2026-onlinehmr.md) | `skimmed` |
 | 2026-08-13 | 2026 | [SKEL-CF: Coarse-to-Fine Biomechanical Skeleton and Surface Mesh Recovery](papers/3d-human-pose/2026-skel-cf.md) | `skimmed` |
 | 2026-08-11 | 2026 | [Mocap-2-to-3: Multi-view Lifting for Monocular Motion Recovery with 2D Pretraining](papers/3d-human-pose/2026-mocap-2-to-3.md) | `skimmed` |
 | 2026-08-11 | 2026 | [Superman: Unifying Skeleton and Vision for Human Motion Perception and Generation](papers/3d-human-pose/2026-superman.md) | `skimmed` |
@@ -23,6 +24,7 @@
 
 | 阅读日期 | 年份 | 论文 | 状态 |
 | --- | ---: | --- | --- |
+| 2026-08-18 | 2025 | [AnyCam: Learning to Recover Camera Poses and Intrinsics from Casual Videos](papers/multiview/2025-anycam.md) | `skimmed` |
 | 2026-08-10 | 2026 | [Human4K: A Large-Scale 4K Multi-View Mocap Dataset for Whole-Body 3D Human Reconstruction](papers/multiview/2026-human4k.md) | `skimmed` |
 | 2026-08-08 | 2026 | [Flex4DHuman: Flexible Multi-view Video Diffusion for 4D Human Reconstruction](papers/multiview/2026-flex4dhuman.md) | `skimmed` |
 | 2026-08-07 | 2025 | [VGGT: Visual Geometry Grounded Transformer](papers/multiview/2025-vggt.md) | `skimmed` |
