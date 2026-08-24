@@ -8,6 +8,7 @@
 
 | 阅读日期 | 年份 | 论文 | 状态 |
 | --- | ---: | --- | --- |
+| 2026-08-24 | 2026 | [UniSH: Unifying Scene and Human Reconstruction in a Feed-Forward Pass](papers/3d-human-pose/2026-unish.md) | `skimmed` |
 | 2026-08-18 | 2026 | [OnlineHMR: Video-based Online World-Grounded Human Mesh Recovery](papers/3d-human-pose/2026-onlinehmr.md) | `skimmed` |
 | 2026-08-13 | 2026 | [SKEL-CF: Coarse-to-Fine Biomechanical Skeleton and Surface Mesh Recovery](papers/3d-human-pose/2026-skel-cf.md) | `skimmed` |
 | 2026-08-11 | 2026 | [Mocap-2-to-3: Multi-view Lifting for Monocular Motion Recovery with 2D Pretraining](papers/3d-human-pose/2026-mocap-2-to-3.md) | `skimmed` |
@@ -34,6 +35,7 @@
 
 | 阅读日期 | 年份 | 论文 | 状态 |
 | --- | ---: | --- | --- |
+| 2026-08-24 | 2026 | [Clinically-Grounded Counterfactual Reasoning for Medical Video Diagnosis](papers/medical-ai/2026-medvcr.md) | `skimmed` |
 | 2026-08-10 | 2025 | [CARE-PD: A Multi-Site Anonymized Clinical Dataset for Parkinson's Disease Gait Assessment](papers/medical-ai/2025-care-pd.md) | `skimmed` |
 | 2026-08-09 | 2026 | [SIMSPINE: A Biomechanics-Aware Simulation Framework for 3D Spine Motion Annotation and Benchmarking](papers/medical-ai/2026-simspine.md) | `skimmed` |
 | 2026-08-06 | 2026 | [Calibrated Uncertainty for Trustworthy Clinical Gait Analysis Using Probabilistic Multiview Markerless Motion Capture](papers/medical-ai/2026-calibrated-uncertainty-clinical-gait.md) | `read` |
