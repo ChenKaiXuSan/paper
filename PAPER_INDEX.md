@@ -6,6 +6,7 @@
 
 | 阅读日期 | 年份 | 论文 | 状态 |
 | --- | ---: | --- | --- |
+| 2026-08-27 | 2024 | [WHAC: World-grounded Humans and Cameras](papers/global-human-motion/2024-whac.md) | `skimmed` |
 | 2026-08-26 | 2026 | [Joint Optimization for 4D Human-Scene Reconstruction in the Wild](papers/global-human-motion/2026-josh-joint-optimization.md) | `skimmed` |
 | 2026-08-26 | 2026 | [DuoMo: Dual Motion Diffusion for World-Space Human Reconstruction](papers/global-human-motion/2026-duomo.md) | `skimmed` |
 | 2026-08-26 | 2026 | [RAM: Recover Any 3D Human Motion in-the-Wild](papers/global-human-motion/2026-ram.md) | `skimmed` |
@@ -18,6 +19,7 @@
 
 | 阅读日期 | 年份 | 论文 | 状态 |
 | --- | ---: | --- | --- |
+| 2026-08-27 | 2026 | [WristP²: A Wrist-Worn System for Hand Pose and Pressure Estimation](papers/3d-human-pose/2026-wristpp.md) | `skimmed` |
 | 2026-08-26 | 2026 | [Towards Balanced Multi-Modal Learning in 3D Human Pose Estimation](papers/3d-human-pose/2026-balanced-multimodal-3d-hpe.md) | `skimmed` |
 | 2026-08-26 | 2026 | [EgoPoseFormer v2: Accurate Egocentric Human Motion Estimation for AR/VR](papers/3d-human-pose/2026-egoposeformer-v2.md) | `skimmed` |
 | 2026-08-13 | 2026 | [SKEL-CF: Coarse-to-Fine Biomechanical Skeleton and Surface Mesh Recovery](papers/3d-human-pose/2026-skel-cf.md) | `skimmed` |

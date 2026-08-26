@@ -16,6 +16,7 @@
 - [AnyCam](../papers/multiview-geometry/2025-anycam.md) — 从 casual videos 恢复 camera pose 与 intrinsics。
 - [VGGT](../papers/multiview-geometry/2025-vggt.md) — 通用视觉几何基础模型，可提供 camera / depth / point-map prior。
 - [MoRe](../papers/multiview-geometry/2026-more-motion-aware-4d-reconstruction.md) — 显式区分动态物体与 camera motion。
+- [WHAC](../papers/global-human-motion/2024-whac.md) — 利用 camera-frame 人体运动恢复 camera metric scale，再用尺度化相机轨迹反向更新 world human trajectory。
 - [Humans as Checkerboards](../papers/global-human-motion/2025-humans-as-checkerboards.md) — 用人体接触提供 metric scale。
 - [PhysDynPose](../papers/global-human-motion/2025-physics-based-human-pose-moving-camera.md) — moving-camera world HMR + physics refinement。
 - [OnlineHMR](../papers/global-human-motion/2026-onlinehmr.md) — 在线 world-grounded HMR。
@@ -26,20 +27,20 @@
 
 ## 当前共识
 
-单纯把 SLAM/camera estimator 与 HMR 串联容易把尺度、漂移和动态前景误差传递到 world-space human motion；人体接触、人体尺度、动态 mask、scene geometry 和 temporal prior 都可以成为额外约束。
+单纯把 SLAM/camera estimator 与 HMR 串联容易把尺度、漂移和动态前景误差传递到 world-space human motion。WHAC 进一步说明 human motion 可以反向提供 camera metric scale，再由尺度化 camera trajectory 更新 world human motion；JOSH 则把 human-scene-camera 推进到更完整的 joint optimization。人体尺度、接触、动态 mask、scene geometry 和 temporal/motion prior 都可以成为 camera-human 互约束信号。
 
 ## 研究空白
 
-- **推断：**现有工作多数仍是 `camera → human` 的单向依赖，真正稳定的 camera-human mutual refinement 仍较少。
+- **推断：**`camera ↔ human` 已有 WHAC 的 scale-level feedback 和 JOSH 的 joint optimization 等先例，但针对 camera rotation / translation / scale 与 world human motion 的**长序列、在线、稳定闭环修正**仍较少。
 - 长距离、高速、低纹理和强旋转场景中的 camera drift 仍是核心问题。
 - 多透视/360 观测如何用于反向修正物理相机 trajectory 尚未形成成熟 benchmark。
 
 ## 与我的研究关系
 
-该 collection 可直接支撑 moving-camera 3D human reconstruction 的 Related Work 与 baseline 设计，特别适合组织 `GT camera / predicted camera / human-assisted camera / joint refinement` 的递进实验。
+该 collection 可直接支撑 moving-camera 3D human reconstruction 的 Related Work 与 baseline 设计，特别适合组织 `GT camera / predicted camera / human-assisted camera scale / human-assisted camera pose / joint refinement` 的递进实验。
 
 ## 下一步阅读 / 实验
 
 - 补充 ViPE、MASt3R-SLAM 等 camera trajectory 工作。
 - 比较 ATE/RPE 与 W-MPJPE/RTE 是否同步改善。
-- 测试人体 2D/3D reprojection、尺度和 contact 对 camera correction 的独立贡献。
+- 测试人体 2D/3D reprojection、尺度、contact 和跨视角一致性对 camera correction 的独立贡献。
