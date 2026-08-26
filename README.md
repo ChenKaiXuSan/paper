@@ -2,27 +2,37 @@
 
 ## 关于
 
-本仓库用于整理我的论文阅读笔记，主要关注计算机视觉、三维人体姿态估计、360° 视觉、多视角学习和医疗人工智能。
+本仓库用于整理研究论文阅读笔记，重点关注 3D 人体姿态、移动相机下的全局人体运动、多视角几何、360° 视觉、人体动作理解、医疗人工智能，以及体育与生物力学。
 
-从 2026-08-07 起，新加入的论文笔记统一使用**中文总结与分析**。论文原标题、作者姓名、会议/期刊名称、模型名、方法名和指标名等专有名词保留原始写法。已有历史笔记不要求回溯改写。
-
-笔记记录阅读当时的个人理解，属于总结与评论，不能替代论文原文。
+从 2026-08-07 起，新加入的论文笔记统一使用**中文总结与分析**。论文原标题、作者姓名、会议/期刊名称、模型名、方法名、数据集名和指标名等专有名词保留原始写法。
 
 ## 研究主题
 
-- [3D 人体姿态](papers/3d-human-pose/)
-- [360° 视觉](papers/360-vision/)
-- [多视角学习](papers/multiview/)
-- [医疗人工智能](papers/medical-ai/)
-- [其他](papers/others/)
+- [Global Human Motion & Moving Camera](papers/global-human-motion/)
+- [3D Human Pose & Mesh](papers/3d-human-pose/)
+- [Multi-view Geometry & Camera](papers/multiview-geometry/)
+- [360° / Omnidirectional Vision](papers/360-vision/)
+- [Human Motion Understanding](papers/motion-understanding/)
+- [Medical AI & Clinical Gait](papers/medical-ai/)
+- [Sports & Biomechanics](papers/sports-biomechanics/)
+
+## 研究专题 Collections
+
+Collections 用于把多篇论文组织成研究问题、方法脉络和可直接使用的 Related Work 阅读路线：
+
+- [Moving-camera World HMR](collections/moving-camera-world-hmr.md)
+- [360° Selfie Human Reconstruction](collections/360-selfie-human-reconstruction.md)
+- [Multi-view Pose Fusion](collections/multiview-pose-fusion.md)
+- [Clinical Gait Analysis](collections/clinical-gait-analysis.md)
+- [Sports Motion Analysis](collections/sports-motion-analysis.md)
 
 ## 论文索引
 
-所有已收录论文统一维护在独立索引中：
+所有已收录论文统一维护在：
 
 **[查看完整论文索引 →](PAPER_INDEX.md)**
 
-README 不再逐篇列出论文，避免随着论文数量增加而变得难以浏览。
+README 不维护逐篇论文列表，以避免随着论文数量增加而失去可读性。
 
 ## 阅读状态
 
@@ -33,10 +43,12 @@ README 不再逐篇列出论文，避免随着论文数量增加而变得难以�
 ## 新增论文笔记
 
 1. 复制 [论文笔记模板](templates/paper-note-template.md)。
-2. 将新文件放入最相关的主题目录。
-3. 文件名使用 `YYYY-short-paper-title.md`，采用小写 ASCII 和连字符。
-4. 完成笔记后同步更新 [PAPER_INDEX.md](PAPER_INDEX.md)。
-5. 详细维护规则见 [AGENTS.md](AGENTS.md)。
+2. 将论文放入最相关的一级研究主题目录。
+3. 使用 tags 表达跨主题属性，如 `slam`、`diffusion`、`vlm`、`clinical-gait`。
+4. 文件名使用 `YYYY-short-paper-title.md`。
+5. 更新 [PAPER_INDEX.md](PAPER_INDEX.md)。
+6. 若论文改变某条研究脉络，可同步更新相关 [collection](collections/)。
+7. 详细维护规则见 [AGENTS.md](AGENTS.md)。
 
 ## 许可协议
 
