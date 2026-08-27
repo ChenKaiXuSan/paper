@@ -6,6 +6,7 @@
 
 | 阅读日期 | 年份 | 论文 | 状态 |
 | --- | ---: | --- | --- |
+| 2026-08-28 | 2026 | [Scene and Human in One World: Reconstruction in a Feedforward Pass](papers/global-human-motion/2026-show.md) | `skimmed` |
 | 2026-08-27 | 2024 | [WHAC: World-grounded Humans and Cameras](papers/global-human-motion/2024-whac.md) | `skimmed` |
 | 2026-08-26 | 2026 | [Joint Optimization for 4D Human-Scene Reconstruction in the Wild](papers/global-human-motion/2026-josh-joint-optimization.md) | `skimmed` |
 | 2026-08-26 | 2026 | [DuoMo: Dual Motion Diffusion for World-Space Human Reconstruction](papers/global-human-motion/2026-duomo.md) | `skimmed` |
@@ -60,6 +61,7 @@
 
 | 阅读日期 | 年份 | 论文 | 状态 |
 | --- | ---: | --- | --- |
+| 2026-08-28 | 2026 | [OpenCap Monocular: 3D Human Kinematics and Musculoskeletal Dynamics from a Single Smartphone Video](papers/medical-ai/2026-opencap-monocular.md) | `skimmed` |
 | 2026-08-26 | 2026 | [GaitEncoder: A Foundation Model of Gait Kinematics for Diverse Clinical Applications and Pathologies](papers/medical-ai/2026-gaitencoder.md) | `skimmed` |
 | 2026-08-26 | 2026 | [ResiHMR: Residual-Limb Aware Single-Image 3D Human Mesh Recovery for Individuals with Limb Loss](papers/medical-ai/2026-resihmr.md) | `skimmed` |
 | 2026-08-26 | 2026 | [BioGait-VLM: A Tri-Modal Vision-Language-Biomechanics Framework for Interpretable Clinical Gait Assessment](papers/medical-ai/2026-biogait-vlm.md) | `skimmed` |

@@ -9,7 +9,7 @@
 1. **Camera estimation / scale**：先获得相机轨迹、内参和 metric scale。
 2. **Camera-relative → world**：将 HMR/HPE 输出变换到统一世界坐标。
 3. **Global refinement**：利用时序、人体尺度、接触或 motion prior 修正漂移。
-4. **Joint optimization**：让 human、camera、scene 不再单向串联，而是互相校正。
+4. **Joint optimization / representation coupling**：让 human、camera、scene 不再单向串联，而是在尺度、特征或优化层互相校正。
 
 ## 关键论文
 
@@ -17,9 +17,10 @@
 - [VGGT](../papers/multiview-geometry/2025-vggt.md) — 通用视觉几何基础模型，可提供 camera / depth / point-map prior。
 - [MoRe](../papers/multiview-geometry/2026-more-motion-aware-4d-reconstruction.md) — 显式区分动态物体与 camera motion。
 - [WHAC](../papers/global-human-motion/2024-whac.md) — 利用 camera-frame 人体运动恢复 camera metric scale，再用尺度化相机轨迹反向更新 world human trajectory。
+- [SHOW](../papers/global-human-motion/2026-show.md) — 将 human semantic / metric-scale priors 注入 geometry backbone，并用 scene geometry 反向约束 SMPL-X，在 shared metric space 中进行 feed-forward 双向 coupling。
 - [Humans as Checkerboards](../papers/global-human-motion/2025-humans-as-checkerboards.md) — 用人体接触提供 metric scale。
 - [PhysDynPose](../papers/global-human-motion/2025-physics-based-human-pose-moving-camera.md) — moving-camera world HMR + physics refinement。
-- [OnlineHMR](../papers/global-human-motion/2026-onlinehmr.md) — 在线 world-grounded HMR。
+- [OnlineHMR](../papers/global-human-motion/2026-onlinehmr.md) — 在线 world-grounded human motion。
 - [DuoMo](../papers/global-human-motion/2026-duomo.md) — camera-space / world-space 双 motion prior。
 - [UniSH](../papers/global-human-motion/2026-unish.md) — feed-forward scene-camera-human metric alignment。
 - [JOSH](../papers/global-human-motion/2026-josh-joint-optimization.md) — human-scene-camera joint optimization。
@@ -27,20 +28,22 @@
 
 ## 当前共识
 
-单纯把 SLAM/camera estimator 与 HMR 串联容易把尺度、漂移和动态前景误差传递到 world-space human motion。WHAC 进一步说明 human motion 可以反向提供 camera metric scale，再由尺度化 camera trajectory 更新 world human motion；JOSH 则把 human-scene-camera 推进到更完整的 joint optimization。人体尺度、接触、动态 mask、scene geometry 和 temporal/motion prior 都可以成为 camera-human 互约束信号。
+单纯把 SLAM/camera estimator 与 HMR 串联容易把尺度、漂移和动态前景误差传递到 world-space human motion。WHAC 说明 human motion 可以反向提供 camera metric scale，再由尺度化 camera trajectory 更新 world human motion；SHOW 进一步把这种互约束推进到 feature representation 和 joint training 层，让 human semantic/scale prior 改变 scene geometry，同时让 scene point map 与 camera intrinsics 反向约束 SMPL-X；JOSH 则代表更完整的 optimization-based human-scene-camera joint refinement。人体尺度、接触、动态 mask、scene geometry、camera ray、temporal/motion prior 都可以成为 camera-human 互约束信号。
 
 ## 研究空白
 
-- **推断：**`camera ↔ human` 已有 WHAC 的 scale-level feedback 和 JOSH 的 joint optimization 等先例，但针对 camera rotation / translation / scale 与 world human motion 的**长序列、在线、稳定闭环修正**仍较少。
-- 长距离、高速、低纹理和强旋转场景中的 camera drift 仍是核心问题。
+- **推断：**`camera ↔ human ↔ scene` 已有 WHAC 的 scale-level feedback、SHOW 的 feed-forward bidirectional representation coupling 和 JOSH 的 joint optimization 等先例，但针对 camera rotation / translation / scale 与 world human motion 的**长序列、在线、稳定闭环修正**仍较少。
+- 长距离、高速、低纹理和强旋转场景中的 camera drift 仍是核心问题；SHOW 也明确存在 synthetic-to-real gap，并在 extreme scale / very-small-human 情况下困难。
 - 多透视/360 观测如何用于反向修正物理相机 trajectory 尚未形成成熟 benchmark。
+- Feed-forward human-scene consistency 改善是否会同步降低 camera ATE/RPE，目前仍需要显式验证。
 
 ## 与我的研究关系
 
-该 collection 可直接支撑 moving-camera 3D human reconstruction 的 Related Work 与 baseline 设计，特别适合组织 `GT camera / predicted camera / human-assisted camera scale / human-assisted camera pose / joint refinement` 的递进实验。
+该 collection 可直接支撑 moving-camera 3D human reconstruction 的 Related Work 与 baseline 设计，特别适合组织 `GT camera / predicted camera / human-assisted camera scale / human-aware geometry / human-assisted camera pose / joint or recurrent refinement` 的递进实验。
 
 ## 下一步阅读 / 实验
 
 - 补充 ViPE、MASt3R-SLAM 等 camera trajectory 工作。
-- 比较 ATE/RPE 与 W-MPJPE/RTE 是否同步改善。
-- 测试人体 2D/3D reprojection、尺度、contact 和跨视角一致性对 camera correction 的独立贡献。
+- 比较 ATE/RPE 与 W-MPJPE/RTE、HS-CF/HS-V 是否同步改善。
+- 测试人体 2D/3D reprojection、尺度、contact、mask/DensePose prompt 和跨视角一致性对 camera correction 的独立贡献。
+- 在长序列滑雪/360 场景中比较 feed-forward SHOW-style coupling 与 recurrent/optimization camera correction。
