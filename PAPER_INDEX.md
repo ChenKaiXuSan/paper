@@ -33,6 +33,7 @@
 
 | 阅读日期 | 年份 | 论文 | 状态 |
 | --- | ---: | --- | --- |
+| 2026-08-29 | 2025 | [ViPE: Video Pose Engine for 3D Geometric Perception](papers/multiview-geometry/2025-vipe.md) | `skimmed` |
 | 2026-08-26 | 2026 | [AnyLift: Scaling Motion Reconstruction from Internet Videos via 2D Diffusion](papers/multiview-geometry/2026-anylift-scaling-motion-reconstruction.md) | `skimmed` |
 | 2026-08-26 | 2026 | [MoRe: Motion-aware Feed-forward 4D Reconstruction Transformer](papers/multiview-geometry/2026-more-motion-aware-4d-reconstruction.md) | `skimmed` |
 | 2026-08-26 | 2025 | [Kineo: Calibration-Free Metric Motion Capture From Sparse RGB Cameras](papers/multiview-geometry/2025-kineo.md) | `skimmed` |
@@ -75,5 +76,6 @@
 
 | 阅读日期 | 年份 | 论文 | 状态 |
 | --- | ---: | --- | --- |
+| 2026-08-29 | 2026 | [BadmintonGRF: A Multimodal Dataset and Benchmark for Markerless Ground Reaction Force Estimation in Badminton](papers/sports-biomechanics/2026-badmintongrf.md) | `skimmed` |
 | 2026-08-26 | 2026 | [Ground Reaction Inertial Poser: Physics-based Human Motion Capture from Sparse IMUs and Insole Pressure Sensors](papers/sports-biomechanics/2026-grip.md) | `skimmed` |
 | 2026-08-26 | 2026 | [From 3D Pose to Prose: Biomechanics-Grounded Vision-Language Coaching](papers/sports-biomechanics/2026-biocoach.md) | `skimmed` |
