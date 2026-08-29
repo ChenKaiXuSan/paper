@@ -47,12 +47,15 @@
 
 ## 360° / Omnidirectional Vision
 
-暂无已收录论文。
+| 阅读日期 | 年份 | 论文 | 状态 |
+| --- | ---: | --- | --- |
+| 2026-08-30 | 2026 | [360DVO: Deep Visual Odometry for Monocular 360-Degree Camera](papers/360-vision/2026-360dvo.md) | `skimmed` |
 
 ## Human Motion Understanding
 
 | 阅读日期 | 年份 | 论文 | 状态 |
 | --- | ---: | --- | --- |
+| 2026-08-30 | 2026 | [Toward Universal Skeleton-Based Action Recognition across Heterogeneous Skeletons and Open Vocabularies](papers/motion-understanding/2026-universal-skeleton.md) | `skimmed` |
 | 2026-08-26 | 2026 | [EventGait: Towards Robust Gait Recognition with Event Streams](papers/motion-understanding/2026-eventgait.md) | `skimmed` |
 | 2026-08-13 | 2026 | [Action Motifs: Self-Supervised Hierarchical Representation of Human Body Movements](papers/motion-understanding/2026-action-motifs.md) | `skimmed` |
 | 2026-08-12 | 2026 | [Exploring Adaptive Masked Reconstruction for Self-Supervised Skeleton-Based Action Recognition](papers/motion-understanding/2026-adaptive-masked-reconstruction.md) | `skimmed` |
