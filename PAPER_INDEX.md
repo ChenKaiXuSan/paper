@@ -33,6 +33,7 @@
 
 | 阅读日期 | 年份 | 论文 | 状态 |
 | --- | ---: | --- | --- |
+| 2026-08-31 | 2025 | [MASt3R-SLAM: Real-Time Dense SLAM with 3D Reconstruction Priors](papers/multiview-geometry/2025-mast3r-slam.md) | `skimmed` |
 | 2026-08-29 | 2025 | [ViPE: Video Pose Engine for 3D Geometric Perception](papers/multiview-geometry/2025-vipe.md) | `skimmed` |
 | 2026-08-26 | 2026 | [AnyLift: Scaling Motion Reconstruction from Internet Videos via 2D Diffusion](papers/multiview-geometry/2026-anylift-scaling-motion-reconstruction.md) | `skimmed` |
 | 2026-08-26 | 2026 | [MoRe: Motion-aware Feed-forward 4D Reconstruction Transformer](papers/multiview-geometry/2026-more-motion-aware-4d-reconstruction.md) | `skimmed` |
@@ -55,6 +56,7 @@
 
 | 阅读日期 | 年份 | 论文 | 状态 |
 | --- | ---: | --- | --- |
+| 2026-08-31 | 2026 | [MotionVLA: Vision-Language-Action Model for Humanoid Motion](papers/motion-understanding/2026-motionvla.md) | `skimmed` |
 | 2026-08-30 | 2026 | [Toward Universal Skeleton-Based Action Recognition across Heterogeneous Skeletons and Open Vocabularies](papers/motion-understanding/2026-universal-skeleton.md) | `skimmed` |
 | 2026-08-26 | 2026 | [EventGait: Towards Robust Gait Recognition with Event Streams](papers/motion-understanding/2026-eventgait.md) | `skimmed` |
 | 2026-08-13 | 2026 | [Action Motifs: Self-Supervised Hierarchical Representation of Human Body Movements](papers/motion-understanding/2026-action-motifs.md) | `skimmed` |
