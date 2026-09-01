@@ -34,6 +34,7 @@
 
 | 阅读日期 | 年份 | 论文 | 状态 |
 | --- | ---: | --- | --- |
+| 2026-09-02 | 2026 | [Unconstrained Multi-view Human Pose Estimation with Algebraic Priors](papers/multiview-geometry/2026-uncalibrated-multiview-algebraic-priors.md) | `skimmed` |
 | 2026-08-31 | 2025 | [MASt3R-SLAM: Real-Time Dense SLAM with 3D Reconstruction Priors](papers/multiview-geometry/2025-mast3r-slam.md) | `skimmed` |
 | 2026-08-29 | 2025 | [ViPE: Video Pose Engine for 3D Geometric Perception](papers/multiview-geometry/2025-vipe.md) | `skimmed` |
 | 2026-08-26 | 2026 | [AnyLift: Scaling Motion Reconstruction from Internet Videos via 2D Diffusion](papers/multiview-geometry/2026-anylift-scaling-motion-reconstruction.md) | `skimmed` |
@@ -83,6 +84,7 @@
 
 | 阅读日期 | 年份 | 论文 | 状态 |
 | --- | ---: | --- | --- |
+| 2026-09-02 | 2026 | [Imitation Learning from Human Motion Alone Does Not Guarantee Biomechanically Plausible Gait Kinetics](papers/sports-biomechanics/2026-kinetics-aware-gait-imitation.md) | `skimmed` |
 | 2026-08-29 | 2026 | [BadmintonGRF: A Multimodal Dataset and Benchmark for Markerless Ground Reaction Force Estimation in Badminton](papers/sports-biomechanics/2026-badmintongrf.md) | `skimmed` |
 | 2026-08-26 | 2026 | [Ground Reaction Inertial Poser: Physics-based Human Motion Capture from Sparse IMUs and Insole Pressure Sensors](papers/sports-biomechanics/2026-grip.md) | `skimmed` |
 | 2026-08-26 | 2026 | [From 3D Pose to Prose: Biomechanics-Grounded Vision-Language Coaching](papers/sports-biomechanics/2026-biocoach.md) | `skimmed` |
