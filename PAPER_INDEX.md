@@ -34,6 +34,7 @@
 
 | 阅读日期 | 年份 | 论文 | 状态 |
 | --- | ---: | --- | --- |
+| 2026-09-03 | 2025 | [Spatiotemporal Multi-Camera Calibration using Freely Moving People](papers/multiview-geometry/2025-spatiotemporal-multicamera-calibration-people.md) | `skimmed` |
 | 2026-09-02 | 2026 | [Unconstrained Multi-view Human Pose Estimation with Algebraic Priors](papers/multiview-geometry/2026-uncalibrated-multiview-algebraic-priors.md) | `skimmed` |
 | 2026-08-31 | 2025 | [MASt3R-SLAM: Real-Time Dense SLAM with 3D Reconstruction Priors](papers/multiview-geometry/2025-mast3r-slam.md) | `skimmed` |
 | 2026-08-29 | 2025 | [ViPE: Video Pose Engine for 3D Geometric Perception](papers/multiview-geometry/2025-vipe.md) | `skimmed` |
@@ -58,6 +59,7 @@
 
 | 阅读日期 | 年份 | 论文 | 状态 |
 | --- | ---: | --- | --- |
+| 2026-09-03 | 2026 | [NextMotionQA: Benchmarking and Judging Human Motion Understanding with Vision-Language Models](papers/motion-understanding/2026-nextmotionqa.md) | `skimmed` |
 | 2026-08-31 | 2026 | [MotionVLA: Vision-Language-Action Model for Humanoid Motion](papers/motion-understanding/2026-motionvla.md) | `skimmed` |
 | 2026-08-30 | 2026 | [Toward Universal Skeleton-Based Action Recognition across Heterogeneous Skeletons and Open Vocabularies](papers/motion-understanding/2026-universal-skeleton.md) | `skimmed` |
 | 2026-08-26 | 2026 | [EventGait: Towards Robust Gait Recognition with Event Streams](papers/motion-understanding/2026-eventgait.md) | `skimmed` |
