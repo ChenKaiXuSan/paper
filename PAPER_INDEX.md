@@ -53,6 +53,7 @@
 
 | 阅读日期 | 年份 | 论文 | 状态 |
 | --- | ---: | --- | --- |
+| 2026-09-04 | 2026 | [PanoAir: A Panoramic Visual-Inertial SLAM with Cross-Time Real-World UAV Dataset](papers/360-vision/2026-panoair.md) | `skimmed` |
 | 2026-08-30 | 2026 | [360DVO: Deep Visual Odometry for Monocular 360-Degree Camera](papers/360-vision/2026-360dvo.md) | `skimmed` |
 
 ## Human Motion Understanding
@@ -71,6 +72,7 @@
 
 | 阅读日期 | 年份 | 论文 | 状态 |
 | --- | ---: | --- | --- |
+| 2026-09-04 | 2026 | [Markerless Motion Capture for Biomechanical Whole-Body Kinematic Estimation in Infants](papers/medical-ai/2026-infant-markerless-biomechanics.md) | `skimmed` |
 | 2026-09-01 | 2026 | [A Gait Foundation Model Predicts Multi-System Health Phenotypes from 3D Skeletal Motion](papers/medical-ai/2026-gait-foundation-health-phenotypes.md) | `skimmed` |
 | 2026-08-28 | 2026 | [OpenCap Monocular: 3D Human Kinematics and Musculoskeletal Dynamics from a Single Smartphone Video](papers/medical-ai/2026-opencap-monocular.md) | `skimmed` |
 | 2026-08-26 | 2026 | [GaitEncoder: A Foundation Model of Gait Kinematics for Diverse Clinical Applications and Pathologies](papers/medical-ai/2026-gaitencoder.md) | `skimmed` |
