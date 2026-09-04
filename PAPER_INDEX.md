@@ -6,6 +6,7 @@
 
 | 阅读日期 | 年份 | 论文 | 状态 |
 | --- | ---: | --- | --- |
+| 2026-09-05 | 2026 | [Everybody Tracking Every Body](papers/global-human-motion/2026-everybody-tracking-every-body.md) | `skimmed` |
 | 2026-09-01 | 2026 | [Natural Human Motion Recovery by Aligning High-Order Temporal Dynamics from Monocular Videos](papers/global-human-motion/2026-htd-refine.md) | `skimmed` |
 | 2026-08-28 | 2026 | [Scene and Human in One World: Reconstruction in a Feedforward Pass](papers/global-human-motion/2026-show.md) | `skimmed` |
 | 2026-08-27 | 2024 | [WHAC: World-grounded Humans and Cameras](papers/global-human-motion/2024-whac.md) | `skimmed` |
@@ -88,6 +89,7 @@
 
 | 阅读日期 | 年份 | 论文 | 状态 |
 | --- | ---: | --- | --- |
+| 2026-09-05 | 2026 | [MuyBridge: Mobile Human Center-of-Mass Estimation from Monocular Video via Sparse Fusion](papers/sports-biomechanics/2026-muybridge.md) | `skimmed` |
 | 2026-09-02 | 2026 | [Imitation Learning from Human Motion Alone Does Not Guarantee Biomechanically Plausible Gait Kinetics](papers/sports-biomechanics/2026-kinetics-aware-gait-imitation.md) | `skimmed` |
 | 2026-08-29 | 2026 | [BadmintonGRF: A Multimodal Dataset and Benchmark for Markerless Ground Reaction Force Estimation in Badminton](papers/sports-biomechanics/2026-badmintongrf.md) | `skimmed` |
 | 2026-08-26 | 2026 | [Ground Reaction Inertial Poser: Physics-based Human Motion Capture from Sparse IMUs and Insole Pressure Sensors](papers/sports-biomechanics/2026-grip.md) | `skimmed` |
