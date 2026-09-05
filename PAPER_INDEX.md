@@ -6,6 +6,7 @@
 
 | 阅读日期 | 年份 | 论文 | 状态 |
 | --- | ---: | --- | --- |
+| 2026-09-06 | 2026 | [Human3R: Everyone Everywhere All at Once](papers/global-human-motion/2026-human3r.md) | `skimmed` |
 | 2026-09-05 | 2026 | [Everybody Tracking Every Body](papers/global-human-motion/2026-everybody-tracking-every-body.md) | `skimmed` |
 | 2026-09-01 | 2026 | [Natural Human Motion Recovery by Aligning High-Order Temporal Dynamics from Monocular Videos](papers/global-human-motion/2026-htd-refine.md) | `skimmed` |
 | 2026-08-28 | 2026 | [Scene and Human in One World: Reconstruction in a Feedforward Pass](papers/global-human-motion/2026-show.md) | `skimmed` |
@@ -61,6 +62,7 @@
 
 | 阅读日期 | 年份 | 论文 | 状态 |
 | --- | ---: | --- | --- |
+| 2026-09-06 | 2026 | [Risk-Aware Selective Multimodal Driver Monitoring with Driver-State World Modeling](papers/motion-understanding/2026-risk-aware-driver-monitoring.md) | `skimmed` |
 | 2026-09-03 | 2026 | [NextMotionQA: Benchmarking and Judging Human Motion Understanding with Vision-Language Models](papers/motion-understanding/2026-nextmotionqa.md) | `skimmed` |
 | 2026-08-31 | 2026 | [MotionVLA: Vision-Language-Action Model for Humanoid Motion](papers/motion-understanding/2026-motionvla.md) | `skimmed` |
 | 2026-08-30 | 2026 | [Toward Universal Skeleton-Based Action Recognition across Heterogeneous Skeletons and Open Vocabularies](papers/motion-understanding/2026-universal-skeleton.md) | `skimmed` |
