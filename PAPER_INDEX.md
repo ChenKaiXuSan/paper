@@ -6,6 +6,7 @@
 
 | 阅读日期 | 年份 | 论文 | 状态 |
 | --- | ---: | --- | --- |
+| 2026-09-07 | 2023 | [BodySLAM++: Fast and Tightly-Coupled Visual-Inertial Camera and Human Motion Tracking](papers/global-human-motion/2023-bodyslam-plus-plus.md) | `skimmed` |
 | 2026-09-06 | 2026 | [Human3R: Everyone Everywhere All at Once](papers/global-human-motion/2026-human3r.md) | `skimmed` |
 | 2026-09-05 | 2026 | [Everybody Tracking Every Body](papers/global-human-motion/2026-everybody-tracking-every-body.md) | `skimmed` |
 | 2026-09-01 | 2026 | [Natural Human Motion Recovery by Aligning High-Order Temporal Dynamics from Monocular Videos](papers/global-human-motion/2026-htd-refine.md) | `skimmed` |
@@ -75,6 +76,7 @@
 
 | 阅读日期 | 年份 | 论文 | 状态 |
 | --- | ---: | --- | --- |
+| 2026-09-07 | 2026 | [Biomechanical 3D Body: Self-Supervised Distillation of Biomechanical Pose from a 3D Body Foundation Model](papers/medical-ai/2026-biomechanical-3d-body.md) | `skimmed` |
 | 2026-09-04 | 2026 | [Markerless Motion Capture for Biomechanical Whole-Body Kinematic Estimation in Infants](papers/medical-ai/2026-infant-markerless-biomechanics.md) | `skimmed` |
 | 2026-09-01 | 2026 | [A Gait Foundation Model Predicts Multi-System Health Phenotypes from 3D Skeletal Motion](papers/medical-ai/2026-gait-foundation-health-phenotypes.md) | `skimmed` |
 | 2026-08-28 | 2026 | [OpenCap Monocular: 3D Human Kinematics and Musculoskeletal Dynamics from a Single Smartphone Video](papers/medical-ai/2026-opencap-monocular.md) | `skimmed` |
