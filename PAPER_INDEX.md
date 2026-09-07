@@ -6,6 +6,7 @@
 
 | 阅读日期 | 年份 | 论文 | 状态 |
 | --- | ---: | --- | --- |
+| 2026-09-08 | 2026 | [MINT: A Unified Model for World-Space Camera and Hand Motion Estimation from Scalable Egocentric Pipeline Supervision](papers/global-human-motion/2026-mint-world-space-camera-hand.md) | `skimmed` |
 | 2026-09-07 | 2023 | [BodySLAM++: Fast and Tightly-Coupled Visual-Inertial Camera and Human Motion Tracking](papers/global-human-motion/2023-bodyslam-plus-plus.md) | `skimmed` |
 | 2026-09-06 | 2026 | [Human3R: Everyone Everywhere All at Once](papers/global-human-motion/2026-human3r.md) | `skimmed` |
 | 2026-09-05 | 2026 | [Everybody Tracking Every Body](papers/global-human-motion/2026-everybody-tracking-every-body.md) | `skimmed` |
@@ -93,6 +94,7 @@
 
 | 阅读日期 | 年份 | 论文 | 状态 |
 | --- | ---: | --- | --- |
+| 2026-09-08 | 2026 | [Visual-to-Haptic Augmentation in XR: A Wearable Glove for Perceptual Grounding in Multimodal Interaction](papers/sports-biomechanics/2026-visual-to-haptic-xr-glove.md) | `skimmed` |
 | 2026-09-05 | 2026 | [MuyBridge: Mobile Human Center-of-Mass Estimation from Monocular Video via Sparse Fusion](papers/sports-biomechanics/2026-muybridge.md) | `skimmed` |
 | 2026-09-02 | 2026 | [Imitation Learning from Human Motion Alone Does Not Guarantee Biomechanically Plausible Gait Kinetics](papers/sports-biomechanics/2026-kinetics-aware-gait-imitation.md) | `skimmed` |
 | 2026-08-29 | 2026 | [BadmintonGRF: A Multimodal Dataset and Benchmark for Markerless Ground Reaction Force Estimation in Badminton](papers/sports-biomechanics/2026-badmintongrf.md) | `skimmed` |
