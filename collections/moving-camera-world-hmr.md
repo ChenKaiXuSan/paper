@@ -9,10 +9,11 @@
 1. **Camera estimation / scale**：先获得相机轨迹、内参和 metric scale。
 2. **Camera-relative → world**：将 HMR/HPE 输出变换到统一世界坐标。
 3. **Tightly-coupled camera-human estimation**：在 SLAM / factor graph 中让人体重投影、人体运动与人体结构直接参与 camera state estimation，而不是只把人体当动态前景。
-4. **Unified recurrent human-scene-camera reconstruction**：在一个 persistent state 中同时恢复多人物 SMPL-X、dense scene 与 camera trajectory，减少多阶段流水线的误差传播。
-5. **Multi-moving-camera observation fusion**：利用多个动态相机之间互补、间歇且可靠性不同的 ego/exo 观测，提高世界坐标人体运动的覆盖与姿态精度。
-6. **Global refinement / high-order dynamics**：利用时序、人体尺度、接触、motion prior，以及 velocity / acceleration / jerk 等高阶动力学约束修正漂移与不自然运动。
-7. **Joint optimization / representation coupling**：让 human、camera、scene 不再单向串联，而是在尺度、特征或优化层互相校正。
+4. **Human-aware metric camera/scene reconstruction**：利用人体尺寸、位置或运动作为 metric cue，直接校准 monocular depth / SLAM 的尺度与几何，再由 scene/camera 反向约束 world HMR。
+5. **Unified recurrent human-scene-camera reconstruction**：在一个 persistent state 中同时恢复多人物 SMPL-X、dense scene 与 camera trajectory，减少多阶段流水线的误差传播。
+6. **Multi-moving-camera observation fusion**：利用多个动态相机之间互补、间歇且可靠性不同的 ego/exo 观测，提高世界坐标人体运动的覆盖与姿态精度。
+7. **Global refinement / high-order dynamics**：利用时序、人体尺度、接触、motion prior，以及 velocity / acceleration / jerk 等高阶动力学约束修正漂移与不自然运动。
+8. **Joint optimization / representation coupling**：让 human、camera、scene 不再单向串联，而是在尺度、特征或优化层互相校正。
 
 ## 关键论文
 
@@ -20,6 +21,7 @@
 - [VGGT](../papers/multiview-geometry/2025-vggt.md) — 通用视觉几何基础模型，可提供 camera / depth / point-map prior。
 - [MASt3R-SLAM](../papers/multiview-geometry/2025-mast3r-slam.md) — 将两视图 3D reconstruction prior 嵌入实时 dense SLAM，同时输出 camera trajectory 与 dense geometry，可作为不利用人体的强 camera/scene baseline。
 - [BodySLAM++](../papers/global-human-motion/2023-bodyslam-plus-plus.md) — 经典的实时 tightly-coupled visual-inertial camera-human factor-graph baseline；人体 joint reprojection 与 motion factors 直接进入 camera optimization，在室内数据上同时将人体 MPJPE 与 camera ATE 相对最强串联 baseline 改善约 26% 与 12%。
+- [SynCHMR](../papers/global-human-motion/2024-synchmr.md) — monocular human-aware metric SLAM baseline；用 camera-frame HMR 的人体 metric cue 校准 monocular depth / camera scale，再由 dense scene 条件化 world-space SMPL refinement，在 EgoBody/EMDB 的 camera ATE ablation 中明确证明 human cue 能改善 camera estimation。
 - [Human3R](../papers/global-human-motion/2026-human3r.md) — unified all-at-once online recurrent baseline，在同一个 persistent state 中同时预测多人物 SMPL-X、dense scene 与 camera trajectory；约 15 FPS / 8 GB，不依赖预先 detector/SLAM/depth，但 human→camera 的帮助主要是 shared-state / joint-training 层面的隐式互益，而非显式 residual correction。
 - [MoRe](../papers/multiview-geometry/2026-more-motion-aware-4d-reconstruction.md) — 显式区分动态物体与 camera motion。
 - [Everybody Tracking Every Body](../papers/global-human-motion/2026-everybody-tracking-every-body.md) — 在 2–4 名佩戴者均携带移动 egocentric camera 的场景中，将 VIO 头部/相机世界轨迹与其他佩戴者提供的稀疏 exocentric 人体观测进行可靠性感知 diffusion fusion；证明多 moving-camera evidence 可协同提升 world body motion，但相机轨迹仍作为固定 conditioning 输入。
@@ -36,9 +38,11 @@
 
 ## 当前共识
 
-单纯把 SLAM/camera estimator 与 HMR 串联容易把尺度、漂移和动态前景误差传递到 world-space human motion。MASt3R-SLAM 说明 foundation-model 3D prior 已经可以在约 15 FPS 下形成同时输出 camera trajectory 与 dense scene geometry 的强 camera-only baseline；BodySLAM++ 则提供了一个重要的经典反例：人体并不只能作为 SLAM 之后的被动估计目标。将 human joint reprojection、motion model 和 anthropometric priors 显式放进 visual-inertial factor graph，可以在多人遮挡静态特征时同时降低人体 MPJPE 与 camera ATE。这意味着“显式 human→camera feedback”已有明确先例，新的工作应把创新点放在现代 HMR / foundation geometry、长序列户外、未知/360 camera model、learned reliability 或更强闭环机制上，而不是笼统声称首次让人体帮助相机。
+单纯把 SLAM/camera estimator 与 HMR 串联容易把尺度、漂移和动态前景误差传递到 world-space human motion。MASt3R-SLAM 说明 foundation-model 3D prior 已经可以在约 15 FPS 下形成同时输出 camera trajectory 与 dense scene geometry 的强 camera-only baseline；BodySLAM++ 则证明在 stereo visual-inertial factor graph 中，人体现有 joint reprojection、motion model 和 anthropometric priors 可以直接进入 camera optimization，在多人遮挡静态特征时同时降低人体 MPJPE 与 camera ATE。
 
-Human3R 则进一步说明 camera、scene 与 multi-person SMPL-X 可以直接放进同一个 online recurrent persistent state 中统一恢复，避免 detector/HMR/SLAM/depth 多阶段串联，并在 generic camera/depth evaluation 中观察到 human prompt tuning 对几何任务的轻微互益。这使 `camera-only pipeline → BodySLAM++-style explicit factor graph → Human3R-style unified shared state → modern explicit human-assisted camera residual / joint refinement` 成为更清晰的比较层次。
+SynCHMR 又补上了单目路线：camera-frame HMR 的人体尺寸与位置可以作为 metric cue 去校准 monocular depth / SLAM scale，再由恢复出的 dense scene 反向约束 world-frame SMPL。其 camera ablation 中，EgoBody ATE 从 RGB-only 的 80.9 降到完整 human-aware calibration 的 26.4，EMDB 从 400.3 降到 107.0。这说明 human→camera/scene feedback 不只存在于 stereo-VI factor graph，也可以通过 human-aware metric depth / SLAM 实现。因此“首次用人体帮助 camera”不是合理的新颖性表述；更有价值的空间是未知/变化 intrinsics、长序列高速户外、360/fisheye、uncertainty-aware feedback 与现代 learned closed loop。
+
+Human3R 则进一步说明 camera、scene 与 multi-person SMPL-X 可以直接放进同一个 online recurrent persistent state 中统一恢复，避免 detector/HMR/SLAM/depth 多阶段串联，并在 generic camera/depth evaluation 中观察到 human prompt tuning 对几何任务的轻微互益。这使 `camera-only pipeline → BodySLAM++ / SynCHMR-style explicit human-aware camera estimation → Human3R-style unified shared state → modern explicit human-assisted camera residual / joint refinement` 成为更清晰的比较层次。
 
 WHAC 说明 human motion 可以反向提供 camera metric scale，再由尺度化 camera trajectory 更新 world human motion；SHOW 进一步把这种互约束推进到 feature representation 和 joint training 层，让 human semantic/scale prior 改变 scene geometry，同时让 scene point map 与 camera intrinsics 反向约束 SMPL-X；JOSH 则代表更完整的 optimization-based human-scene-camera joint refinement。
 
@@ -48,7 +52,8 @@ HTD-Refine 又补充了另一个重要维度：world-HMR 的质量不能只看�
 
 ## 研究空白
 
-- BodySLAM++ 已经证明经典 visual-inertial factor graph 中可以实现明确且可量化的 `human residual → camera state` feedback；**推断：**真正仍缺少的是把这一紧耦合思想扩展到现代 foundation HMR / dense geometry、长距离高速户外、monocular 或 dual-360、未知 intrinsics/scale，以及能够在线稳定工作的 learned correction，并与 camera ATE/RPE、W-MPJPE/RTE 同时评价。
+- BodySLAM++ 与 SynCHMR 已分别证明 stereo visual-inertial factor graph 和 monocular human-aware metric SLAM 中存在可量化的 human→camera/scene feedback；**推断：**真正仍缺少的是把这类紧耦合扩展到 modern foundation HMR / dense geometry、长距离高速户外、monocular 或 dual-360、未知/变化 intrinsics 与 scale，并形成能够在线稳定工作的 uncertainty-aware learned correction，同时评价 camera ATE/RPE 与 W-MPJPE/RTE。
+- SynCHMR 仍以 `(W+H)/2` 近似 focal length，并依赖人体尺寸校准 monocular depth；人体尺度/形体建模误差、未知或变化 intrinsics 与 spherical/fisheye projection 如何联合进入 camera-human refinement 尚未解决。
 - Human3R 虽然将 human、scene 与 camera 放入同一 persistent state，并显示 human prompt tuning 对 camera/depth 有一定隐式互益，但缺少可单独量化的 `human residual → camera rotation/translation/scale correction` 模块；如何区分 shared representation 收益与真正的 human-to-camera feedback 仍值得研究。
 - Everybody Tracking Every Body 已经展示多 moving-camera + reliability-aware human fusion，但其 VIO trajectories 仍是固定 conditioning；如何让 fused body evidence、骨长、contact 或跨 observer consistency **反向修正每个移动相机的 trajectory** 仍未解决。
 - 现有多移动相机实验中 observation coverage 往往偏高；长时间完全不可见、observer 数量变化、低纹理导致 VIO drift 时，fusion 是否仍能稳定工作需要更有针对性的 benchmark。
@@ -62,17 +67,17 @@ HTD-Refine 又补充了另一个重要维度：world-HMR 的质量不能只看�
 
 ## 与我的研究关系
 
-该 collection 可直接支撑 moving-camera 3D human reconstruction 的 Related Work 与 baseline 设计，特别适合组织 `GT camera / camera-only SLAM+geometry / independent camera+HMR / BodySLAM++-style explicit tightly-coupled factor graph / Human3R-style unified recurrent state / multi-moving-camera reliability fusion / human-assisted camera scale / human-aware geometry / explicit learned human-assisted camera pose / joint or recurrent refinement / high-order motion refinement` 的递进实验。MASt3R-SLAM 可作为 perspective / rectified-view 下的 camera+scene baseline，与 panorama-level ViPE / 360DVO 并列；BodySLAM++ 用于证明 classical explicit human→camera feedback 的已有上限与作用机制；Human3R 则作为不依赖多阶段 preprocessing 的 all-at-once unified baseline，用于检验后续显式 human constraints 是否不仅改善人体，还进一步降低 camera ATE/RPE；Everybody Tracking Every Body 可作为“多动态 observer 如何融合”的方法参考；HTD-Refine 则适合作为 world-HMR 之后的 dynamics refinement baseline。
+该 collection 可直接支撑 moving-camera 3D human reconstruction 的 Related Work 与 baseline 设计，特别适合组织 `GT camera / camera-only SLAM+geometry / independent camera+HMR / BodySLAM++-style factor graph / SynCHMR-style human-aware metric SLAM / Human3R-style unified recurrent state / multi-moving-camera reliability fusion / human-assisted camera scale / human-aware geometry / explicit learned human-assisted camera pose / joint or recurrent refinement / high-order motion refinement` 的递进实验。MASt3R-SLAM 可作为 perspective / rectified-view 下的 camera+scene baseline，与 panorama-level ViPE / 360DVO 并列；BodySLAM++ 用于证明 classical factor-graph feedback，SynCHMR 用于证明 monocular human metric cue 可改善 camera/scene，Human3R 用于检验 shared-state joint prediction，而后续显式 human constraints 应进一步验证 camera ATE/RPE 是否继续下降。
 
-**推断：**对于双 360° 跟拍，可以将不同物理相机、不同 perspective crops 或不同时间段的有效人体观测视为 reliability-varying observers，同时把 camera confidence 与 human confidence 共同输入 fusion。可以先以 BodySLAM++ 的 joint reprojection / anthropometric / motion factors 为经典显式约束，再加入 Human3R-style shared state 初始化与现代人体 reprojection、骨长、contact、velocity 等 learned / differentiable residual，验证从 pinhole stereo VI 到 spherical / fisheye dual-360 的增益。
+**推断：**对于双 360° 跟拍，可以将不同物理相机、不同 perspective crops 或不同时间段的有效人体观测视为 reliability-varying observers，同时把 camera confidence 与 human confidence 共同输入 fusion。可以先复现 SynCHMR-style human metric depth/scale calibration，再以 BodySLAM++ 的 joint reprojection / anthropometric / motion factors 为显式约束，加入 Human3R-style shared state 初始化与现代人体 reprojection、骨长、contact、velocity 等 learned / differentiable residual，验证从 pinhole/stereo VI 到 spherical / fisheye dual-360 的增益。
 
 ## 下一步阅读 / 实验
 
-- 比较 MASt3R-SLAM、ViPE、360DVO、AnyCam、BodySLAM++ 与 Human3R 在同一长序列移动相机数据上的 ATE/RPE、scale drift、dense geometry、W-MPJPE/RTE 与 runtime。
-- 增加 `independent camera+HMR → BodySLAM++-style explicit factor graph → Human3R unified recurrent state → modern explicit human-assisted camera correction` 实验，区分经典几何反馈、shared-state joint prediction 与 learned feedback 的增益。
+- 比较 MASt3R-SLAM、ViPE、360DVO、AnyCam、BodySLAM++、SynCHMR 与 Human3R 在同一长序列移动相机数据上的 ATE/RPE、scale drift、dense geometry、W-MPJPE/RTE 与 runtime。
+- 增加 `independent camera+HMR → SynCHMR-style human-aware metric SLAM → BodySLAM++-style explicit factor graph → Human3R unified recurrent state → modern explicit human-assisted camera correction` 实验，区分 metric-depth calibration、经典几何反馈、shared-state joint prediction 与 learned feedback 的增益。
 - 增加 `single observer → fixed-weight multi-view fusion → confidence-aware observer fusion → human-assisted camera correction` 递进实验，并按 observer 数量与 visibility/coverage 分层报告性能。
-- 人为注入 VIO rotation/translation/scale drift，测试 BodySLAM++ 风格的人体因子与 Everybody Tracking Every Body 风格的 body fusion，区分“吸收 camera error”和“真正反向修正 camera”。
+- 人为注入 focal、VIO rotation/translation/scale drift，测试 SynCHMR-style human metric calibration、BodySLAM++ 风格人体因子与 multi-observer body fusion，区分“吸收 camera error”和“真正反向修正 camera”。
 - 同时报告 ATE/RPE、W-MPJPE/RTE 与 MPJVE/MPJAE/Jitter/FS，检查 camera、global pose 与 motion dynamics 是否同步改善。
 - 测试人体 2D/3D reprojection、尺度、contact、mask/DensePose prompt、velocity / acceleration 与跨视角一致性对 camera correction 的独立贡献。
-- 在长序列滑雪/360 场景中比较 camera-only MASt3R-SLAM、BodySLAM++-style explicit coupling、Human3R-style unified recurrent reconstruction、reliability-aware multi-observer fusion、feed-forward SHOW-style coupling、recurrent/optimization camera correction，以及 HTD-style high-order dynamics refinement。
-- 对 perspective crop、fisheye rectification 与 ERP 做 distortion sensitivity 分析，明确 pinhole-trained 3D prior、经典 pinhole/stereo human factors 与 360-specific SLAM 的适用边界。
+- 在长序列滑雪/360 场景中比较 camera-only MASt3R-SLAM、SynCHMR-style human-aware metric calibration、BodySLAM++-style explicit coupling、Human3R-style unified recurrent reconstruction、reliability-aware multi-observer fusion、feed-forward SHOW-style coupling、recurrent/optimization camera correction，以及 HTD-style high-order dynamics refinement。
+- 对 perspective crop、fisheye rectification 与 ERP 做 distortion sensitivity 分析，明确 pinhole-trained 3D prior、经典 pinhole/stereo human factors、human metric depth calibration 与 360-specific SLAM 的适用边界。

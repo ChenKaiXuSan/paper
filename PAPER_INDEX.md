@@ -6,6 +6,7 @@
 
 | 阅读日期 | 年份 | 论文 | 状态 |
 | --- | ---: | --- | --- |
+| 2026-09-09 | 2024 | [Synergistic Global-space Camera and Human Reconstruction from Videos](papers/global-human-motion/2024-synchmr.md) | `skimmed` |
 | 2026-09-08 | 2026 | [MINT: A Unified Model for World-Space Camera and Hand Motion Estimation from Scalable Egocentric Pipeline Supervision](papers/global-human-motion/2026-mint-world-space-camera-hand.md) | `skimmed` |
 | 2026-09-07 | 2023 | [BodySLAM++: Fast and Tightly-Coupled Visual-Inertial Camera and Human Motion Tracking](papers/global-human-motion/2023-bodyslam-plus-plus.md) | `skimmed` |
 | 2026-09-06 | 2026 | [Human3R: Everyone Everywhere All at Once](papers/global-human-motion/2026-human3r.md) | `skimmed` |
@@ -77,6 +78,7 @@
 
 | 阅读日期 | 年份 | 论文 | 状态 |
 | --- | ---: | --- | --- |
+| 2026-09-09 | 2026 | [GAITGen: Disentangled Motion-Pathology Impaired Gait Generative Model -- Bringing Motion Generation to the Clinical Domain](papers/medical-ai/2026-gaitgen.md) | `skimmed` |
 | 2026-09-07 | 2026 | [Biomechanical 3D Body: Self-Supervised Distillation of Biomechanical Pose from a 3D Body Foundation Model](papers/medical-ai/2026-biomechanical-3d-body.md) | `skimmed` |
 | 2026-09-04 | 2026 | [Markerless Motion Capture for Biomechanical Whole-Body Kinematic Estimation in Infants](papers/medical-ai/2026-infant-markerless-biomechanics.md) | `skimmed` |
 | 2026-09-01 | 2026 | [A Gait Foundation Model Predicts Multi-System Health Phenotypes from 3D Skeletal Motion](papers/medical-ai/2026-gait-foundation-health-phenotypes.md) | `skimmed` |
