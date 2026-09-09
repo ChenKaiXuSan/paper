@@ -6,6 +6,7 @@
 
 | 阅读日期 | 年份 | 论文 | 状态 |
 | --- | ---: | --- | --- |
+| 2026-09-10 | 2025 | [Reconstructing People, Places, and Cameras](papers/global-human-motion/2025-hsfm.md) | `skimmed` |
 | 2026-09-09 | 2024 | [Synergistic Global-space Camera and Human Reconstruction from Videos](papers/global-human-motion/2024-synchmr.md) | `skimmed` |
 | 2026-09-08 | 2026 | [MINT: A Unified Model for World-Space Camera and Hand Motion Estimation from Scalable Egocentric Pipeline Supervision](papers/global-human-motion/2026-mint-world-space-camera-hand.md) | `skimmed` |
 | 2026-09-07 | 2023 | [BodySLAM++: Fast and Tightly-Coupled Visual-Inertial Camera and Human Motion Tracking](papers/global-human-motion/2023-bodyslam-plus-plus.md) | `skimmed` |
@@ -65,6 +66,7 @@
 
 | 阅读日期 | 年份 | 论文 | 状态 |
 | --- | ---: | --- | --- |
+| 2026-09-10 | 2026 | [DriveMotion: A Large-Scale Multi-Source Benchmark for Driver Motion Sequence Modeling and Forecasting](papers/motion-understanding/2026-drivemotion.md) | `skimmed` |
 | 2026-09-06 | 2026 | [Risk-Aware Selective Multimodal Driver Monitoring with Driver-State World Modeling](papers/motion-understanding/2026-risk-aware-driver-monitoring.md) | `skimmed` |
 | 2026-09-03 | 2026 | [NextMotionQA: Benchmarking and Judging Human Motion Understanding with Vision-Language Models](papers/motion-understanding/2026-nextmotionqa.md) | `skimmed` |
 | 2026-08-31 | 2026 | [MotionVLA: Vision-Language-Action Model for Humanoid Motion](papers/motion-understanding/2026-motionvla.md) | `skimmed` |
