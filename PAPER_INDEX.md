@@ -40,6 +40,7 @@
 
 | 阅读日期 | 年份 | 论文 | 状态 |
 | --- | ---: | --- | --- |
+| 2026-09-11 | 2026 | [AHAP: Reconstructing Arbitrary Humans from Arbitrary Perspectives with Geometric Priors](papers/multiview-geometry/2026-ahap.md) | `skimmed` |
 | 2026-09-03 | 2025 | [Spatiotemporal Multi-Camera Calibration using Freely Moving People](papers/multiview-geometry/2025-spatiotemporal-multicamera-calibration-people.md) | `skimmed` |
 | 2026-09-02 | 2026 | [Unconstrained Multi-view Human Pose Estimation with Algebraic Priors](papers/multiview-geometry/2026-uncalibrated-multiview-algebraic-priors.md) | `skimmed` |
 | 2026-08-31 | 2025 | [MASt3R-SLAM: Real-Time Dense SLAM with 3D Reconstruction Priors](papers/multiview-geometry/2025-mast3r-slam.md) | `skimmed` |
@@ -80,6 +81,7 @@
 
 | 阅读日期 | 年份 | 论文 | 状态 |
 | --- | ---: | --- | --- |
+| 2026-09-11 | 2026 | [Forecasting Epileptic Seizures from Contactless Camera via Cross-Species Transfer Learning](papers/medical-ai/2026-video-seizure-forecast-cross-species.md) | `skimmed` |
 | 2026-09-09 | 2026 | [GAITGen: Disentangled Motion-Pathology Impaired Gait Generative Model -- Bringing Motion Generation to the Clinical Domain](papers/medical-ai/2026-gaitgen.md) | `skimmed` |
 | 2026-09-07 | 2026 | [Biomechanical 3D Body: Self-Supervised Distillation of Biomechanical Pose from a 3D Body Foundation Model](papers/medical-ai/2026-biomechanical-3d-body.md) | `skimmed` |
 | 2026-09-04 | 2026 | [Markerless Motion Capture for Biomechanical Whole-Body Kinematic Estimation in Infants](papers/medical-ai/2026-infant-markerless-biomechanics.md) | `skimmed` |
