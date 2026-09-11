@@ -6,6 +6,7 @@
 
 | 阅读日期 | 年份 | 论文 | 状态 |
 | --- | ---: | --- | --- |
+| 2026-09-12 | 2025 | [WATCH: World-aware Allied Trajectory and pose reconstruction for Camera and Human](papers/global-human-motion/2025-watch.md) | `skimmed` |
 | 2026-09-10 | 2025 | [Reconstructing People, Places, and Cameras](papers/global-human-motion/2025-hsfm.md) | `skimmed` |
 | 2026-09-09 | 2024 | [Synergistic Global-space Camera and Human Reconstruction from Videos](papers/global-human-motion/2024-synchmr.md) | `skimmed` |
 | 2026-09-08 | 2026 | [MINT: A Unified Model for World-Space Camera and Hand Motion Estimation from Scalable Egocentric Pipeline Supervision](papers/global-human-motion/2026-mint-world-space-camera-hand.md) | `skimmed` |
@@ -100,6 +101,7 @@
 
 | 阅读日期 | 年份 | 论文 | 状态 |
 | --- | ---: | --- | --- |
+| 2026-09-12 | 2026 | [VR-Based Teleoperation Framework: Integration of Haptic Feedback and Singularity Management](papers/sports-biomechanics/2026-vr-teleoperation-haptics.md) | `skimmed` |
 | 2026-09-08 | 2026 | [Visual-to-Haptic Augmentation in XR: A Wearable Glove for Perceptual Grounding in Multimodal Interaction](papers/sports-biomechanics/2026-visual-to-haptic-xr-glove.md) | `skimmed` |
 | 2026-09-05 | 2026 | [MuyBridge: Mobile Human Center-of-Mass Estimation from Monocular Video via Sparse Fusion](papers/sports-biomechanics/2026-muybridge.md) | `skimmed` |
 | 2026-09-02 | 2026 | [Imitation Learning from Human Motion Alone Does Not Guarantee Biomechanically Plausible Gait Kinetics](papers/sports-biomechanics/2026-kinetics-aware-gait-imitation.md) | `skimmed` |
