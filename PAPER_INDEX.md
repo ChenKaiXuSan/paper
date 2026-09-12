@@ -6,6 +6,7 @@
 
 | 阅读日期 | 年份 | 论文 | 状态 |
 | --- | ---: | --- | --- |
+| 2026-09-13 | 2024 | [World-Grounded Human Motion Recovery via Gravity-View Coordinates](papers/global-human-motion/2024-gvhmr.md) | `skimmed` |
 | 2026-09-12 | 2025 | [WATCH: World-aware Allied Trajectory and pose reconstruction for Camera and Human](papers/global-human-motion/2025-watch.md) | `skimmed` |
 | 2026-09-10 | 2025 | [Reconstructing People, Places, and Cameras](papers/global-human-motion/2025-hsfm.md) | `skimmed` |
 | 2026-09-09 | 2024 | [Synergistic Global-space Camera and Human Reconstruction from Videos](papers/global-human-motion/2024-synchmr.md) | `skimmed` |
@@ -82,6 +83,7 @@
 
 | 阅读日期 | 年份 | 论文 | 状态 |
 | --- | ---: | --- | --- |
+| 2026-09-13 | 2026 | [Towards Context-Aware Clinical Motion Understanding in Daily Living at Home: Freezing of Gait Detection with Egocentric Vision](papers/medical-ai/2026-egocentric-fog-detection.md) | `skimmed` |
 | 2026-09-11 | 2026 | [Forecasting Epileptic Seizures from Contactless Camera via Cross-Species Transfer Learning](papers/medical-ai/2026-video-seizure-forecast-cross-species.md) | `skimmed` |
 | 2026-09-09 | 2026 | [GAITGen: Disentangled Motion-Pathology Impaired Gait Generative Model -- Bringing Motion Generation to the Clinical Domain](papers/medical-ai/2026-gaitgen.md) | `skimmed` |
 | 2026-09-07 | 2026 | [Biomechanical 3D Body: Self-Supervised Distillation of Biomechanical Pose from a 3D Body Foundation Model](papers/medical-ai/2026-biomechanical-3d-body.md) | `skimmed` |
