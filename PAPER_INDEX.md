@@ -42,6 +42,7 @@
 
 | 阅读日期 | 年份 | 论文 | 状态 |
 | --- | ---: | --- | --- |
+| 2026-09-14 | 2026 | [Coherent Human-Scene Reconstruction from Multi-Person Multi-View Video in a Single Pass](papers/multiview-geometry/2026-chromm.md) | `skimmed` |
 | 2026-09-11 | 2026 | [AHAP: Reconstructing Arbitrary Humans from Arbitrary Perspectives with Geometric Priors](papers/multiview-geometry/2026-ahap.md) | `skimmed` |
 | 2026-09-03 | 2025 | [Spatiotemporal Multi-Camera Calibration using Freely Moving People](papers/multiview-geometry/2025-spatiotemporal-multicamera-calibration-people.md) | `skimmed` |
 | 2026-09-02 | 2026 | [Unconstrained Multi-view Human Pose Estimation with Algebraic Priors](papers/multiview-geometry/2026-uncalibrated-multiview-algebraic-priors.md) | `skimmed` |
@@ -69,6 +70,7 @@
 
 | 阅读日期 | 年份 | 论文 | 状态 |
 | --- | ---: | --- | --- |
+| 2026-09-14 | 2026 | [Universal Skeleton Understanding via Differentiable Rendering and MLLMs](papers/motion-understanding/2026-skeletonllm.md) | `skimmed` |
 | 2026-09-10 | 2026 | [DriveMotion: A Large-Scale Multi-Source Benchmark for Driver Motion Sequence Modeling and Forecasting](papers/motion-understanding/2026-drivemotion.md) | `skimmed` |
 | 2026-09-06 | 2026 | [Risk-Aware Selective Multimodal Driver Monitoring with Driver-State World Modeling](papers/motion-understanding/2026-risk-aware-driver-monitoring.md) | `skimmed` |
 | 2026-09-03 | 2026 | [NextMotionQA: Benchmarking and Judging Human Motion Understanding with Vision-Language Models](papers/motion-understanding/2026-nextmotionqa.md) | `skimmed` |
