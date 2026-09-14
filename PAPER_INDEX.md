@@ -63,6 +63,7 @@
 
 | 阅读日期 | 年份 | 论文 | 状态 |
 | --- | ---: | --- | --- |
+| 2026-09-15 | 2026 | [Holo360D: A Large-Scale Real-World Dataset with Continuous Trajectories for Advancing Panoramic 3D Reconstruction and Beyond](papers/360-vision/2026-holo360d.md) | `skimmed` |
 | 2026-09-04 | 2026 | [PanoAir: A Panoramic Visual-Inertial SLAM with Cross-Time Real-World UAV Dataset](papers/360-vision/2026-panoair.md) | `skimmed` |
 | 2026-08-30 | 2026 | [360DVO: Deep Visual Odometry for Monocular 360-Degree Camera](papers/360-vision/2026-360dvo.md) | `skimmed` |
 
@@ -85,6 +86,7 @@
 
 | 阅读日期 | 年份 | 论文 | 状态 |
 | --- | ---: | --- | --- |
+| 2026-09-15 | 2026 | [SynthGait-19K: A Physically Grounded Synthetic Video Dataset for Gait Parameter Estimation](papers/medical-ai/2026-synthgait-19k.md) | `skimmed` |
 | 2026-09-13 | 2026 | [Towards Context-Aware Clinical Motion Understanding in Daily Living at Home: Freezing of Gait Detection with Egocentric Vision](papers/medical-ai/2026-egocentric-fog-detection.md) | `skimmed` |
 | 2026-09-11 | 2026 | [Forecasting Epileptic Seizures from Contactless Camera via Cross-Species Transfer Learning](papers/medical-ai/2026-video-seizure-forecast-cross-species.md) | `skimmed` |
 | 2026-09-09 | 2026 | [GAITGen: Disentangled Motion-Pathology Impaired Gait Generative Model -- Bringing Motion Generation to the Clinical Domain](papers/medical-ai/2026-gaitgen.md) | `skimmed` |
