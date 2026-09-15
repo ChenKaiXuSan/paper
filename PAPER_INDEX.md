@@ -6,6 +6,7 @@
 
 | 阅读日期 | 年份 | 论文 | 状态 |
 | --- | ---: | --- | --- |
+| 2026-09-16 | 2026 | [Field Converter: Geometry-Initialized Temporal Residual Refinement for World-Grounded Player Pose Estimation from Soccer Broadcasts](papers/global-human-motion/2026-field-converter.md) | `skimmed` |
 | 2026-09-13 | 2024 | [World-Grounded Human Motion Recovery via Gravity-View Coordinates](papers/global-human-motion/2024-gvhmr.md) | `skimmed` |
 | 2026-09-12 | 2025 | [WATCH: World-aware Allied Trajectory and pose reconstruction for Camera and Human](papers/global-human-motion/2025-watch.md) | `skimmed` |
 | 2026-09-10 | 2025 | [Reconstructing People, Places, and Cameras](papers/global-human-motion/2025-hsfm.md) | `skimmed` |
@@ -107,6 +108,7 @@
 
 | 阅读日期 | 年份 | 论文 | 状态 |
 | --- | ---: | --- | --- |
+| 2026-09-16 | 2026 | [VideoRun2D Demo: Markerless Body Tracking for Biomechanical Analysis of Running](papers/sports-biomechanics/2026-videorun2d-demo.md) | `skimmed` |
 | 2026-09-12 | 2026 | [VR-Based Teleoperation Framework: Integration of Haptic Feedback and Singularity Management](papers/sports-biomechanics/2026-vr-teleoperation-haptics.md) | `skimmed` |
 | 2026-09-08 | 2026 | [Visual-to-Haptic Augmentation in XR: A Wearable Glove for Perceptual Grounding in Multimodal Interaction](papers/sports-biomechanics/2026-visual-to-haptic-xr-glove.md) | `skimmed` |
 | 2026-09-05 | 2026 | [MuyBridge: Mobile Human Center-of-Mass Estimation from Monocular Video via Sparse Fusion](papers/sports-biomechanics/2026-muybridge.md) | `skimmed` |
