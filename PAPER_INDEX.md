@@ -30,6 +30,7 @@
 
 | 阅读日期 | 年份 | 论文 | 状态 |
 | --- | ---: | --- | --- |
+| 2026-09-17 | 2025 | [Bring Your Rear Cameras for Egocentric 3D Human Pose Estimation](papers/3d-human-pose/2025-bring-your-rear-cameras.md) | `skimmed` |
 | 2026-08-27 | 2026 | [WristP²: A Wrist-Worn System for Hand Pose and Pressure Estimation](papers/3d-human-pose/2026-wristpp.md) | `skimmed` |
 | 2026-08-26 | 2026 | [Towards Balanced Multi-Modal Learning in 3D Human Pose Estimation](papers/3d-human-pose/2026-balanced-multimodal-3d-hpe.md) | `skimmed` |
 | 2026-08-26 | 2026 | [EgoPoseFormer v2: Accurate Egocentric Human Motion Estimation for AR/VR](papers/3d-human-pose/2026-egoposeformer-v2.md) | `skimmed` |
@@ -72,6 +73,7 @@
 
 | 阅读日期 | 年份 | 论文 | 状态 |
 | --- | ---: | --- | --- |
+| 2026-09-17 | 2026 | [Driver-WM: A Driver-Centric Traffic-Conditioned Latent World Model for In-Cabin Dynamics Rollout](papers/motion-understanding/2026-driver-wm.md) | `skimmed` |
 | 2026-09-14 | 2026 | [Universal Skeleton Understanding via Differentiable Rendering and MLLMs](papers/motion-understanding/2026-skeletonllm.md) | `skimmed` |
 | 2026-09-10 | 2026 | [DriveMotion: A Large-Scale Multi-Source Benchmark for Driver Motion Sequence Modeling and Forecasting](papers/motion-understanding/2026-drivemotion.md) | `skimmed` |
 | 2026-09-06 | 2026 | [Risk-Aware Selective Multimodal Driver Monitoring with Driver-State World Modeling](papers/motion-understanding/2026-risk-aware-driver-monitoring.md) | `skimmed` |
