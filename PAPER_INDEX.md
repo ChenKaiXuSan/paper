@@ -44,6 +44,7 @@
 
 | 阅读日期 | 年份 | 论文 | 状态 |
 | --- | ---: | --- | --- |
+| 2026-09-18 | 2026 | [Tele360: Real-Time Feed-Forward Human Reconstruction from Sparse Unposed Cameras](papers/multiview-geometry/2026-tele360.md) | `skimmed` |
 | 2026-09-14 | 2026 | [Coherent Human-Scene Reconstruction from Multi-Person Multi-View Video in a Single Pass](papers/multiview-geometry/2026-chromm.md) | `skimmed` |
 | 2026-09-11 | 2026 | [AHAP: Reconstructing Arbitrary Humans from Arbitrary Perspectives with Geometric Priors](papers/multiview-geometry/2026-ahap.md) | `skimmed` |
 | 2026-09-03 | 2025 | [Spatiotemporal Multi-Camera Calibration using Freely Moving People](papers/multiview-geometry/2025-spatiotemporal-multicamera-calibration-people.md) | `skimmed` |
@@ -110,6 +111,7 @@
 
 | 阅读日期 | 年份 | 论文 | 状态 |
 | --- | ---: | --- | --- |
+| 2026-09-18 | 2026 | [Diffusion-Based Generation of Gait Trajectories](papers/sports-biomechanics/2026-diffusion-gait-trajectories.md) | `skimmed` |
 | 2026-09-16 | 2026 | [VideoRun2D Demo: Markerless Body Tracking for Biomechanical Analysis of Running](papers/sports-biomechanics/2026-videorun2d-demo.md) | `skimmed` |
 | 2026-09-12 | 2026 | [VR-Based Teleoperation Framework: Integration of Haptic Feedback and Singularity Management](papers/sports-biomechanics/2026-vr-teleoperation-haptics.md) | `skimmed` |
 | 2026-09-08 | 2026 | [Visual-to-Haptic Augmentation in XR: A Wearable Glove for Perceptual Grounding in Multimodal Interaction](papers/sports-biomechanics/2026-visual-to-haptic-xr-glove.md) | `skimmed` |
