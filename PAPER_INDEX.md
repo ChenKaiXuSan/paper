@@ -6,6 +6,7 @@
 
 | 阅读日期 | 年份 | 论文 | 状态 |
 | --- | ---: | --- | --- |
+| 2026-09-19 | 2024 | [PACE: Human and Camera Motion Estimation from in-the-wild Videos](papers/global-human-motion/2024-pace.md) | `skimmed` |
 | 2026-09-16 | 2026 | [Field Converter: Geometry-Initialized Temporal Residual Refinement for World-Grounded Player Pose Estimation from Soccer Broadcasts](papers/global-human-motion/2026-field-converter.md) | `skimmed` |
 | 2026-09-13 | 2024 | [World-Grounded Human Motion Recovery via Gravity-View Coordinates](papers/global-human-motion/2024-gvhmr.md) | `skimmed` |
 | 2026-09-12 | 2025 | [WATCH: World-aware Allied Trajectory and pose reconstruction for Camera and Human](papers/global-human-motion/2025-watch.md) | `skimmed` |
@@ -90,6 +91,7 @@
 
 | 阅读日期 | 年份 | 论文 | 状态 |
 | --- | ---: | --- | --- |
+| 2026-09-19 | 2026 | [Clinical-Prior Guided Multi-Modal Learning with Latent Attention Pooling for Gait-Based Scoliosis Screening](papers/medical-ai/2026-clinical-prior-scoligait.md) | `skimmed` |
 | 2026-09-15 | 2026 | [SynthGait-19K: A Physically Grounded Synthetic Video Dataset for Gait Parameter Estimation](papers/medical-ai/2026-synthgait-19k.md) | `skimmed` |
 | 2026-09-13 | 2026 | [Towards Context-Aware Clinical Motion Understanding in Daily Living at Home: Freezing of Gait Detection with Egocentric Vision](papers/medical-ai/2026-egocentric-fog-detection.md) | `skimmed` |
 | 2026-09-11 | 2026 | [Forecasting Epileptic Seizures from Contactless Camera via Cross-Species Transfer Learning](papers/medical-ai/2026-video-seizure-forecast-cross-species.md) | `skimmed` |
