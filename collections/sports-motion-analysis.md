@@ -9,14 +9,16 @@
 1. 运动姿态与时序表征。
 2. 高速动作、遮挡与移动相机下的 3D reconstruction。
 3. **Metric body state / CoM estimation**：从 pose、depth、anthropometry 与 physical cues 恢复具有实际尺度的 root / center-of-mass 等中间生物力学量。
-4. physics / contact / biomechanics constraints，以及由 pressure / GRF / CoP 等信号验证 kinetics。
-5. 运动技术评价、coaching 与自然语言反馈。
+4. physics / contact / biomechanics constraints，以及由 pressure / GRF / CoP 等信号验证 external kinetics。
+5. **Internal biomechanics / muscle state**：从视觉和运动学进一步估计 muscle activation 等内部 musculoskeletal states，并用 EMG 等真实生理信号验证。
+6. 运动技术评价、coaching 与自然语言反馈。
 
 ## 关键论文
 
 - [GRIP](../papers/sports-biomechanics/2026-grip.md) — sparse IMU + insole pressure + physics-based human motion capture。
 - [BadmintonGRF](../papers/sports-biomechanics/2026-badmintongrf.md) — 多视角 RGB + mocap + force plates 的高速体育 GRF benchmark，强调 subject-disjoint 与 impact/load metrics。
 - [MuyBridge](../papers/sports-biomechanics/2026-muybridge.md) — 将轻量 2D pose、低频 monocular metric depth、anthropometry、ground-contact 与 ballistic range cue 解析式融合，在手机端恢复运动员 metric segmental CoM；显示 vertical CoM 可较稳定，而 camera-to-athlete range/depth 是绝对 3D 的主要误差源。
+- [BioHuman](../papers/sports-biomechanics/2026-biohuman.md) — 将 monocular HMR 与 full-body muscle activation prediction 端到端联合训练，并用 BioHuman10M 把 video、SMPL motion、GRF 与 112-D muscle activation 放到统一监督空间；把视频生物力学从 external kinematics/kinetics 扩展到 internal musculoskeletal state。
 - [Imitation Learning from Human Motion Alone Does Not Guarantee Biomechanically Plausible Gait Kinetics](../papers/sports-biomechanics/2026-kinetics-aware-gait-imitation.md) — 证明 motion imitation 的良好 kinematics 不保证真实 GRF/CoP/joint moments；显式 kinetics reward 可显著改善动力学一致性。
 - [BioCoach](../papers/sports-biomechanics/2026-biocoach.md) — 3D pose 到 biomechanics-grounded coaching。
 - [Action Motifs](../papers/motion-understanding/2026-action-motifs.md) — 可变长度层级运动表征。
@@ -30,30 +32,34 @@
 
 MuyBridge 又补充了位于 pose 和 kinetics 之间的一个实用层次：**metric center-of-mass trajectory**。体育分析不一定需要先恢复完整 muscle/joint force 才能获得有意义的物理量；利用 pose、metric depth、人体测量学和 contact/range physics，可以先得到更直接用于 balance、translation 与动作阶段分析的 CoM。但其结果也表明，垂直 CoM 误差可以相对较小，而绝对 3D 仍被 camera-to-athlete range/depth 主导，因此 vertical/relative biomechanics 与 global metric localization 应分开评价。
 
-因此，如果研究最终目标包含“负荷”“发力”“冲击”“关节力矩”等生物力学解释，应该把 kinematic fidelity 与 kinetic fidelity 分开评价。GRF、CoP、pressure、contact timing、joint moment 或其他可观测 load proxies 应尽可能作为独立 ground truth / supervision，而不是仅从姿态误差间接推断。同时对于 metric CoM / root trajectory，应额外报告 camera-to-athlete range、scale 或 depth error，避免把深度定位误差误解为人体动作本身的误差。
+BioHuman 则进一步把这条链从 external kinematics / kinetics 推向 **internal muscle state**：video representation 不一定只能输出 pose、CoM、GRF 或 joint moment，还可以通过 joint visual-kinematic learning 预测 full-body muscle activation。它同时说明 biomechanical supervision 可以反向改善 HMR，而不是只能作为 pose 的后处理。但当前 muscle labels 主要来自 OpenSim simulation，而不是真实 EMG，因此“可预测 simulated activation”与“生理上可信的 muscle recruitment”必须明确区分。
+
+因此，如果研究最终目标包含“负荷”“发力”“冲击”“关节力矩”或“肌肉激活”等生物力学解释，应该把 kinematic fidelity、metric localization、external kinetic fidelity 与 internal physiological fidelity 分开评价。GRF、CoP、pressure、contact timing、joint moment、EMG 或其他可观测 load/activation proxies 应尽可能作为独立 ground truth / supervision，而不是仅从姿态误差间接推断。同时对于 metric CoM / root trajectory，应额外报告 camera-to-athlete range、scale 或 depth error，避免把深度定位误差误解为人体动作本身的误差。
 
 ## 研究空白
 
-- 高速户外体育缺少带 camera trajectory、world human motion、metric CoM 和接触/地形/kinetics GT 的统一 benchmark。
+- 高速户外体育缺少带 camera trajectory、world human motion、metric CoM、接触/地形、external kinetics 与 muscle/EMG GT 的统一 benchmark。
 - **推断：**360° 伴随式拍摄可以提高观测连续性，但需要专门处理同中心多透视、动态 camera 和场景尺度。
 - MuyBridge 已经证明手机单目可估计 metric CoM，但主要仍依赖一次性 scene calibration、ground/contact/range cue；在 moving-camera、长距离与 airborne sports 中，camera motion 与 athlete range 会进一步耦合，尚缺少直接验证。
+- BioHuman 已展示 video-to-muscle activation 的可行性，但监督主要来自 simulated GRF + inverse dynamics + static optimization；真实 EMG、个体化 musculoskeletal parameters、病理人群与高冲击体育动作上的 physiological validation 仍不足。
 - biomechanics 规则与 learned representation 如何结合、并跨运动项目泛化仍不明确。
 - 实验室 force plate 很难直接迁移到雪场；boot/insole pressure、IMU、contact timing、ski deformation 等弱动力学信号能否替代或补充 GRF/CoP supervision 仍需验证。
-- kinematic accuracy、metric localization / CoM accuracy 与 kinetic plausibility 之间可能存在 trade-off，方法评价需要避免用单一综合误差掩盖这种差异。
-- 人体测量学通常使用 population-average segment proportions；个体差异、装备、厚衣服和运动姿态对 CoM 估计偏差的影响在户外体育中需要单独分析。
+- kinematic accuracy、metric localization / CoM accuracy、kinetic plausibility 与 muscle activation fidelity 之间可能存在 trade-off，方法评价需要避免用单一综合误差掩盖这种差异。
+- 人体测量学和 musculoskeletal models 通常使用 population-average segment/muscle parameters；个体差异、装备、厚衣服和运动姿态对 CoM、force 与 muscle activation 估计偏差的影响在户外体育中需要单独分析。
 
 ## 与我的研究关系
 
-用于组织滑雪、体育视频 3D motion reconstruction、physics/contact evaluation 和动作技术解释相关文献。尤其适合把现有滑雪 pipeline 从 `3D pose / world trajectory` 扩展为 `metric root / CoM → contact-aware → pressure/IMU-aware → kinetics-aware`，并明确区分“重建动作准确”“世界尺度定位准确”和“动力学解释可信”三个层次。
+用于组织滑雪、体育视频 3D motion reconstruction、physics/contact evaluation 和动作技术解释相关文献。尤其适合把现有滑雪 pipeline 从 `3D pose / world trajectory` 扩展为 `metric root / CoM → contact-aware → pressure/IMU-aware → GRF/kinetics-aware → muscle/EMG-aware`，并明确区分“重建动作准确”“世界尺度定位准确”“external dynamics 可信”和“内部生理解释可信”四个层次。
 
-**推断：**如果未来采集 boot pressure、insole pressure、IMU 或 RTK，可以把这些信号既作为 world-motion / CoM refinement 的辅助约束，也作为独立的 biomechanics validation，从而检验更低的 W-MPJPE / joint-angle error 是否真的对应更准确的 CoM、load / contact dynamics。双 360 或 moving-camera 提供的多视角 depth/geometry 还可以替代 MuyBridge 中较脆弱的单目 camera-to-athlete range cue。
+**推断：**如果未来采集 boot pressure、insole pressure、IMU、RTK 或 EMG，可以把这些信号既作为 world-motion / CoM refinement 的辅助约束，也作为独立的 biomechanics validation，从而检验更低的 W-MPJPE / joint-angle error 是否真的对应更准确的 CoM、load/contact dynamics 与 muscle recruitment。双 360 或 moving-camera 提供的多视角 depth/geometry 还可以替代 MuyBridge 中较脆弱的单目 camera-to-athlete range cue。
 
 ## 下一步阅读 / 实验
 
 - 增加 skiing / alpine sports 专门文献与数据集。
 - 在现有滑雪序列上从 3D skeleton 计算 segmental CoM，报告 vertical CoM、3D CoM、root trajectory、camera-to-athlete range/scale 与 camera ATE/RPE，而不是只报告 MPJPE。
 - 复现 MuyBridge 的 `pose-only → + depth → + anthropometry → + contact/range physics` 消融，并进一步加入 multi-view / 360 geometry、IMU 或 RTK 作为 metric cue。
-- 报告 joint angle、root trajectory、velocity/acceleration、foot/contact 与 camera metrics，同时独立报告可获得的 pressure / GRF / CoP / load metrics。
-- 做 `pose-only → CoM-aware → contact-aware → pressure/force-aware` 的递进 ablation，检查 kinematic、metric localization 与 kinetic 指标是否同步改善。
-- 对比 OpenCap Monocular、MuyBridge、BadmintonGRF、GRIP 与 kinetics-aware imitation learning 中 metric/force/contact supervision 的来源、可部署性与误差定义。
-- 探索从 3D pose / CoM / biomechanics variables 自动生成技术反馈，但避免在没有 kinetics validation 时直接把 pose-based proxy 解释为真实关节负荷。
+- 参考 BioHuman 增加 `pose-only → biomechanics-aware temporal representation → muscle-aware` 分支；若有条件，必须用真实 EMG / pressure / GRF 做独立验证，而不能只对 simulated activation label 评估。
+- 报告 joint angle、root trajectory、velocity/acceleration、foot/contact 与 camera metrics，同时独立报告可获得的 pressure / GRF / CoP / load / EMG metrics。
+- 做 `pose-only → CoM-aware → contact-aware → pressure/force-aware → muscle-aware` 的递进 ablation，检查 kinematic、metric localization、kinetic 与 physiological 指标是否同步改善。
+- 对比 OpenCap Monocular、MuyBridge、BadmintonGRF、GRIP、BioHuman 与 kinetics-aware imitation learning 中 metric/force/contact/muscle supervision 的来源、可部署性与误差定义。
+- 探索从 3D pose / CoM / biomechanics variables 自动生成技术反馈，但避免在没有 kinetics / EMG validation 时直接把 pose-based 或 simulation-based proxy 解释为真实关节负荷或肌肉募集。
