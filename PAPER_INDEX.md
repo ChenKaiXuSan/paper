@@ -6,6 +6,7 @@
 
 | 阅读日期 | 年份 | 论文 | 状态 |
 | --- | ---: | --- | --- |
+| 2026-09-20 | 2023 | [Decoupling Human and Camera Motion from Videos in the Wild](papers/global-human-motion/2023-slahmr.md) | `skimmed` |
 | 2026-09-19 | 2024 | [PACE: Human and Camera Motion Estimation from in-the-wild Videos](papers/global-human-motion/2024-pace.md) | `skimmed` |
 | 2026-09-16 | 2026 | [Field Converter: Geometry-Initialized Temporal Residual Refinement for World-Grounded Player Pose Estimation from Soccer Broadcasts](papers/global-human-motion/2026-field-converter.md) | `skimmed` |
 | 2026-09-13 | 2024 | [World-Grounded Human Motion Recovery via Gravity-View Coordinates](papers/global-human-motion/2024-gvhmr.md) | `skimmed` |
@@ -75,6 +76,7 @@
 
 | 阅读日期 | 年份 | 论文 | 状态 |
 | --- | ---: | --- | --- |
+| 2026-09-20 | 2026 | [H-Flow: Self-supervised Human Scene Flow via Physics-inspired Joint Multi-modal Learning](papers/motion-understanding/2026-h-flow.md) | `skimmed` |
 | 2026-09-17 | 2026 | [Driver-WM: A Driver-Centric Traffic-Conditioned Latent World Model for In-Cabin Dynamics Rollout](papers/motion-understanding/2026-driver-wm.md) | `skimmed` |
 | 2026-09-14 | 2026 | [Universal Skeleton Understanding via Differentiable Rendering and MLLMs](papers/motion-understanding/2026-skeletonllm.md) | `skimmed` |
 | 2026-09-10 | 2026 | [DriveMotion: A Large-Scale Multi-Source Benchmark for Driver Motion Sequence Modeling and Forecasting](papers/motion-understanding/2026-drivemotion.md) | `skimmed` |
