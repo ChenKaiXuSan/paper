@@ -6,6 +6,7 @@
 
 | 阅读日期 | 年份 | 论文 | 状态 |
 | --- | ---: | --- | --- |
+| 2026-09-22 | 2024 | [WHAM: Reconstructing World-grounded Humans with Accurate 3D Motion](papers/global-human-motion/2024-wham.md) | `skimmed` |
 | 2026-09-20 | 2023 | [Decoupling Human and Camera Motion from Videos in the Wild](papers/global-human-motion/2023-slahmr.md) | `skimmed` |
 | 2026-09-19 | 2024 | [PACE: Human and Camera Motion Estimation from in-the-wild Videos](papers/global-human-motion/2024-pace.md) | `skimmed` |
 | 2026-09-16 | 2026 | [Field Converter: Geometry-Initialized Temporal Residual Refinement for World-Grounded Player Pose Estimation from Soccer Broadcasts](papers/global-human-motion/2026-field-converter.md) | `skimmed` |
@@ -94,6 +95,7 @@
 
 | 阅读日期 | 年份 | 论文 | 状态 |
 | --- | ---: | --- | --- |
+| 2026-09-22 | 2026 | [Biomechanically Accurate Gait Analysis: A 3d Human Reconstruction Framework for Markerless Estimation of Gait Parameters](papers/medical-ai/2026-biomechanically-accurate-gait-analysis.md) | `skimmed` |
 | 2026-09-19 | 2026 | [Clinical-Prior Guided Multi-Modal Learning with Latent Attention Pooling for Gait-Based Scoliosis Screening](papers/medical-ai/2026-clinical-prior-scoligait.md) | `skimmed` |
 | 2026-09-15 | 2026 | [SynthGait-19K: A Physically Grounded Synthetic Video Dataset for Gait Parameter Estimation](papers/medical-ai/2026-synthgait-19k.md) | `skimmed` |
 | 2026-09-13 | 2026 | [Towards Context-Aware Clinical Motion Understanding in Daily Living at Home: Freezing of Gait Detection with Egocentric Vision](papers/medical-ai/2026-egocentric-fog-detection.md) | `skimmed` |
