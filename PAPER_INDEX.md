@@ -6,6 +6,7 @@
 
 | 阅读日期 | 年份 | 论文 | 状态 |
 | --- | ---: | --- | --- |
+| 2026-09-23 | 2026 | [JOintGS: Joint Optimization of Cameras, Bodies and 3D Gaussians for In-the-Wild Monocular Reconstruction](papers/global-human-motion/2026-jointgs.md) | `skimmed` |
 | 2026-09-22 | 2024 | [WHAM: Reconstructing World-grounded Humans with Accurate 3D Motion](papers/global-human-motion/2024-wham.md) | `skimmed` |
 | 2026-09-20 | 2023 | [Decoupling Human and Camera Motion from Videos in the Wild](papers/global-human-motion/2023-slahmr.md) | `skimmed` |
 | 2026-09-19 | 2024 | [PACE: Human and Camera Motion Estimation from in-the-wild Videos](papers/global-human-motion/2024-pace.md) | `skimmed` |
@@ -78,6 +79,7 @@
 
 | 阅读日期 | 年份 | 论文 | 状态 |
 | --- | ---: | --- | --- |
+| 2026-09-23 | 2026 | [Encoder-Free Human Motion Understanding via Structured Motion Descriptions](papers/motion-understanding/2026-structured-motion-descriptions.md) | `skimmed` |
 | 2026-09-20 | 2026 | [H-Flow: Self-supervised Human Scene Flow via Physics-inspired Joint Multi-modal Learning](papers/motion-understanding/2026-h-flow.md) | `skimmed` |
 | 2026-09-17 | 2026 | [Driver-WM: A Driver-Centric Traffic-Conditioned Latent World Model for In-Cabin Dynamics Rollout](papers/motion-understanding/2026-driver-wm.md) | `skimmed` |
 | 2026-09-14 | 2026 | [Universal Skeleton Understanding via Differentiable Rendering and MLLMs](papers/motion-understanding/2026-skeletonllm.md) | `skimmed` |
