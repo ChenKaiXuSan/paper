@@ -34,6 +34,7 @@
 
 | 阅读日期 | 年份 | 论文 | 状态 |
 | --- | ---: | --- | --- |
+| 2026-09-24 | 2025 | [Fish2Mesh Transformer: 3D Human Mesh Recovery from Egocentric Vision](papers/3d-human-pose/2025-fish2mesh.md) | `skimmed` |
 | 2026-09-17 | 2025 | [Bring Your Rear Cameras for Egocentric 3D Human Pose Estimation](papers/3d-human-pose/2025-bring-your-rear-cameras.md) | `skimmed` |
 | 2026-08-27 | 2026 | [WristP²: A Wrist-Worn System for Hand Pose and Pressure Estimation](papers/3d-human-pose/2026-wristpp.md) | `skimmed` |
 | 2026-08-26 | 2026 | [Towards Balanced Multi-Modal Learning in 3D Human Pose Estimation](papers/3d-human-pose/2026-balanced-multimodal-3d-hpe.md) | `skimmed` |
@@ -120,6 +121,7 @@
 
 | 阅读日期 | 年份 | 论文 | 状态 |
 | --- | ---: | --- | --- |
+| 2026-09-24 | 2026 | [Towards Embodied AI with MuscleMimic: Unlocking full-body musculoskeletal motor learning at scale](papers/sports-biomechanics/2026-musclemimic.md) | `skimmed` |
 | 2026-09-21 | 2026 | [BioHuman: Learning Biomechanical Human Representations from Video](papers/sports-biomechanics/2026-biohuman.md) | `skimmed` |
 | 2026-09-18 | 2026 | [Diffusion-Based Generation of Gait Trajectories](papers/sports-biomechanics/2026-diffusion-gait-trajectories.md) | `skimmed` |
 | 2026-09-16 | 2026 | [VideoRun2D Demo: Markerless Body Tracking for Biomechanical Analysis of Running](papers/sports-biomechanics/2026-videorun2d-demo.md) | `skimmed` |
