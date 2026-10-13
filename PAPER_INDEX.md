@@ -6,6 +6,7 @@
 
 | 阅读日期 | 年份 | 论文 | 状态 |
 | --- | ---: | --- | --- |
+| 2026-10-14 | 2025 | [From Camera to World: A Plug-and-Play Module for Human Mesh Transformation](papers/global-human-motion/2025-mesh-plug-camera-to-world.md) | `skimmed` |
 | 2026-09-23 | 2026 | [JOintGS: Joint Optimization of Cameras, Bodies and 3D Gaussians for In-the-Wild Monocular Reconstruction](papers/global-human-motion/2026-jointgs.md) | `skimmed` |
 | 2026-09-22 | 2024 | [WHAM: Reconstructing World-grounded Humans with Accurate 3D Motion](papers/global-human-motion/2024-wham.md) | `skimmed` |
 | 2026-09-20 | 2023 | [Decoupling Human and Camera Motion from Videos in the Wild](papers/global-human-motion/2023-slahmr.md) | `skimmed` |
@@ -121,6 +122,7 @@
 
 | 阅读日期 | 年份 | 论文 | 状态 |
 | --- | ---: | --- | --- |
+| 2026-10-14 | 2026 | [eSkiTB: A Synthetic Event-based Dataset for Tracking Skiers](papers/sports-biomechanics/2026-eskitb-event-ski-tracking.md) | `skimmed` |
 | 2026-09-24 | 2026 | [Towards Embodied AI with MuscleMimic: Unlocking full-body musculoskeletal motor learning at scale](papers/sports-biomechanics/2026-musclemimic.md) | `skimmed` |
 | 2026-09-21 | 2026 | [BioHuman: Learning Biomechanical Human Representations from Video](papers/sports-biomechanics/2026-biohuman.md) | `skimmed` |
 | 2026-09-18 | 2026 | [Diffusion-Based Generation of Gait Trajectories](papers/sports-biomechanics/2026-diffusion-gait-trajectories.md) | `skimmed` |
