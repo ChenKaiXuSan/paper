@@ -50,6 +50,7 @@
 
 | 阅读日期 | 年份 | 论文 | 状态 |
 | --- | ---: | --- | --- |
+| 2026-10-24 | 2025 | [HAMSt3R: Human-Aware Multi-view Stereo 3D Reconstruction](papers/multiview-geometry/2025-hamst3r-human-aware-multiview-stereo.md) | `skimmed` |
 | 2026-09-21 | 2026 | [Feed-Forward Multi-view Multi-person Reconstruction with Contrastive Human-Aware 3D Representation](papers/multiview-geometry/2026-feed-forward-human-aware-3d.md) | `skimmed` |
 | 2026-09-18 | 2026 | [Tele360: Real-Time Feed-Forward Human Reconstruction from Sparse Unposed Cameras](papers/multiview-geometry/2026-tele360.md) | `skimmed` |
 | 2026-09-14 | 2026 | [Coherent Human-Scene Reconstruction from Multi-Person Multi-View Video in a Single Pass](papers/multiview-geometry/2026-chromm.md) | `skimmed` |
@@ -81,6 +82,7 @@
 
 | 阅读日期 | 年份 | 论文 | 状态 |
 | --- | ---: | --- | --- |
+| 2026-10-24 | 2026 | [EventDrive: Event Cameras for Vision-Language Driving Intelligence](papers/motion-understanding/2026-eventdrive-event-frame-vlm.md) | `skimmed` |
 | 2026-09-23 | 2026 | [Encoder-Free Human Motion Understanding via Structured Motion Descriptions](papers/motion-understanding/2026-structured-motion-descriptions.md) | `skimmed` |
 | 2026-09-20 | 2026 | [H-Flow: Self-supervised Human Scene Flow via Physics-inspired Joint Multi-modal Learning](papers/motion-understanding/2026-h-flow.md) | `skimmed` |
 | 2026-09-17 | 2026 | [Driver-WM: A Driver-Centric Traffic-Conditioned Latent World Model for In-Cabin Dynamics Rollout](papers/motion-understanding/2026-driver-wm.md) | `skimmed` |
