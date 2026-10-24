@@ -6,6 +6,7 @@
 
 | 阅读日期 | 年份 | 论文 | 状态 |
 | --- | ---: | --- | --- |
+| 2026-10-25 | 2026 | [World Motion Models: Flexible Sequence Modeling of SE(3) Trajectories](papers/global-human-motion/2026-world-motion-models-se3-trajectories.md) | `skimmed` |
 | 2026-10-14 | 2025 | [From Camera to World: A Plug-and-Play Module for Human Mesh Transformation](papers/global-human-motion/2025-mesh-plug-camera-to-world.md) | `skimmed` |
 | 2026-09-23 | 2026 | [JOintGS: Joint Optimization of Cameras, Bodies and 3D Gaussians for In-the-Wild Monocular Reconstruction](papers/global-human-motion/2026-jointgs.md) | `skimmed` |
 | 2026-09-22 | 2024 | [WHAM: Reconstructing World-grounded Humans with Accurate 3D Motion](papers/global-human-motion/2024-wham.md) | `skimmed` |
@@ -101,6 +102,7 @@
 
 | 阅读日期 | 年份 | 论文 | 状态 |
 | --- | ---: | --- | --- |
+| 2026-10-25 | 2026 | [Monocular markerless biomechanics for clinically interpretable gait assessment in spinal cord injury](papers/medical-ai/2026-sci-monocular-markerless-biomechanics.md) | `skimmed` |
 | 2026-09-22 | 2026 | [Biomechanically Accurate Gait Analysis: A 3d Human Reconstruction Framework for Markerless Estimation of Gait Parameters](papers/medical-ai/2026-biomechanically-accurate-gait-analysis.md) | `skimmed` |
 | 2026-09-19 | 2026 | [Clinical-Prior Guided Multi-Modal Learning with Latent Attention Pooling for Gait-Based Scoliosis Screening](papers/medical-ai/2026-clinical-prior-scoligait.md) | `skimmed` |
 | 2026-09-15 | 2026 | [SynthGait-19K: A Physically Grounded Synthetic Video Dataset for Gait Parameter Estimation](papers/medical-ai/2026-synthgait-19k.md) | `skimmed` |
