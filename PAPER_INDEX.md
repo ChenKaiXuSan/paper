@@ -76,6 +76,7 @@
 
 | 阅读日期 | 年份 | 论文 | 状态 |
 | --- | ---: | --- | --- |
+| 2026-10-27 | 2026 | [Wid3R: Wide Field-of-View 3D Reconstruction via Camera Model Conditioning](papers/360-vision/2026-wid3r-wide-fov-camera-model-conditioning.md) | `skimmed` |
 | 2026-09-15 | 2026 | [Holo360D: A Large-Scale Real-World Dataset with Continuous Trajectories for Advancing Panoramic 3D Reconstruction and Beyond](papers/360-vision/2026-holo360d.md) | `skimmed` |
 | 2026-09-04 | 2026 | [PanoAir: A Panoramic Visual-Inertial SLAM with Cross-Time Real-World UAV Dataset](papers/360-vision/2026-panoair.md) | `skimmed` |
 | 2026-08-30 | 2026 | [360DVO: Deep Visual Odometry for Monocular 360-Degree Camera](papers/360-vision/2026-360dvo.md) | `skimmed` |
@@ -84,6 +85,7 @@
 
 | 阅读日期 | 年份 | 论文 | 状态 |
 | --- | ---: | --- | --- |
+| 2026-10-27 | 2026 | [DriverGaze360: OmniDirectional Driver Attention with Object-Level Guidance](papers/motion-understanding/2026-drivergaze360-omnidirectional-attention.md) | `skimmed` |
 | 2026-10-24 | 2026 | [EventDrive: Event Cameras for Vision-Language Driving Intelligence](papers/motion-understanding/2026-eventdrive-event-frame-vlm.md) | `skimmed` |
 | 2026-09-23 | 2026 | [Encoder-Free Human Motion Understanding via Structured Motion Descriptions](papers/motion-understanding/2026-structured-motion-descriptions.md) | `skimmed` |
 | 2026-09-20 | 2026 | [H-Flow: Self-supervised Human Scene Flow via Physics-inspired Joint Multi-modal Learning](papers/motion-understanding/2026-h-flow.md) | `skimmed` |
