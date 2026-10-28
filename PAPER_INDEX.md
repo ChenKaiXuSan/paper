@@ -52,6 +52,7 @@
 
 | 阅读日期 | 年份 | 论文 | 状态 |
 | --- | ---: | --- | --- |
+| 2026-10-29 | 2024 | [Simultaneously Recovering Multi-Person Meshes and Multi-View Cameras with Human Semantics](papers/multiview-geometry/2024-joint-multiperson-meshes-and-cameras.md) | `skimmed` |
 | 2026-10-28 | 2026 | [Emergent Multi-View Geometry Through Self-Distillation](papers/multiview-geometry/2026-poincar3-multiview-self-distillation.md) | `skimmed` |
 | 2026-10-24 | 2025 | [HAMSt3R: Human-Aware Multi-view Stereo 3D Reconstruction](papers/multiview-geometry/2025-hamst3r-human-aware-multiview-stereo.md) | `skimmed` |
 | 2026-09-21 | 2026 | [Feed-Forward Multi-view Multi-person Reconstruction with Contrastive Human-Aware 3D Representation](papers/multiview-geometry/2026-feed-forward-human-aware-3d.md) | `skimmed` |
@@ -107,6 +108,7 @@
 
 | 阅读日期 | 年份 | 论文 | 状态 |
 | --- | ---: | --- | --- |
+| 2026-10-29 | 2026 | [Deep learning-enabled accurate assessment of gait impairments in Parkinson’s disease using smartphone videos](papers/medical-ai/2026-smartphone-parkinson-gait-assessment.md) | `skimmed` |
 | 2026-10-25 | 2026 | [Monocular markerless biomechanics for clinically interpretable gait assessment in spinal cord injury](papers/medical-ai/2026-sci-monocular-markerless-biomechanics.md) | `skimmed` |
 | 2026-09-22 | 2026 | [Biomechanically Accurate Gait Analysis: A 3d Human Reconstruction Framework for Markerless Estimation of Gait Parameters](papers/medical-ai/2026-biomechanically-accurate-gait-analysis.md) | `skimmed` |
 | 2026-09-19 | 2026 | [Clinical-Prior Guided Multi-Modal Learning with Latent Attention Pooling for Gait-Based Scoliosis Screening](papers/medical-ai/2026-clinical-prior-scoligait.md) | `skimmed` |
