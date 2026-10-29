@@ -22,6 +22,7 @@
 - [360DVO](../papers/360-vision/2026-360dvo.md) — 针对 monocular ERP/360 视频的深度 visual odometry，用 spherical distortion-aware features 与 omnidirectional differentiable bundle adjustment 直接恢复 360 camera trajectory，并提供真实 360DVO benchmark。
 - [PanoAir](../papers/360-vision/2026-panoair.md) — 将 ERP panorama、IMU、distortion-aware hybrid features 与 panoramic loop closure 统一进 metric VI-SLAM，并公开 17 条、15.8 km / 45 min、RTK GT 的真实 UAV panoramic visual-inertial benchmark。
 - [Holo360D](../papers/360-vision/2026-holo360d.md) — 109,495 张真实 panorama、75 个 indoor/outdoor scenes，提供 LiDAR-derived mesh/point cloud/depth 与连续 camera pose，可作为 panorama geometry / depth / trajectory pretraining 与 benchmark。
+- [PanoVGGT](../papers/360-vision/2026-panovggt-feed-forward-panoramic-reconstruction.md) — CVPR 2026 的原生 ERP feed-forward camera/depth/global-pointmap 联合重建；与 iterative panorama VO/VIO 构成独立 camera-only baseline，PanoCity 提供合成大规模 6DoF/depth supervision。
 - [EmbodMocap](../papers/multiview-geometry/2026-embodmocap.md) — 双移动相机的 metric human-scene reconstruction。
 - [Kineo](../papers/multiview-geometry/2025-kineo.md) — calibration-free sparse RGB multi-camera geometry。
 - [OnlineHMR](../papers/global-human-motion/2026-onlinehmr.md) — moving-camera world-grounded human motion。
@@ -31,6 +32,8 @@
 从同一个 360° 相机切出的 perspective views 共享相同 camera center，主要提供方向和观测完整性的互补，而不是传统 stereo baseline；多台 360 相机则额外提供真实平移几何。ViPE 说明物理 360° 相机的 trajectory 与 depth 可以直接在 panorama / ERP pipeline 中估计，因此 camera estimation 没有必要完全依赖 perspective crop 之后的独立求解。360DVO 进一步说明，直接在 spherical / ERP geometry 中学习 distortion-aware features 并执行 omnidirectional bundle adjustment，在强旋转和大 FoV 条件下可以成为更有针对性的 visual-only 360 camera baseline；但全景视野同时也会包含更多动态前景，因此在人群或强动态场景中可能增加错误匹配。
 
 PanoAir 又补上了另一类关键 camera baseline：在 panorama 上融合 IMU 获得 metric scale，并通过 panoramic loop closure 显式纠正长序列 accumulated drift。其公开数据还同时提供 ERP、dual-fisheye、virtual pinhole、IMU 与 RTK ground truth，因此现在可以更系统地把 `visual-only OVO`、`visual-inertial panoramic SLAM` 和 `human-assisted camera refinement` 分开评价，而不是把所有 camera error 混在最终人体 MPJPE 中。
+
+PanoVGGT 代表原生 ERP 的 feed-forward 多视角几何路线：通过 spherical position embedding、全 SO(3) 增强与 stochastic anchoring，一次预测 camera pose、depth、pointmaps。这与 ViPE 的 panorama geometry pipeline、360DVO 的 visual-only VO、PanoAir 的 VI-SLAM/loop closure 及 Holo360D 的真实 LiDAR geometry supervision 构成互补；其 PanoCity 数据为 UE5 合成，camera pose 主要报告旋转/平移方向角而不是长序列 metric ATE/RPE，不能据此推断 snow-sport camera drift。
 
 Holo360D 进一步补齐了 panorama scene-geometry 数据层：它不是 human-centric benchmark，但提供大规模真实 ERP、LiDAR-derived dense depth/mesh/point cloud 与连续 camera poses。这样可以先独立训练和验证 panorama-level depth / feed-forward geometry，再把 PanoAir 的 metric VIO、360DVO 的 visual-only OVO 与人体约束接到同一研究链中，减少 scene/camera front-end 过弱对最终 world-HMR 结论的干扰。
 

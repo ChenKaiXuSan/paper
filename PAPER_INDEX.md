@@ -78,6 +78,7 @@
 
 | 阅读日期 | 年份 | 论文 | 状态 |
 | --- | ---: | --- | --- |
+| 2026-10-30 | 2026 | [PanoVGGT: Feed-Forward 3D Reconstruction from Panoramic Imagery](papers/360-vision/2026-panovggt-feed-forward-panoramic-reconstruction.md) | `skimmed` |
 | 2026-10-27 | 2026 | [Wid3R: Wide Field-of-View 3D Reconstruction via Camera Model Conditioning](papers/360-vision/2026-wid3r-wide-fov-camera-model-conditioning.md) | `skimmed` |
 | 2026-09-15 | 2026 | [Holo360D: A Large-Scale Real-World Dataset with Continuous Trajectories for Advancing Panoramic 3D Reconstruction and Beyond](papers/360-vision/2026-holo360d.md) | `skimmed` |
 | 2026-09-04 | 2026 | [PanoAir: A Panoramic Visual-Inertial SLAM with Cross-Time Real-World UAV Dataset](papers/360-vision/2026-panoair.md) | `skimmed` |
@@ -133,6 +134,7 @@
 
 | 阅读日期 | 年份 | 论文 | 状态 |
 | --- | ---: | --- | --- |
+| 2026-10-30 | 2026 | [UT-HMR: Uncertainty-Guided Temporal Modeling for Robust 3D Human Mesh Recovery](papers/sports-biomechanics/2026-ut-hmr-uncertainty-temporal-sports.md) | `skimmed` |
 | 2026-10-26 | 2026 | [PACT: End-to-End Learning of Human Pose, Contacts, and Forces from Video](papers/sports-biomechanics/2026-pact-pose-contacts-forces.md) | `skimmed` |
 | 2026-10-14 | 2026 | [eSkiTB: A Synthetic Event-based Dataset for Tracking Skiers](papers/sports-biomechanics/2026-eskitb-event-ski-tracking.md) | `skimmed` |
 | 2026-09-24 | 2026 | [Towards Embodied AI with MuscleMimic: Unlocking full-body musculoskeletal motor learning at scale](papers/sports-biomechanics/2026-musclemimic.md) | `skimmed` |
