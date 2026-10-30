@@ -52,6 +52,7 @@
 
 | 阅读日期 | 年份 | 论文 | 状态 |
 | --- | ---: | --- | --- |
+| 2026-10-31 | 2026 | [Dense Dynamic Scene Reconstruction and Camera Pose Estimation from Multi-View Videos](papers/multiview-geometry/2026-dense-dynamic-scene-multicamera-camera-pose.md) | `skimmed` |
 | 2026-10-29 | 2024 | [Simultaneously Recovering Multi-Person Meshes and Multi-View Cameras with Human Semantics](papers/multiview-geometry/2024-joint-multiperson-meshes-and-cameras.md) | `skimmed` |
 | 2026-10-28 | 2026 | [Emergent Multi-View Geometry Through Self-Distillation](papers/multiview-geometry/2026-poincar3-multiview-self-distillation.md) | `skimmed` |
 | 2026-10-24 | 2025 | [HAMSt3R: Human-Aware Multi-view Stereo 3D Reconstruction](papers/multiview-geometry/2025-hamst3r-human-aware-multiview-stereo.md) | `skimmed` |
@@ -88,6 +89,7 @@
 
 | 阅读日期 | 年份 | 论文 | 状态 |
 | --- | ---: | --- | --- |
+| 2026-10-31 | 2026 | [Fine-grained Human Motion Understanding with Language Models](papers/motion-understanding/2026-figmo-timestamp-grounded-motion-understanding.md) | `skimmed` |
 | 2026-10-28 | 2026 | [ViSTR-Bench: Can MLLMs Reason from Continuous Visual Cues in Dynamic Scenes?](papers/motion-understanding/2026-vistr-bench-dynamic-spatiotemporal-reasoning.md) | `skimmed` |
 | 2026-10-27 | 2026 | [DriverGaze360: OmniDirectional Driver Attention with Object-Level Guidance](papers/motion-understanding/2026-drivergaze360-omnidirectional-attention.md) | `skimmed` |
 | 2026-10-24 | 2026 | [EventDrive: Event Cameras for Vision-Language Driving Intelligence](papers/motion-understanding/2026-eventdrive-event-frame-vlm.md) | `skimmed` |
