@@ -11,6 +11,7 @@
 3. Kinetics / ground reaction force / joint moment / muscle-force-related variables。
 4. 周期、时空和 biomechanics representation，以及 self-supervised / foundation gait embedding，用于疾病分类、严重度、longitudinal modeling 与 broad health phenotyping。
 5. uncertainty、clinical knowledge 与解释性。
+6. **Tool-grounded clinical reasoning：**由 VLM/agent 提出步态假设，调用可复核的 2D/3D kinematics 与 gait-event 工具验证，保留支持、反证和不确定性，再输出解释报告。
 
 ## 关键论文
 
@@ -21,6 +22,7 @@
 - [CARE-PD](../papers/medical-ai/2025-care-pd.md) — Parkinson's gait assessment 数据资源。
 - [GaitEncoder](../papers/medical-ai/2026-gaitencoder.md) — gait kinematics foundation representation。
 - [BioGait-VLM](../papers/medical-ai/2026-biogait-vlm.md) — vision-language-biomechanics 临床解释框架。
+- [DrGait](../papers/medical-ai/2026-drgait-biomechanically-grounded-clinical-gait.md) — training-free TVS agent：VLM 仅规划可核验的临床证据，RTMW/WHAM 与 biomechanical tools 负责定量测量；GAVD/ProGait 上考察异常亚型和可审计报告。
 - [SIMSPINE](../papers/medical-ai/2026-simspine.md) — biomechanics-aware spine simulation / annotation。
 - [MedVCR](../papers/medical-ai/2026-medvcr.md) — clinically-grounded counterfactual reasoning。
 - [ResiHMR](../papers/medical-ai/2026-resihmr.md) — 非标准人体拓扑下的 HMR 偏差问题。
@@ -34,6 +36,7 @@ Gait foundation model 的 phenome-wide 结果进一步提示，gait embedding �
 ## 研究空白
 
 - 多中心、跨设备和真实 clinical deployment 的外部验证仍不足。
+- DrGait 补充了 **agentic differential diagnosis + deterministic measurement** 路线，但可核验工具仍受上游 2D/3D pose 偏差制约；原文 GAVD 异常亚型整体准确率在 Table 2（53.4%）与正文/Table 7（51.4%）之间不一致，且尚缺公开官方代码及前瞻性临床验证。
 - **推断：**将周期时序表示、self-supervised gait foundation embedding、3D pose uncertainty、biomechanical kinematics/kinetics 与 clinical knowledge 显式结合，可能比纯 RGB 分类或单一 engineered features 更稳健且更可解释。
 - 上游姿态模型通常在健康/通用人体上预训练，可能把病理动作拉回“正常”先验；OpenCap Monocular 本身也只在 10 名年轻健康成人上验证，真实病理人群仍需要独立评估。
 - 大规模 gait foundation representation 当前主要来自 Azure Kinect 3D skeleton；迁移到 monocular RGB、2D keypoints、不同 pose estimators 与不同 skeleton topology 的 domain gap 尚未解决。
@@ -52,3 +55,4 @@ Gait foundation model 的 phenome-wide 结果进一步提示，gait embedding �
 - 强制 subject-disjoint / site-disjoint protocol，并增加真实病理 cohort、跨 camera/viewpoint、跨 pose estimator 与跨 skeleton topology 测试。
 - 研究 Azure Kinect 3D skeleton representation 向 monocular RGB / 2D pose 的 distillation 或 domain adaptation。
 - 同时报告 discrimination、calibration、uncertainty、kinematic/kinetic error、external validity 和 clinical interpretability。
+- **推断：**在 ASD/临床步态视频上额外比较 class-only、attention-map explanation、clinical-feature report 与 DrGait-style tool-verified VLM report；对关键点噪声、摄像机视角与测量冲突做压力测试，统计错误定量解释率、医生盲评及拒答/不确定性质量。

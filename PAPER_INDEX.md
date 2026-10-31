@@ -6,6 +6,7 @@
 
 | 阅读日期 | 年份 | 论文 | 状态 |
 | --- | ---: | --- | --- |
+| 2026-11-01 | 2024 | [TRAM: Global Trajectory and Motion of 3D Humans from in-the-wild Videos](papers/global-human-motion/2024-tram-global-trajectory-and-motion.md) | `skimmed` |
 | 2026-10-25 | 2026 | [World Motion Models: Flexible Sequence Modeling of SE(3) Trajectories](papers/global-human-motion/2026-world-motion-models-se3-trajectories.md) | `skimmed` |
 | 2026-10-14 | 2025 | [From Camera to World: A Plug-and-Play Module for Human Mesh Transformation](papers/global-human-motion/2025-mesh-plug-camera-to-world.md) | `skimmed` |
 | 2026-09-23 | 2026 | [JOintGS: Joint Optimization of Cameras, Bodies and 3D Gaussians for In-the-Wild Monocular Reconstruction](papers/global-human-motion/2026-jointgs.md) | `skimmed` |
@@ -111,6 +112,7 @@
 
 | 阅读日期 | 年份 | 论文 | 状态 |
 | --- | ---: | --- | --- |
+| 2026-11-01 | 2026 | [DrGait: Biomechanically Grounded Visual Reasoning for Interpretable Clinical Gait Analysis](papers/medical-ai/2026-drgait-biomechanically-grounded-clinical-gait.md) | `skimmed` |
 | 2026-10-29 | 2026 | [Deep learning-enabled accurate assessment of gait impairments in Parkinson’s disease using smartphone videos](papers/medical-ai/2026-smartphone-parkinson-gait-assessment.md) | `skimmed` |
 | 2026-10-25 | 2026 | [Monocular markerless biomechanics for clinically interpretable gait assessment in spinal cord injury](papers/medical-ai/2026-sci-monocular-markerless-biomechanics.md) | `skimmed` |
 | 2026-09-22 | 2026 | [Biomechanically Accurate Gait Analysis: A 3d Human Reconstruction Framework for Markerless Estimation of Gait Parameters](papers/medical-ai/2026-biomechanically-accurate-gait-analysis.md) | `skimmed` |
