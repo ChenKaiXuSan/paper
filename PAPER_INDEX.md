@@ -53,6 +53,7 @@
 
 | 阅读日期 | 年份 | 论文 | 状态 |
 | --- | ---: | --- | --- |
+| 2026-11-02 | 2025 | [MegaSaM: Accurate, Fast and Robust Structure and Motion from Casual Dynamic Videos](papers/multiview-geometry/2025-megasam-robust-dynamic-video-slam.md) | `skimmed` |
 | 2026-10-31 | 2026 | [Dense Dynamic Scene Reconstruction and Camera Pose Estimation from Multi-View Videos](papers/multiview-geometry/2026-dense-dynamic-scene-multicamera-camera-pose.md) | `skimmed` |
 | 2026-10-29 | 2024 | [Simultaneously Recovering Multi-Person Meshes and Multi-View Cameras with Human Semantics](papers/multiview-geometry/2024-joint-multiperson-meshes-and-cameras.md) | `skimmed` |
 | 2026-10-28 | 2026 | [Emergent Multi-View Geometry Through Self-Distillation](papers/multiview-geometry/2026-poincar3-multiview-self-distillation.md) | `skimmed` |
@@ -138,6 +139,7 @@
 
 | 阅读日期 | 年份 | 论文 | 状态 |
 | --- | ---: | --- | --- |
+| 2026-11-02 | 2025 | [AthleticsPose: Authentic Sports Motion Dataset on Athletic Field and Evaluation of Monocular 3D Pose Estimation Ability](papers/sports-biomechanics/2025-athleticspose-authentic-sports-motion.md) | `skimmed` |
 | 2026-10-30 | 2026 | [UT-HMR: Uncertainty-Guided Temporal Modeling for Robust 3D Human Mesh Recovery](papers/sports-biomechanics/2026-ut-hmr-uncertainty-temporal-sports.md) | `skimmed` |
 | 2026-10-26 | 2026 | [PACT: End-to-End Learning of Human Pose, Contacts, and Forces from Video](papers/sports-biomechanics/2026-pact-pose-contacts-forces.md) | `skimmed` |
 | 2026-10-14 | 2026 | [eSkiTB: A Synthetic Event-based Dataset for Tracking Skiers](papers/sports-biomechanics/2026-eskitb-event-ski-tracking.md) | `skimmed` |
