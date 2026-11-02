@@ -6,6 +6,7 @@
 
 | 阅读日期 | 年份 | 论文 | 状态 |
 | --- | ---: | --- | --- |
+| 2026-11-03 | 2022 | [Camera Motion Agnostic Method for Estimating 3D Human Poses](papers/global-human-motion/2022-camera-motion-agnostic-gmr.md) | `skimmed` |
 | 2026-11-01 | 2024 | [TRAM: Global Trajectory and Motion of 3D Humans from in-the-wild Videos](papers/global-human-motion/2024-tram-global-trajectory-and-motion.md) | `skimmed` |
 | 2026-10-25 | 2026 | [World Motion Models: Flexible Sequence Modeling of SE(3) Trajectories](papers/global-human-motion/2026-world-motion-models-se3-trajectories.md) | `skimmed` |
 | 2026-10-14 | 2025 | [From Camera to World: A Plug-and-Play Module for Human Mesh Transformation](papers/global-human-motion/2025-mesh-plug-camera-to-world.md) | `skimmed` |
@@ -91,6 +92,7 @@
 
 | 阅读日期 | 年份 | 论文 | 状态 |
 | --- | ---: | --- | --- |
+| 2026-11-03 | 2026 | [Foundation Model for Skeleton-Based Human Action Understanding](papers/motion-understanding/2026-foundation-model-skeleton-action-understanding.md) | `skimmed` |
 | 2026-10-31 | 2026 | [Fine-grained Human Motion Understanding with Language Models](papers/motion-understanding/2026-figmo-timestamp-grounded-motion-understanding.md) | `skimmed` |
 | 2026-10-28 | 2026 | [ViSTR-Bench: Can MLLMs Reason from Continuous Visual Cues in Dynamic Scenes?](papers/motion-understanding/2026-vistr-bench-dynamic-spatiotemporal-reasoning.md) | `skimmed` |
 | 2026-10-27 | 2026 | [DriverGaze360: OmniDirectional Driver Attention with Object-Level Guidance](papers/motion-understanding/2026-drivergaze360-omnidirectional-attention.md) | `skimmed` |
