@@ -54,6 +54,7 @@
 
 | 阅读日期 | 年份 | 论文 | 状态 |
 | --- | ---: | --- | --- |
+| 2026-11-04 | 2025 | [Humans as a Calibration Pattern: Dynamic 3D Scene Reconstruction from Unsynchronized and Uncalibrated Videos](papers/multiview-geometry/2025-humans-as-calibration-pattern.md) | `skimmed` |
 | 2026-11-02 | 2025 | [MegaSaM: Accurate, Fast and Robust Structure and Motion from Casual Dynamic Videos](papers/multiview-geometry/2025-megasam-robust-dynamic-video-slam.md) | `skimmed` |
 | 2026-10-31 | 2026 | [Dense Dynamic Scene Reconstruction and Camera Pose Estimation from Multi-View Videos](papers/multiview-geometry/2026-dense-dynamic-scene-multicamera-camera-pose.md) | `skimmed` |
 | 2026-10-29 | 2024 | [Simultaneously Recovering Multi-Person Meshes and Multi-View Cameras with Human Semantics](papers/multiview-geometry/2024-joint-multiperson-meshes-and-cameras.md) | `skimmed` |
@@ -92,6 +93,7 @@
 
 | 阅读日期 | 年份 | 论文 | 状态 |
 | --- | ---: | --- | --- |
+| 2026-11-04 | 2019 | [Drive&Act: A Multi-Modal Dataset for Fine-Grained Driver Behavior Recognition in Autonomous Vehicles](papers/motion-understanding/2019-drive-and-act-driver-behavior.md) | `skimmed` |
 | 2026-11-03 | 2026 | [Foundation Model for Skeleton-Based Human Action Understanding](papers/motion-understanding/2026-foundation-model-skeleton-action-understanding.md) | `skimmed` |
 | 2026-10-31 | 2026 | [Fine-grained Human Motion Understanding with Language Models](papers/motion-understanding/2026-figmo-timestamp-grounded-motion-understanding.md) | `skimmed` |
 | 2026-10-28 | 2026 | [ViSTR-Bench: Can MLLMs Reason from Continuous Visual Cues in Dynamic Scenes?](papers/motion-understanding/2026-vistr-bench-dynamic-spatiotemporal-reasoning.md) | `skimmed` |
