@@ -6,6 +6,7 @@
 
 | 阅读日期 | 年份 | 论文 | 状态 |
 | --- | ---: | --- | --- |
+| 2026-11-05 | 2023 | [EMDB: The Electromagnetic Database of Global 3D Human Pose and Shape in the Wild](papers/global-human-motion/2023-emdb-global-3d-human-pose-and-shape.md) | `skimmed` |
 | 2026-11-03 | 2022 | [Camera Motion Agnostic Method for Estimating 3D Human Poses](papers/global-human-motion/2022-camera-motion-agnostic-gmr.md) | `skimmed` |
 | 2026-11-01 | 2024 | [TRAM: Global Trajectory and Motion of 3D Humans from in-the-wild Videos](papers/global-human-motion/2024-tram-global-trajectory-and-motion.md) | `skimmed` |
 | 2026-10-25 | 2026 | [World Motion Models: Flexible Sequence Modeling of SE(3) Trajectories](papers/global-human-motion/2026-world-motion-models-se3-trajectories.md) | `skimmed` |
@@ -143,6 +144,7 @@
 
 | 阅读日期 | 年份 | 论文 | 状态 |
 | --- | ---: | --- | --- |
+| 2026-11-05 | 2023 | [OpenCap: Human movement dynamics from smartphone videos](papers/sports-biomechanics/2023-opencap-human-movement-dynamics.md) | `skimmed` |
 | 2026-11-02 | 2025 | [AthleticsPose: Authentic Sports Motion Dataset on Athletic Field and Evaluation of Monocular 3D Pose Estimation Ability](papers/sports-biomechanics/2025-athleticspose-authentic-sports-motion.md) | `skimmed` |
 | 2026-10-30 | 2026 | [UT-HMR: Uncertainty-Guided Temporal Modeling for Robust 3D Human Mesh Recovery](papers/sports-biomechanics/2026-ut-hmr-uncertainty-temporal-sports.md) | `skimmed` |
 | 2026-10-26 | 2026 | [PACT: End-to-End Learning of Human Pose, Contacts, and Forces from Video](papers/sports-biomechanics/2026-pact-pose-contacts-forces.md) | `skimmed` |
