@@ -22,6 +22,7 @@
 - [MASt3R-SLAM](../papers/multiview-geometry/2025-mast3r-slam.md) — 将两视图 3D reconstruction prior 嵌入实时 dense SLAM，同时输出 camera trajectory 与 dense geometry，可作为不利用人体的强 camera/scene baseline。
 - [Multi-camera dense dynamic reconstruction](../papers/multiview-geometry/2026-dense-dynamic-scene-multicamera-camera-pose.md) — ECCV 2026 自由移动多相机 camera-only baseline：VGGT 宽基线初始化 + temporal/spatial/cross-time 时空连接图 + dense flow/depth/pose 迭代 refinement；在 24 条 2–3 相机 Qualisys GT 序列测试，尚未引入人体反向约束。
 - [BodySLAM++](../papers/global-human-motion/2023-bodyslam-plus-plus.md) — 经典的实时 tightly-coupled visual-inertial camera-human factor-graph baseline；人体 joint reprojection 与 motion factors 直接进入 camera optimization，在室内数据上同时将人体 MPJPE 与 camera ATE 相对最强串联 baseline 改善约 26% 与 12%。
+- [EgoMo3R](../papers/global-human-motion/2026-egomo3r-joint-egocentric-motion-scene.md) — NeurIPS 2026 作者项目所示的单目 egocentric motion↔camera↔scene **显式交替优化**：由 optical flow / point tracks / monocular depth 估计相机与场景，再用 SMPL-X head trajectory 和 diffusion motion prior 将人体动态反向注入 camera metric/gravity refinement。尤其适合区分仅使用 human prior 的 camera smoothing 与真正的 mutual refinement；其前端依赖 pinhole rectification，尚未验证 ERP / 双移动相机。
 - [PACE](../papers/global-human-motion/2024-pace.md) — 3DV 2024 的 monocular joint-optimization baseline；把 human motion prior 与 background point-cloud reprojection 放进 bundle-adjustment-style objective，在 Stage 4 联合优化完整 camera `R_t/T_t` 与人体 motion latent，并在 HCM 上将 DROID-SLAM 初始化的 ATE / ATE-S 从 155.8 / 1670.7 降至 137.5 / 459.7。
 - [SynCHMR](../papers/global-human-motion/2024-synchmr.md) — monocular human-aware metric SLAM baseline；用 camera-frame HMR 的人体 metric cue 校准 monocular depth / camera scale，再由 dense scene 条件化 world-space SMPL refinement，在 EgoBody/EMDB 的 camera ATE ablation 中明确证明 human cue 能改善 camera estimation。
 - [Human3R](../papers/global-human-motion/2026-human3r.md) — unified all-at-once online recurrent baseline，在同一个 persistent state 中同时预测多人物 SMPL-X、dense scene 与 camera trajectory；约 15 FPS / 8 GB，不依赖预先 detector/SLAM/depth，但 human→camera 的帮助主要是 shared-state / joint-training 层面的隐式互益，而非显式 residual correction。
@@ -56,6 +57,7 @@ HTD-Refine 又补充了另一个重要维度：world-HMR 的质量不能只看�
 
 ## 研究空白
 
+- 新的 EgoMo3R 为 **不可见自身躯干** 的单目头戴视角提供了 motion-prior→camera/scene 的显式反馈，但其 head-camera constraint 与能直接看到滑雪者的 third-person / 双 360° 相机不等价；两者需分别设计观测几何、世界尺度和运动先验，并独立报告 camera ATE/RPE、全局人体 MPJPE 及先验偏置。**推断：**可在双 360° 上尝试以人体重投影一致性替代 head trajectory consistency。
 - [Multi-camera dense dynamic reconstruction](../papers/multiview-geometry/2026-dense-dynamic-scene-multicamera-camera-pose.md) 已显示多台**自由移动**相机可用跨时间/跨相机的稠密几何图联合追踪，而不必固定 rig 外参；但仍要求已知内参及时间同步，且人物信息仅被视作动态内容。**推断：**在 dual-360 的球面投影与长序列中，将人体骨长/关键点、cross-view consistency 和观测不确定性加入相机图优化，是区别于纯 camera-only spatiotemporal graph 的更明确实验变量。
 
 - BodySLAM++、PACE 与 SynCHMR 已分别证明 stereo visual-inertial factor graph、monocular full-trajectory joint optimization 与 human-aware metric SLAM 中存在可量化的 human→camera/scene feedback；**推断：**真正仍缺少的是把这类紧耦合扩展到 modern foundation HMR / dense geometry、长距离高速户外、dual-360、未知/变化 intrinsics 与 scale，并形成能够在线稳定工作的 uncertainty-aware learned / differentiable correction，同时评价 camera ATE/RPE 与 W-MPJPE/RTE。
