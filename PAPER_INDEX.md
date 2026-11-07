@@ -85,6 +85,7 @@
 
 | 阅读日期 | 年份 | 论文 | 状态 |
 | --- | ---: | --- | --- |
+| 2026-11-08 | 2024 | [Improving Real-Time Omnidirectional 3D Multi-Person Human Pose Estimation with People Matching and Unsupervised 2D-3D Lifting](papers/360-vision/2024-omnidirectional-radar-3d-multiperson-pose.md) | `skimmed` |
 | 2026-10-30 | 2026 | [PanoVGGT: Feed-Forward 3D Reconstruction from Panoramic Imagery](papers/360-vision/2026-panovggt-feed-forward-panoramic-reconstruction.md) | `skimmed` |
 | 2026-10-27 | 2026 | [Wid3R: Wide Field-of-View 3D Reconstruction via Camera Model Conditioning](papers/360-vision/2026-wid3r-wide-fov-camera-model-conditioning.md) | `skimmed` |
 | 2026-09-15 | 2026 | [Holo360D: A Large-Scale Real-World Dataset with Continuous Trajectories for Advancing Panoramic 3D Reconstruction and Beyond](papers/360-vision/2026-holo360d.md) | `skimmed` |
@@ -146,6 +147,7 @@
 
 | 阅读日期 | 年份 | 论文 | 状态 |
 | --- | ---: | --- | --- |
+| 2026-11-08 | 2025 | [SkiTechCoach: A Multimodal Alpine Skiing Dataset with 3D Body Pose, Sole Pressure, and Expert Coaching](papers/sports-biomechanics/2025-skitechcoach-alpine-skiing-multimodal.md) | `skimmed` |
 | 2026-11-05 | 2023 | [OpenCap: Human movement dynamics from smartphone videos](papers/sports-biomechanics/2023-opencap-human-movement-dynamics.md) | `skimmed` |
 | 2026-11-02 | 2025 | [AthleticsPose: Authentic Sports Motion Dataset on Athletic Field and Evaluation of Monocular 3D Pose Estimation Ability](papers/sports-biomechanics/2025-athleticspose-authentic-sports-motion.md) | `skimmed` |
 | 2026-10-30 | 2026 | [UT-HMR: Uncertainty-Guided Temporal Modeling for Robust 3D Human Mesh Recovery](papers/sports-biomechanics/2026-ut-hmr-uncertainty-temporal-sports.md) | `skimmed` |
