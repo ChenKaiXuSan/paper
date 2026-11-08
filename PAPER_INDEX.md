@@ -6,6 +6,7 @@
 
 | 阅读日期 | 年份 | 论文 | 状态 |
 | --- | ---: | --- | --- |
+| 2026-11-09 | 2023 | [SmartMocap: Joint Estimation of Human and Camera Motion Using Uncalibrated RGB Cameras](papers/global-human-motion/2023-smartmocap-uncalibrated-moving-cameras.md) | `skimmed` |
 | 2026-11-06 | 2026 | [EgoMo3R: Joint Egocentric Motion and Scene Reconstruction](papers/global-human-motion/2026-egomo3r-joint-egocentric-motion-scene.md) | `skimmed` |
 | 2026-11-05 | 2023 | [EMDB: The Electromagnetic Database of Global 3D Human Pose and Shape in the Wild](papers/global-human-motion/2023-emdb-global-3d-human-pose-and-shape.md) | `skimmed` |
 | 2026-11-03 | 2022 | [Camera Motion Agnostic Method for Estimating 3D Human Poses](papers/global-human-motion/2022-camera-motion-agnostic-gmr.md) | `skimmed` |
@@ -96,6 +97,7 @@
 
 | 阅读日期 | 年份 | 论文 | 状态 |
 | --- | ---: | --- | --- |
+| 2026-11-09 | 2023 | [MotionBERT: A Unified Perspective on Learning Human Motion Representations](papers/motion-understanding/2023-motionbert-human-motion-representations.md) | `skimmed` |
 | 2026-11-04 | 2019 | [Drive&Act: A Multi-Modal Dataset for Fine-Grained Driver Behavior Recognition in Autonomous Vehicles](papers/motion-understanding/2019-drive-and-act-driver-behavior.md) | `skimmed` |
 | 2026-11-03 | 2026 | [Foundation Model for Skeleton-Based Human Action Understanding](papers/motion-understanding/2026-foundation-model-skeleton-action-understanding.md) | `skimmed` |
 | 2026-10-31 | 2026 | [Fine-grained Human Motion Understanding with Language Models](papers/motion-understanding/2026-figmo-timestamp-grounded-motion-understanding.md) | `skimmed` |
