@@ -6,6 +6,7 @@
 
 | 阅读日期 | 年份 | 论文 | 状态 |
 | --- | ---: | --- | --- |
+| 2026-11-10 | 2025 | [Human Mesh Reconstruction of Sports Players with Multiple Dynamic Cameras](papers/global-human-motion/2025-sports-mesh-multiple-dynamic-cameras.md) | `skimmed` |
 | 2026-11-09 | 2023 | [SmartMocap: Joint Estimation of Human and Camera Motion Using Uncalibrated RGB Cameras](papers/global-human-motion/2023-smartmocap-uncalibrated-moving-cameras.md) | `skimmed` |
 | 2026-11-06 | 2026 | [EgoMo3R: Joint Egocentric Motion and Scene Reconstruction](papers/global-human-motion/2026-egomo3r-joint-egocentric-motion-scene.md) | `skimmed` |
 | 2026-11-05 | 2023 | [EMDB: The Electromagnetic Database of Global 3D Human Pose and Shape in the Wild](papers/global-human-motion/2023-emdb-global-3d-human-pose-and-shape.md) | `skimmed` |
@@ -122,6 +123,7 @@
 
 | 阅读日期 | 年份 | 论文 | 状态 |
 | --- | ---: | --- | --- |
+| 2026-11-10 | 2026 | [VisionMD-Gait: scalable clinical gait assessment from smartphone videos](papers/medical-ai/2026-visionmd-gait-smartphone-clinical-assessment.md) | `skimmed` |
 | 2026-11-06 | 2025 | [Computer Vision for Clinical Gait Analysis: A Gait Abnormality Video Dataset](papers/medical-ai/2025-gavd-clinical-gait-video-dataset.md) | `skimmed` |
 | 2026-11-01 | 2026 | [DrGait: Biomechanically Grounded Visual Reasoning for Interpretable Clinical Gait Analysis](papers/medical-ai/2026-drgait-biomechanically-grounded-clinical-gait.md) | `skimmed` |
 | 2026-10-29 | 2026 | [Deep learning-enabled accurate assessment of gait impairments in Parkinson’s disease using smartphone videos](papers/medical-ai/2026-smartphone-parkinson-gait-assessment.md) | `skimmed` |
