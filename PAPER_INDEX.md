@@ -6,6 +6,7 @@
 
 | 阅读日期 | 年份 | 论文 | 状态 |
 | --- | ---: | --- | --- |
+| 2026-11-11 | 2023 | [EgoHumans: An Egocentric 3D Multi-Human Benchmark](papers/global-human-motion/2023-egohumans-egocentric-3d-multihuman-benchmark.md) | `skimmed` |
 | 2026-11-10 | 2025 | [Human Mesh Reconstruction of Sports Players with Multiple Dynamic Cameras](papers/global-human-motion/2025-sports-mesh-multiple-dynamic-cameras.md) | `skimmed` |
 | 2026-11-09 | 2023 | [SmartMocap: Joint Estimation of Human and Camera Motion Using Uncalibrated RGB Cameras](papers/global-human-motion/2023-smartmocap-uncalibrated-moving-cameras.md) | `skimmed` |
 | 2026-11-06 | 2026 | [EgoMo3R: Joint Egocentric Motion and Scene Reconstruction](papers/global-human-motion/2026-egomo3r-joint-egocentric-motion-scene.md) | `skimmed` |
@@ -151,6 +152,7 @@
 
 | 阅读日期 | 年份 | 论文 | 状态 |
 | --- | ---: | --- | --- |
+| 2026-11-11 | 2026 | [Quantitative Analysis of Elite Giant Slalom Turn Technique Using Broadcast Video Images and 3D CAD Model Matching](papers/sports-biomechanics/2026-giant-slalom-turn-broadcast-cad-model-matching.md) | `skimmed` |
 | 2026-11-08 | 2025 | [SkiTechCoach: A Multimodal Alpine Skiing Dataset with 3D Body Pose, Sole Pressure, and Expert Coaching](papers/sports-biomechanics/2025-skitechcoach-alpine-skiing-multimodal.md) | `skimmed` |
 | 2026-11-05 | 2023 | [OpenCap: Human movement dynamics from smartphone videos](papers/sports-biomechanics/2023-opencap-human-movement-dynamics.md) | `skimmed` |
 | 2026-11-02 | 2025 | [AthleticsPose: Authentic Sports Motion Dataset on Athletic Field and Evaluation of Monocular 3D Pose Estimation Ability](papers/sports-biomechanics/2025-athleticspose-authentic-sports-motion.md) | `skimmed` |
