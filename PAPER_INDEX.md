@@ -88,6 +88,7 @@
 
 | 阅读日期 | 年份 | 论文 | 状态 |
 | --- | ---: | --- | --- |
+| 2026-11-12 | 2025 | [IM360: Large-scale Indoor Mapping with 360 Cameras](papers/360-vision/2025-im360-spherical-sfm-mapping.md) | `skimmed` |
 | 2026-11-08 | 2024 | [Improving Real-Time Omnidirectional 3D Multi-Person Human Pose Estimation with People Matching and Unsupervised 2D-3D Lifting](papers/360-vision/2024-omnidirectional-radar-3d-multiperson-pose.md) | `skimmed` |
 | 2026-10-30 | 2026 | [PanoVGGT: Feed-Forward 3D Reconstruction from Panoramic Imagery](papers/360-vision/2026-panovggt-feed-forward-panoramic-reconstruction.md) | `skimmed` |
 | 2026-10-27 | 2026 | [Wid3R: Wide Field-of-View 3D Reconstruction via Camera Model Conditioning](papers/360-vision/2026-wid3r-wide-fov-camera-model-conditioning.md) | `skimmed` |
@@ -99,6 +100,7 @@
 
 | 阅读日期 | 年份 | 论文 | 状态 |
 | --- | ---: | --- | --- |
+| 2026-11-12 | 2022 | [Revisiting Skeleton-Based Action Recognition](papers/motion-understanding/2022-posec3d-skeleton-action-recognition.md) | `skimmed` |
 | 2026-11-09 | 2023 | [MotionBERT: A Unified Perspective on Learning Human Motion Representations](papers/motion-understanding/2023-motionbert-human-motion-representations.md) | `skimmed` |
 | 2026-11-04 | 2019 | [Drive&Act: A Multi-Modal Dataset for Fine-Grained Driver Behavior Recognition in Autonomous Vehicles](papers/motion-understanding/2019-drive-and-act-driver-behavior.md) | `skimmed` |
 | 2026-11-03 | 2026 | [Foundation Model for Skeleton-Based Human Action Understanding](papers/motion-understanding/2026-foundation-model-skeleton-action-understanding.md) | `skimmed` |
