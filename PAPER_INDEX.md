@@ -6,6 +6,7 @@
 
 | 阅读日期 | 年份 | 论文 | 状态 |
 | --- | ---: | --- | --- |
+| 2026-11-14 | 2025 | [HumanMM: Global Human Motion Recovery from Multi-shot Videos](papers/global-human-motion/2025-humanmm-multishot-world-motion.md) | `skimmed` |
 | 2026-11-11 | 2023 | [EgoHumans: An Egocentric 3D Multi-Human Benchmark](papers/global-human-motion/2023-egohumans-egocentric-3d-multihuman-benchmark.md) | `skimmed` |
 | 2026-11-10 | 2025 | [Human Mesh Reconstruction of Sports Players with Multiple Dynamic Cameras](papers/global-human-motion/2025-sports-mesh-multiple-dynamic-cameras.md) | `skimmed` |
 | 2026-11-09 | 2023 | [SmartMocap: Joint Estimation of Human and Camera Motion Using Uncalibrated RGB Cameras](papers/global-human-motion/2023-smartmocap-uncalibrated-moving-cameras.md) | `skimmed` |
@@ -101,6 +102,7 @@
 
 | 阅读日期 | 年份 | 论文 | 状态 |
 | --- | ---: | --- | --- |
+| 2026-11-14 | 2022 | [TransRAC: Encoding Multi-scale Temporal Correlation with Transformers for Repetitive Action Counting](papers/motion-understanding/2022-transrac-repetitive-action-counting.md) | `skimmed` |
 | 2026-11-12 | 2022 | [Revisiting Skeleton-Based Action Recognition](papers/motion-understanding/2022-posec3d-skeleton-action-recognition.md) | `skimmed` |
 | 2026-11-09 | 2023 | [MotionBERT: A Unified Perspective on Learning Human Motion Representations](papers/motion-understanding/2023-motionbert-human-motion-representations.md) | `skimmed` |
 | 2026-11-04 | 2019 | [Drive&Act: A Multi-Modal Dataset for Fine-Grained Driver Behavior Recognition in Autonomous Vehicles](papers/motion-understanding/2019-drive-and-act-driver-behavior.md) | `skimmed` |
