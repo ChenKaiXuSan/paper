@@ -59,6 +59,7 @@
 
 | 阅读日期 | 年份 | 论文 | 状态 |
 | --- | ---: | --- | --- |
+| 2026-11-13 | 2025 | [Continuous 3D Perception Model with Persistent State](papers/multiview-geometry/2025-cut3r-continuous-3d-perception-persistent-state.md) | `skimmed` |
 | 2026-11-04 | 2025 | [Humans as a Calibration Pattern: Dynamic 3D Scene Reconstruction from Unsynchronized and Uncalibrated Videos](papers/multiview-geometry/2025-humans-as-calibration-pattern.md) | `skimmed` |
 | 2026-11-02 | 2025 | [MegaSaM: Accurate, Fast and Robust Structure and Motion from Casual Dynamic Videos](papers/multiview-geometry/2025-megasam-robust-dynamic-video-slam.md) | `skimmed` |
 | 2026-10-31 | 2026 | [Dense Dynamic Scene Reconstruction and Camera Pose Estimation from Multi-View Videos](papers/multiview-geometry/2026-dense-dynamic-scene-multicamera-camera-pose.md) | `skimmed` |
@@ -126,6 +127,7 @@
 
 | 阅读日期 | 年份 | 论文 | 状态 |
 | --- | ---: | --- | --- |
+| 2026-11-13 | 2024 | [Gait Patterns as Biomarkers: A Video-Based Approach for Classifying Scoliosis](papers/medical-ai/2024-gait-patterns-scoliosis1k-sconet.md) | `skimmed` |
 | 2026-11-10 | 2026 | [VisionMD-Gait: scalable clinical gait assessment from smartphone videos](papers/medical-ai/2026-visionmd-gait-smartphone-clinical-assessment.md) | `skimmed` |
 | 2026-11-06 | 2025 | [Computer Vision for Clinical Gait Analysis: A Gait Abnormality Video Dataset](papers/medical-ai/2025-gavd-clinical-gait-video-dataset.md) | `skimmed` |
 | 2026-11-01 | 2026 | [DrGait: Biomechanically Grounded Visual Reasoning for Interpretable Clinical Gait Analysis](papers/medical-ai/2026-drgait-biomechanically-grounded-clinical-gait.md) | `skimmed` |
