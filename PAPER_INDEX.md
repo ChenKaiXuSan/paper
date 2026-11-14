@@ -60,6 +60,7 @@
 
 | 阅读日期 | 年份 | 论文 | 状态 |
 | --- | ---: | --- | --- |
+| 2026-11-15 | 2025 | [MUC: Mixture of Uncalibrated Cameras for Robust 3D Human Body Reconstruction](papers/multiview-geometry/2025-muc-mixture-of-uncalibrated-cameras.md) | `skimmed` |
 | 2026-11-13 | 2025 | [Continuous 3D Perception Model with Persistent State](papers/multiview-geometry/2025-cut3r-continuous-3d-perception-persistent-state.md) | `skimmed` |
 | 2026-11-04 | 2025 | [Humans as a Calibration Pattern: Dynamic 3D Scene Reconstruction from Unsynchronized and Uncalibrated Videos](papers/multiview-geometry/2025-humans-as-calibration-pattern.md) | `skimmed` |
 | 2026-11-02 | 2025 | [MegaSaM: Accurate, Fast and Robust Structure and Motion from Casual Dynamic Videos](papers/multiview-geometry/2025-megasam-robust-dynamic-video-slam.md) | `skimmed` |
@@ -102,6 +103,7 @@
 
 | 阅读日期 | 年份 | 论文 | 状态 |
 | --- | ---: | --- | --- |
+| 2026-11-15 | 2026 | [EyeCue: Driver Cognitive Distraction Detection via Gaze-Empowered Egocentric Video Understanding](papers/motion-understanding/2026-eyecue-gaze-empowered-driver-distraction.md) | `skimmed` |
 | 2026-11-14 | 2022 | [TransRAC: Encoding Multi-scale Temporal Correlation with Transformers for Repetitive Action Counting](papers/motion-understanding/2022-transrac-repetitive-action-counting.md) | `skimmed` |
 | 2026-11-12 | 2022 | [Revisiting Skeleton-Based Action Recognition](papers/motion-understanding/2022-posec3d-skeleton-action-recognition.md) | `skimmed` |
 | 2026-11-09 | 2023 | [MotionBERT: A Unified Perspective on Learning Human Motion Representations](papers/motion-understanding/2023-motionbert-human-motion-representations.md) | `skimmed` |
