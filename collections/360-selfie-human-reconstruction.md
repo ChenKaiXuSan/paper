@@ -16,6 +16,7 @@
 ## 关键论文
 
 - [SAM 3D Body](../papers/3d-human-pose/2026-sam-3d-body.md) — 可作为每个 perspective view 的单目人体恢复前端。
+- [FISHnCHIPS: fisheye projection comparison](../papers/360-vision/2025-fisheye-projection-fishnchips.md) — ICRA 2025 使用 7 人、56 序列、202,240 张 fisheye 图像检验 MeTRAbs 的 pinhole、double-sphere、equidistant/cylindrical 和自适应投影，定量说明大 FoV 人体的局部/绝对误差并不总随投影选择同向变化。
 - [VGGT](../papers/multiview-geometry/2025-vggt.md) — camera/depth/geometry prior。
 - [AnyCam](../papers/multiview-geometry/2025-anycam.md) — casual video camera pose/intrinsics。
 - [ViPE](../papers/multiview-geometry/2025-vipe.md) — 直接支持 pinhole / wide-angle / 360 panorama 的 camera intrinsics、trajectory 与 near-metric depth；Web360 提供约 2,000 个 ERP 视频的 camera pose / distance-map annotation。
@@ -44,6 +45,7 @@ Holo360D 进一步补齐了 panorama scene-geometry 数据层：它不是 human-
 - 公开领域仍缺少与“360° 自拍 + 全身 3D GT + camera trajectory GT”完全匹配的 benchmark；Web360 提供 camera pose / distance map，360DVO 提供 camera trajectory pseudo-GT，PanoAir 提供 RTK camera GT，Holo360D 提供 dense LiDAR geometry 与连续 camera pose，但这些都不是 human-centric full-body 3D benchmark。
 - **推断：**ViPE、360DVO、PanoAir 与 Holo360D 可以分别构成 learned panorama geometry、visual-only spherical VO、visual-inertial metric SLAM 与 dense geometry supervision 四类 camera-only / scene-only baselines；将人体从“mask-out dynamic object”升级为显式 camera constraint，并比较 `visual-only / VIO / human-assisted VIO` 的 ATE/RPE，仍有清晰方法空间。
 - ERP 重采样、FoV、yaw spacing、人体有效像素与下游 3D pose 误差之间缺少系统评价。
+- **FISHnCHIPS 已在 fisheye HPE 上证明 projection choice 与人体张角有关**（大 FoV 时 pinhole 绝对 3D 误差更差），但仍以已知 intrinsics、GT bbox、室内 pseudo-GT 为前提；尚缺 ERP 虚拟相机、跨 seam、双移动 360、camera trajectory 与端到端 world HMR 联合的系统验证。
 - Panorama camera ATE/RPE 的改善是否会同步转化为 world-human W-MPJPE/RTE 改善，需要在统一 benchmark 中验证。
 - 360DVO 与 PanoAir 都指出 dynamic objects / large occlusion 仍可能破坏 camera estimation；雪地、天空和高速运动正是这一问题的高风险场景。
 - PanoAir 的 stitched panorama 使用前后 fisheye optical centers 中点定义 virtual camera center；这种近似对精细 dual-fisheye geometry 和人体三角测量是否足够准确，需要单独验证。
@@ -62,6 +64,7 @@ PanoAir 数据的 17 条真实 UAV sequence、最高约 10 m/s 平均速度、�
 - 在 Holo360D 上复现或使用 fine-tuned Pi3，比较 panorama-specific fine-tuning 对 depth / camera geometry 的改善，再迁移到自己的 360 自拍数据。
 - 用 PanoAir 的 ERP / dual-fisheye / virtual-pinhole 三种输入做 projection ablation，检查 stitched panorama virtual-center approximation 对 trajectory 的影响。
 - 对 2/4/6/8 perspective views、不同 FoV 和 crop resolution 做人体消融。
+- 先用 FISHnCHIPS 复核 `PH crop / DS crop / bbox-angle adaptive crop` 的相对/绝对 3D pose 权衡，再在真实双 360 滑雪数据上按 FoV、距相机距离和跨 ERP seam 分桶，并评价人体误差能否改善 camera ATE/RPE。
 - 区分单 360 同中心融合与双 360 有 baseline 融合。
 - 比较 panorama-level camera estimation 与 perspective-crop camera estimation，特别关注快速 yaw/pitch/roll 与低纹理雪地。
 - 测试 `dynamic mask → human-aware mask → human-as-constraint → human+IMU joint correction`，观察 camera ATE/RPE 与人体 W-MPJPE/RTE 是否同步改善。

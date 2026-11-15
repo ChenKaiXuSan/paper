@@ -91,6 +91,7 @@
 
 | 阅读日期 | 年份 | 论文 | 状态 |
 | --- | ---: | --- | --- |
+| 2026-11-16 | 2025 | [Systematic Comparison of Projection Methods for Monocular 3D Human Pose Estimation on Fisheye Images](papers/360-vision/2025-fisheye-projection-fishnchips.md) | `skimmed` |
 | 2026-11-12 | 2025 | [IM360: Large-scale Indoor Mapping with 360 Cameras](papers/360-vision/2025-im360-spherical-sfm-mapping.md) | `skimmed` |
 | 2026-11-08 | 2024 | [Improving Real-Time Omnidirectional 3D Multi-Person Human Pose Estimation with People Matching and Unsupervised 2D-3D Lifting](papers/360-vision/2024-omnidirectional-radar-3d-multiperson-pose.md) | `skimmed` |
 | 2026-10-30 | 2026 | [PanoVGGT: Feed-Forward 3D Reconstruction from Panoramic Imagery](papers/360-vision/2026-panovggt-feed-forward-panoramic-reconstruction.md) | `skimmed` |
@@ -131,6 +132,7 @@
 
 | 阅读日期 | 年份 | 论文 | 状态 |
 | --- | ---: | --- | --- |
+| 2026-11-16 | 2026 | [GaVA-CLIP: Refining Multimodal Representations with Clinical Knowledge and Numerical Parameters for Gait Video Analysis in Neurodegenerative Diseases](papers/medical-ai/2026-gava-clip-clinical-numerical-gait.md) | `skimmed` |
 | 2026-11-13 | 2024 | [Gait Patterns as Biomarkers: A Video-Based Approach for Classifying Scoliosis](papers/medical-ai/2024-gait-patterns-scoliosis1k-sconet.md) | `skimmed` |
 | 2026-11-10 | 2026 | [VisionMD-Gait: scalable clinical gait assessment from smartphone videos](papers/medical-ai/2026-visionmd-gait-smartphone-clinical-assessment.md) | `skimmed` |
 | 2026-11-06 | 2025 | [Computer Vision for Clinical Gait Analysis: A Gait Abnormality Video Dataset](papers/medical-ai/2025-gavd-clinical-gait-video-dataset.md) | `skimmed` |
