@@ -17,6 +17,7 @@
 
 ## 关键论文
 
+- [UniCon3R](../papers/global-human-motion/2026-unicon3r-contact-aware-human-scene.md) — NeurIPS 2026 的 contact-aware recurrent human-scene reconstruction：把局部 metric geometry、scene memory 和时序接触预测变成 HMR latent correction，而不只是旁路的接触标签；在 RICH 上显著改善 world trajectory 与 penetration，但尚未验证 contact→camera ATE/RPE 的显式反馈。
 - [AnyCam](../papers/multiview-geometry/2025-anycam.md) — 从 casual videos 恢复 camera pose 与 intrinsics。
 - [VGGT](../papers/multiview-geometry/2025-vggt.md) — 通用视觉几何基础模型，可提供 camera / depth / point-map prior。
 - [MASt3R-SLAM](../papers/multiview-geometry/2025-mast3r-slam.md) — 将两视图 3D reconstruction prior 嵌入实时 dense SLAM，同时输出 camera trajectory 与 dense geometry，可作为不利用人体的强 camera/scene baseline。
@@ -57,6 +58,7 @@ HTD-Refine 又补充了另一个重要维度：world-HMR 的质量不能只看�
 
 ## 研究空白
 
+- UniCon3R 说明 **接触预测必须进入人体恢复路径** 才能有效改善 physical grounding，补足了仅有人体/scene shared latent 而缺少交互反馈的方向；但该反馈仍主要更新 human latent，而没有证明 contact/human residual 反向修正每帧相机。**推断：**可把 scene support/contact residual 与 spherical keypoint reprojection 一起作为 dual-360 camera refinement 因子，分别评价 W-MPJPE、penetration/foot sliding 和 camera ATE/RPE。
 - 新的 EgoMo3R 为 **不可见自身躯干** 的单目头戴视角提供了 motion-prior→camera/scene 的显式反馈，但其 head-camera constraint 与能直接看到滑雪者的 third-person / 双 360° 相机不等价；两者需分别设计观测几何、世界尺度和运动先验，并独立报告 camera ATE/RPE、全局人体 MPJPE 及先验偏置。**推断：**可在双 360° 上尝试以人体重投影一致性替代 head trajectory consistency。
 - [Multi-camera dense dynamic reconstruction](../papers/multiview-geometry/2026-dense-dynamic-scene-multicamera-camera-pose.md) 已显示多台**自由移动**相机可用跨时间/跨相机的稠密几何图联合追踪，而不必固定 rig 外参；但仍要求已知内参及时间同步，且人物信息仅被视作动态内容。**推断：**在 dual-360 的球面投影与长序列中，将人体骨长/关键点、cross-view consistency 和观测不确定性加入相机图优化，是区别于纯 camera-only spatiotemporal graph 的更明确实验变量。
 
@@ -82,6 +84,7 @@ HTD-Refine 又补充了另一个重要维度：world-HMR 的质量不能只看�
 
 ## 下一步阅读 / 实验
 
+- 参考 [UniCon3R](../papers/global-human-motion/2026-unicon3r-contact-aware-human-scene.md) 做 `no contact → contact auxiliary → contact-driven human latent refinement → contact/human-conditioned camera correction` 消融；注意使用独立坡面/鞋底接触 GT，区分 contact F1、scene penetration、相机 ATE/RPE 与人体 world motion 误差。
 - 新增 `independent monocular camera VO → multi-moving-camera spatio-temporal graph → +human pose/contact factors` 比较；按相机间 overlap、相机数量、时间同步误差分别报告 camera ATE/RPE、scale drift 和人体 W-MPJPE。优先复现新论文的 graph edge ablation 与两阶段 depth refinement。
 
 - 比较 MASt3R-SLAM、ViPE、360DVO、AnyCam、BodySLAM++、PACE、SynCHMR 与 Human3R 在同一长序列移动相机数据上的 ATE/RPE、scale drift、dense geometry、W-MPJPE/RTE 与 runtime。

@@ -6,6 +6,7 @@
 
 | 阅读日期 | 年份 | 论文 | 状态 |
 | --- | ---: | --- | --- |
+| 2026-11-17 | 2026 | [UniCon3R: Contact-aware 3D Human-Scene Reconstruction from Monocular Video](papers/global-human-motion/2026-unicon3r-contact-aware-human-scene.md) | `skimmed` |
 | 2026-11-14 | 2025 | [HumanMM: Global Human Motion Recovery from Multi-shot Videos](papers/global-human-motion/2025-humanmm-multishot-world-motion.md) | `skimmed` |
 | 2026-11-11 | 2023 | [EgoHumans: An Egocentric 3D Multi-Human Benchmark](papers/global-human-motion/2023-egohumans-egocentric-3d-multihuman-benchmark.md) | `skimmed` |
 | 2026-11-10 | 2025 | [Human Mesh Reconstruction of Sports Players with Multiple Dynamic Cameras](papers/global-human-motion/2025-sports-mesh-multiple-dynamic-cameras.md) | `skimmed` |
@@ -104,6 +105,7 @@
 
 | 阅读日期 | 年份 | 论文 | 状态 |
 | --- | ---: | --- | --- |
+| 2026-11-17 | 2026 | [Beyond Motion Patterns: An Empirical Study of Physical Forces for Human Motion Understanding](papers/motion-understanding/2026-beyond-motion-patterns-physical-forces.md) | `skimmed` |
 | 2026-11-15 | 2026 | [EyeCue: Driver Cognitive Distraction Detection via Gaze-Empowered Egocentric Video Understanding](papers/motion-understanding/2026-eyecue-gaze-empowered-driver-distraction.md) | `skimmed` |
 | 2026-11-14 | 2022 | [TransRAC: Encoding Multi-scale Temporal Correlation with Transformers for Repetitive Action Counting](papers/motion-understanding/2022-transrac-repetitive-action-counting.md) | `skimmed` |
 | 2026-11-12 | 2022 | [Revisiting Skeleton-Based Action Recognition](papers/motion-understanding/2022-posec3d-skeleton-action-recognition.md) | `skimmed` |
