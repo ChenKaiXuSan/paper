@@ -61,6 +61,7 @@
 
 | 阅读日期 | 年份 | 论文 | 状态 |
 | --- | ---: | --- | --- |
+| 2026-11-19 | 2026 | [TwinPose: Person-Specific Subspaces for Multi-View 3D Pose Estimation](papers/multiview-geometry/2026-twinpose-person-specific-subspaces.md) | `skimmed` |
 | 2026-11-15 | 2025 | [MUC: Mixture of Uncalibrated Cameras for Robust 3D Human Body Reconstruction](papers/multiview-geometry/2025-muc-mixture-of-uncalibrated-cameras.md) | `skimmed` |
 | 2026-11-13 | 2025 | [Continuous 3D Perception Model with Persistent State](papers/multiview-geometry/2025-cut3r-continuous-3d-perception-persistent-state.md) | `skimmed` |
 | 2026-11-04 | 2025 | [Humans as a Calibration Pattern: Dynamic 3D Scene Reconstruction from Unsynchronized and Uncalibrated Videos](papers/multiview-geometry/2025-humans-as-calibration-pattern.md) | `skimmed` |
@@ -135,6 +136,7 @@
 
 | 阅读日期 | 年份 | 论文 | 状态 |
 | --- | ---: | --- | --- |
+| 2026-11-19 | 2026 | [MotionDecipher: LLM-Assisted Clinical Interpretation of Human Motion Signals for Efficient Gait Analysis](papers/medical-ai/2026-motiondecipher-llm-clinical-gait-interpretation.md) | `skimmed` |
 | 2026-11-18 | 2026 | [Validation of AI-based markerless gait event detection during perturbed walking using smartphone videos from two camera perspectives](papers/medical-ai/2026-smartgait-perturbed-walking-two-views.md) | `skimmed` |
 | 2026-11-16 | 2026 | [GaVA-CLIP: Refining Multimodal Representations with Clinical Knowledge and Numerical Parameters for Gait Video Analysis in Neurodegenerative Diseases](papers/medical-ai/2026-gava-clip-clinical-numerical-gait.md) | `skimmed` |
 | 2026-11-13 | 2024 | [Gait Patterns as Biomarkers: A Video-Based Approach for Classifying Scoliosis](papers/medical-ai/2024-gait-patterns-scoliosis1k-sconet.md) | `skimmed` |
