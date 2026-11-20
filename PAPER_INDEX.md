@@ -45,6 +45,7 @@
 
 | 阅读日期 | 年份 | 论文 | 状态 |
 | --- | ---: | --- | --- |
+| 2026-11-20 | 2026 | [MetricPose: Flexible 3D Human Pose Estimation with Depth and Geometric Cues](papers/3d-human-pose/2026-metricpose-flexible-depth-geometric-cues.md) | `skimmed` |
 | 2026-10-26 | 2026 | [Multi-HMR 2: Multi-Person Camera-Centric Human Detection, Mesh Recovery and Tracking](papers/3d-human-pose/2026-multi-hmr-2-camera-centric-recovery.md) | `skimmed` |
 | 2026-09-24 | 2025 | [Fish2Mesh Transformer: 3D Human Mesh Recovery from Egocentric Vision](papers/3d-human-pose/2025-fish2mesh.md) | `skimmed` |
 | 2026-09-17 | 2025 | [Bring Your Rear Cameras for Egocentric 3D Human Pose Estimation](papers/3d-human-pose/2025-bring-your-rear-cameras.md) | `skimmed` |
@@ -168,6 +169,7 @@
 
 | 阅读日期 | 年份 | 论文 | 状态 |
 | --- | ---: | --- | --- |
+| 2026-11-20 | 2026 | [Democratizing Ski Safety: Real-Time Turn Segmentation with Smartphone IMU and Causal LSTM Networks](papers/sports-biomechanics/2026-skic-lstm-ski-turn-segmentation.md) | `skimmed` |
 | 2026-11-11 | 2026 | [Quantitative Analysis of Elite Giant Slalom Turn Technique Using Broadcast Video Images and 3D CAD Model Matching](papers/sports-biomechanics/2026-giant-slalom-turn-broadcast-cad-model-matching.md) | `skimmed` |
 | 2026-11-08 | 2025 | [SkiTechCoach: A Multimodal Alpine Skiing Dataset with 3D Body Pose, Sole Pressure, and Expert Coaching](papers/sports-biomechanics/2025-skitechcoach-alpine-skiing-multimodal.md) | `skimmed` |
 | 2026-11-05 | 2023 | [OpenCap: Human movement dynamics from smartphone videos](papers/sports-biomechanics/2023-opencap-human-movement-dynamics.md) | `skimmed` |
