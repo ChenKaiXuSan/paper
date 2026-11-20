@@ -6,6 +6,7 @@
 
 | 阅读日期 | 年份 | 论文 | 状态 |
 | --- | ---: | --- | --- |
+| 2026-11-21 | 2026 | [GUSH3R: Everyone Everywhere All at Once as Gaussians](papers/global-human-motion/2026-gush3r-unified-human-scene-gaussians.md) | `skimmed` |
 | 2026-11-17 | 2026 | [UniCon3R: Contact-aware 3D Human-Scene Reconstruction from Monocular Video](papers/global-human-motion/2026-unicon3r-contact-aware-human-scene.md) | `skimmed` |
 | 2026-11-14 | 2025 | [HumanMM: Global Human Motion Recovery from Multi-shot Videos](papers/global-human-motion/2025-humanmm-multishot-world-motion.md) | `skimmed` |
 | 2026-11-11 | 2023 | [EgoHumans: An Egocentric 3D Multi-Human Benchmark](papers/global-human-motion/2023-egohumans-egocentric-3d-multihuman-benchmark.md) | `skimmed` |
@@ -169,6 +170,7 @@
 
 | 阅读日期 | 年份 | 论文 | 状态 |
 | --- | ---: | --- | --- |
+| 2026-11-21 | 2026 | [TouchSight: Bare-Handed Tactile Prediction from Egocentric Video via Generative Visual Augmentation](papers/sports-biomechanics/2026-touchsight-vision-to-tactile-prediction.md) | `skimmed` |
 | 2026-11-20 | 2026 | [Democratizing Ski Safety: Real-Time Turn Segmentation with Smartphone IMU and Causal LSTM Networks](papers/sports-biomechanics/2026-skic-lstm-ski-turn-segmentation.md) | `skimmed` |
 | 2026-11-11 | 2026 | [Quantitative Analysis of Elite Giant Slalom Turn Technique Using Broadcast Video Images and 3D CAD Model Matching](papers/sports-biomechanics/2026-giant-slalom-turn-broadcast-cad-model-matching.md) | `skimmed` |
 | 2026-11-08 | 2025 | [SkiTechCoach: A Multimodal Alpine Skiing Dataset with 3D Body Pose, Sole Pressure, and Expert Coaching](papers/sports-biomechanics/2025-skitechcoach-alpine-skiing-multimodal.md) | `skimmed` |
