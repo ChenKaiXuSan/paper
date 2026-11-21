@@ -6,6 +6,7 @@
 
 | 阅读日期 | 年份 | 论文 | 状态 |
 | --- | ---: | --- | --- |
+| 2026-11-22 | 2026 | [A Diagnostic Study of World-Space Human Recovery Under High Camera Dynamics](papers/global-human-motion/2026-fastcam-camera-human-scale-mismatch.md) | `skimmed` |
 | 2026-11-21 | 2026 | [GUSH3R: Everyone Everywhere All at Once as Gaussians](papers/global-human-motion/2026-gush3r-unified-human-scene-gaussians.md) | `skimmed` |
 | 2026-11-17 | 2026 | [UniCon3R: Contact-aware 3D Human-Scene Reconstruction from Monocular Video](papers/global-human-motion/2026-unicon3r-contact-aware-human-scene.md) | `skimmed` |
 | 2026-11-14 | 2025 | [HumanMM: Global Human Motion Recovery from Multi-shot Videos](papers/global-human-motion/2025-humanmm-multishot-world-motion.md) | `skimmed` |
@@ -109,6 +110,7 @@
 
 | 阅读日期 | 年份 | 论文 | 状态 |
 | --- | ---: | --- | --- |
+| 2026-11-22 | 2026 | [SOMA: A Benchmark for Fine-Grained Egocentric Behavior and Body-Motion Understanding](papers/motion-understanding/2026-soma-egocentric-motion-reasoning-benchmark.md) | `skimmed` |
 | 2026-11-17 | 2026 | [Beyond Motion Patterns: An Empirical Study of Physical Forces for Human Motion Understanding](papers/motion-understanding/2026-beyond-motion-patterns-physical-forces.md) | `skimmed` |
 | 2026-11-15 | 2026 | [EyeCue: Driver Cognitive Distraction Detection via Gaze-Empowered Egocentric Video Understanding](papers/motion-understanding/2026-eyecue-gaze-empowered-driver-distraction.md) | `skimmed` |
 | 2026-11-14 | 2022 | [TransRAC: Encoding Multi-scale Temporal Correlation with Transformers for Repetitive Action Counting](papers/motion-understanding/2022-transrac-repetitive-action-counting.md) | `skimmed` |
