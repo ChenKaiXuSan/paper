@@ -13,7 +13,11 @@
 5. uncertainty、clinical knowledge 与解释性。
 6. **Tool-grounded clinical reasoning：**由 VLM/agent 提出步态假设，调用可复核的 2D/3D kinematics 与 gait-event 工具验证，保留支持、反证和不确定性，再输出解释报告。
 
+7. **Label-free normative anomaly localization / twin generation：**仅用健康 gait 的 masked reconstruction 学到关节与时序一致性，对异常者定位不一致关节并生成条件化 normative twin；此为表征与假设生成，不是可直接替代临床诊断或病理真实轨迹的纠正。
+
 ## 关键论文
+
+- [GenGait](../papers/medical-ai/2026-gengait-normative-twin-anomaly-detection.md) — 2026 arXiv label-free joint-level anomaly detection + conditional normative twin；150 名健康成人训练、10 名健康成人模拟 7 类异常进行验证。须警惕正常化重建擦除真实病理信号，且缺真实患者验证。
 
 - [Video pose estimation vs markerless motion capture in knee OA](../papers/medical-ai/2026-video-pose-estimation-knee-oa.md) — 临床视频姿态测量有效性。
 - [Calibrated Uncertainty for Clinical Gait Analysis](../papers/medical-ai/2026-calibrated-uncertainty-clinical-gait.md) — probabilistic multiview markerless gait 与 uncertainty。
@@ -35,6 +39,8 @@ Gait foundation model 的 phenome-wide 结果进一步提示，gait embedding �
 
 ## 研究空白
 
+- GenGait 补充了“normative-only pretraining → joint-wise anomaly localization → conditional normal reference”的新路线，与疾病标签监督分类、foundation gait phenotype prediction 不同。**推断：**真实 ASD 患者的诊断任务不能把回归到健康均值当作正确预测；需要独立病理 GT、医生一致性与异常分数的敏感度评价。
+
 - 多中心、跨设备和真实 clinical deployment 的外部验证仍不足。
 - DrGait 补充了 **agentic differential diagnosis + deterministic measurement** 路线，但可核验工具仍受上游 2D/3D pose 偏差制约；原文 GAVD 异常亚型整体准确率在 Table 2（53.4%）与正文/Table 7（51.4%）之间不一致，且尚缺公开官方代码及前瞻性临床验证。
 - **推断：**将周期时序表示、self-supervised gait foundation embedding、3D pose uncertainty、biomechanical kinematics/kinetics 与 clinical knowledge 显式结合，可能比纯 RGB 分类或单一 engineered features 更稳健且更可解释。
@@ -48,6 +54,8 @@ Gait foundation model 的 phenome-wide 结果进一步提示，gait embedding �
 该 collection 可直接支持临床步态、脊柱疾病视频分析、周期运动建模和可解释多模态融合的 Related Work 与实验设计。适合把 `RGB/keypoints → latent classification` 扩展为两条互补路线：一条是 `video → pose → constrained kinematics/kinetics → diagnosis`，另一条是 `large-scale pose sequence → self-supervised foundation embedding → disease / severity / phenotype prediction`，最终再与 biomechanics variables、RGB/flow 和 clinical knowledge 融合。
 
 ## 下一步阅读 / 实验
+
+- **推断：**尝试 ClinicalGated + normative joint anomaly scores 的辅助分支；在保持原始视频/pose 的前提下，对比 abnormal localization、RGB/flow/ROI classification、pose correction 后分类，并以 patient-disjoint ASD 队列检测是否有临床诊断信息被“标准化”抹去。
 
 - 比较 engineered gait features、task-specific pose encoder、masked self-supervised gait embedding、以及 embedding + biomechanics variables 的性能。
 - 在 masked reconstruction 中增加 velocity / phase / periodicity objective，测试其对病理 gait representation 的贡献。
