@@ -6,6 +6,7 @@
 
 | 阅读日期 | 年份 | 论文 | 状态 |
 | --- | ---: | --- | --- |
+| 2026-11-24 | 2026 | [DewHand: Direct Metric World-Space Hand Motion Reconstruction from Egocentric Videos](papers/global-human-motion/2026-dewhand-metric-world-hand-camera.md) | `skimmed` |
 | 2026-11-22 | 2026 | [A Diagnostic Study of World-Space Human Recovery Under High Camera Dynamics](papers/global-human-motion/2026-fastcam-camera-human-scale-mismatch.md) | `skimmed` |
 | 2026-11-21 | 2026 | [GUSH3R: Everyone Everywhere All at Once as Gaussians](papers/global-human-motion/2026-gush3r-unified-human-scene-gaussians.md) | `skimmed` |
 | 2026-11-17 | 2026 | [UniCon3R: Contact-aware 3D Human-Scene Reconstruction from Monocular Video](papers/global-human-motion/2026-unicon3r-contact-aware-human-scene.md) | `skimmed` |
@@ -111,6 +112,7 @@
 
 | 阅读日期 | 年份 | 论文 | 状态 |
 | --- | ---: | --- | --- |
+| 2026-11-24 | 2026 | [Driver Gaze Target Identification via Gaze Estimation and Structured Driving Scene Understanding](papers/motion-understanding/2026-mfgaze-driver-gaze-target-identification.md) | `skimmed` |
 | 2026-11-22 | 2026 | [SOMA: A Benchmark for Fine-Grained Egocentric Behavior and Body-Motion Understanding](papers/motion-understanding/2026-soma-egocentric-motion-reasoning-benchmark.md) | `skimmed` |
 | 2026-11-17 | 2026 | [Beyond Motion Patterns: An Empirical Study of Physical Forces for Human Motion Understanding](papers/motion-understanding/2026-beyond-motion-patterns-physical-forces.md) | `skimmed` |
 | 2026-11-15 | 2026 | [EyeCue: Driver Cognitive Distraction Detection via Gaze-Empowered Egocentric Video Understanding](papers/motion-understanding/2026-eyecue-gaze-empowered-driver-distraction.md) | `skimmed` |
