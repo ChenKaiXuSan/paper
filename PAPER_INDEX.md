@@ -48,6 +48,7 @@
 
 | 阅读日期 | 年份 | 论文 | 状态 |
 | --- | ---: | --- | --- |
+| 2026-11-25 | 2026 | [Prosthesis-Aware 3D Human Pose Estimation: A Dataset and Benchmark for RSP Users](papers/3d-human-pose/2026-rsp3d-prosthesis-aware-pose-benchmark.md) | `skimmed` |
 | 2026-11-20 | 2026 | [MetricPose: Flexible 3D Human Pose Estimation with Depth and Geometric Cues](papers/3d-human-pose/2026-metricpose-flexible-depth-geometric-cues.md) | `skimmed` |
 | 2026-10-26 | 2026 | [Multi-HMR 2: Multi-Person Camera-Centric Human Detection, Mesh Recovery and Tracking](papers/3d-human-pose/2026-multi-hmr-2-camera-centric-recovery.md) | `skimmed` |
 | 2026-09-24 | 2025 | [Fish2Mesh Transformer: 3D Human Mesh Recovery from Egocentric Vision](papers/3d-human-pose/2025-fish2mesh.md) | `skimmed` |
@@ -65,6 +66,7 @@
 
 | 阅读日期 | 年份 | 论文 | 状态 |
 | --- | ---: | --- | --- |
+| 2026-11-25 | 2026 | [MultiCam: On-the-fly Multi-Camera Pose Estimation Using Spatiotemporal Overlaps of Known Objects](papers/multiview-geometry/2026-multicam-spatiotemporal-object-camera-calibration.md) | `skimmed` |
 | 2026-11-23 | 2026 | [Multiview Multi-Person Human Mesh Recovery Under Large Scenes with Occlusions](papers/multiview-geometry/2026-mvmp-hmr-large-scenes-occlusion.md) | `skimmed` |
 | 2026-11-19 | 2026 | [TwinPose: Person-Specific Subspaces for Multi-View 3D Pose Estimation](papers/multiview-geometry/2026-twinpose-person-specific-subspaces.md) | `skimmed` |
 | 2026-11-15 | 2025 | [MUC: Mixture of Uncalibrated Cameras for Robust 3D Human Body Reconstruction](papers/multiview-geometry/2025-muc-mixture-of-uncalibrated-cameras.md) | `skimmed` |
