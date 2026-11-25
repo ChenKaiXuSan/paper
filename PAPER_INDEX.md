@@ -100,6 +100,7 @@
 
 | 阅读日期 | 年份 | 论文 | 状态 |
 | --- | ---: | --- | --- |
+| 2026-11-26 | 2026 | [GeoPano: Towards Geometrically Accurate 3D Reconstruction from a Single Panorama](papers/360-vision/2026-geopano-spherical-ray-attention.md) | `skimmed` |
 | 2026-11-18 | 2026 | [OmniVLoc: Topo-metric Visual Localization for Omnidirectional Cameras](papers/360-vision/2026-omnivloc-topometric-omnidirectional-localization.md) | `skimmed` |
 | 2026-11-16 | 2025 | [Systematic Comparison of Projection Methods for Monocular 3D Human Pose Estimation on Fisheye Images](papers/360-vision/2025-fisheye-projection-fishnchips.md) | `skimmed` |
 | 2026-11-12 | 2025 | [IM360: Large-scale Indoor Mapping with 360 Cameras](papers/360-vision/2025-im360-spherical-sfm-mapping.md) | `skimmed` |
@@ -145,6 +146,7 @@
 
 | 阅读日期 | 年份 | 论文 | 状态 |
 | --- | ---: | --- | --- |
+| 2026-11-26 | 2026 | [Quantifying Rodda and Graham Gait Classification from 3D Makerless Kinematics derived from a Single-view Video in a Heterogeneous Pediatric Clinical Cohort](papers/medical-ai/2026-rodda-graham-monocular-gait-zscore.md) | `skimmed` |
 | 2026-11-23 | 2026 | [GenGait: A Transformer-Based Model for Human Gait Anomaly Detection and Normative Twin Generation](papers/medical-ai/2026-gengait-normative-twin-anomaly-detection.md) | `skimmed` |
 | 2026-11-19 | 2026 | [MotionDecipher: LLM-Assisted Clinical Interpretation of Human Motion Signals for Efficient Gait Analysis](papers/medical-ai/2026-motiondecipher-llm-clinical-gait-interpretation.md) | `skimmed` |
 | 2026-11-18 | 2026 | [Validation of AI-based markerless gait event detection during perturbed walking using smartphone videos from two camera perspectives](papers/medical-ai/2026-smartgait-perturbed-walking-two-views.md) | `skimmed` |

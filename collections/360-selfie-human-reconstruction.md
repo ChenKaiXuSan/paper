@@ -28,6 +28,9 @@
 - [Kineo](../papers/multiview-geometry/2025-kineo.md) — calibration-free sparse RGB multi-camera geometry。
 - [OnlineHMR](../papers/global-human-motion/2026-onlinehmr.md) — moving-camera world-grounded human motion。
 
+
+- [GeoPano](../papers/360-vision/2026-geopano-spherical-ray-attention.md) — 单张 panorama 的 10 个同中心 perspective crops，使用 spherical-ray cosine candidate mask 限制跨 crop attention，并以局部/全景点云双损失提高一致性；Table 4 显示普通全局注意力不能替代球面约束。
+
 ## 当前共识
 
 从同一个 360° 相机切出的 perspective views 共享相同 camera center，主要提供方向和观测完整性的互补，而不是传统 stereo baseline；多台 360 相机则额外提供真实平移几何。ViPE 说明物理 360° 相机的 trajectory 与 depth 可以直接在 panorama / ERP pipeline 中估计，因此 camera estimation 没有必要完全依赖 perspective crop 之后的独立求解。360DVO 进一步说明，直接在 spherical / ERP geometry 中学习 distortion-aware features 并执行 omnidirectional bundle adjustment，在强旋转和大 FoV 条件下可以成为更有针对性的 visual-only 360 camera baseline；但全景视野同时也会包含更多动态前景，因此在人群或强动态场景中可能增加错误匹配。
@@ -39,6 +42,8 @@ PanoVGGT 代表原生 ERP 的 feed-forward 多视角几何路线：通过 spheri
 Holo360D 进一步补齐了 panorama scene-geometry 数据层：它不是 human-centric benchmark，但提供大规模真实 ERP、LiDAR-derived dense depth/mesh/point cloud 与连续 camera poses。这样可以先独立训练和验证 panorama-level depth / feed-forward geometry，再把 PanoAir 的 metric VIO、360DVO 的 visual-only OVO 与人体约束接到同一研究链中，减少 scene/camera front-end 过弱对最终 world-HMR 结论的干扰。
 
 对于 human-centric reconstruction，更合理的分工是由 panorama-level geometry / VIO 估计物理 camera，再利用多个 perspective views 提供人体细节与跨视角人体约束；如果有 IMU，还应测试人体结构是否在已有 metric-scale inertial prior 的基础上继续降低 camera drift。
+
+GeoPano 给出了同中心虚拟视角的显式 token-level 几何先验。**推断：**同一相机的 crops 可按球面射线关联；不同物理相机的 ray origin 不同，必须改用时变相对几何、深度或 epipolar/reprojection 对应，不能直接用余弦等方向作为同一三维点的条件。其单帧尺度对齐点云结果不能证明世界人体或相机轨迹精度。
 
 ## 研究空白
 
