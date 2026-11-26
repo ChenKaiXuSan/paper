@@ -17,6 +17,8 @@
 
 ## 关键论文
 
+- [ScaleCurve](../papers/global-human-motion/2026-scalecurve-temporal-metric-calibration.md) — 2026-11-25 预印本：从人体脚部与局部地面形成尺度观测，以 Student-t / random-walk 联合优化时变 log-scale，按相机平移增量积分。SLOPER4D 受控消融恒定→时变 ATE 7.52→4.36 m，W-MPJPE 708.12→446.83 mm；保留相机旋转/位移方向，后续人体优化固定相机。
+
 - [Fast-camera world-space scale diagnosis](../papers/global-human-motion/2026-fastcam-camera-human-scale-mismatch.md) — 2026 预印本在 616 段高速移动广播视频中揭示：camera VO 与 camera-relative HMR 各自自洽仍可能因组合尺度不匹配导致世界轨迹漂移；由高置信度脚部静止段闭式估计所有人物共享尺度，在 11 对代理参考中将 W-MPJPE 降至 47.02 cm。**区别：**这是 camera-human scale compatibility correction，不是对 camera R/t 的完整显式优化；滑雪接触不代表静止，必须换约束。
 
 - [UniCon3R](../papers/global-human-motion/2026-unicon3r-contact-aware-human-scene.md) — NeurIPS 2026 的 contact-aware recurrent human-scene reconstruction：把局部 metric geometry、scene memory 和时序接触预测变成 HMR latent correction，而不只是旁路的接触标签；在 RICH 上显著改善 world trajectory 与 penetration，但尚未验证 contact→camera ATE/RPE 的显式反馈。
@@ -59,6 +61,8 @@ Everybody Tracking Every Body 补充了一个此前较少被单独讨论的维�
 HTD-Refine 又补充了另一个重要维度：world-HMR 的质量不能只看位置误差。即使 W-MPJPE 较低，人体仍可能存在 jitter、foot sliding、速度和加速度不自然的问题。显式利用 video-grounded velocity / acceleration 约束可以大幅改善这些动态指标，并在多数情况下同步改善 global position accuracy。因此 camera trajectory、人体位置和人体高阶运动动态应作为三个相关但不同的评价层分别报告。
 
 ## 研究空白
+
+- **推断：**ScaleCurve 使 `constant scale → robust time-varying scale → full SE(3) correction` 成为必须区分的比较层次。双 360 滑雪需要以雪板/坡面接触、已知装备尺度或多中心几何替代普通脚部地面观测，独立评价 scale drift、camera ATE/RPE、人体 W-MPJPE；时变尺度仍不能修复旋转/方向漂移。
 
 - Fast-camera stress test 进一步强调：评测不仅要注入 camera ATE/RPE 噪声，还要**分别控制 camera translation scale 与 human camera-space root scale 的 mismatch**；高动态下二者单独自洽也会组合失败。**推断：**双 360 滑雪应以多视角几何、基线或场景尺度替代广播舞蹈的静止脚条件，同时记录 scale mismatch、world W-MPJPE 和 camera ATE/RPE，以区分尺度补偿与真正相机轨迹 refinement。
 

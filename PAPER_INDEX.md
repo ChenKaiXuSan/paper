@@ -6,6 +6,7 @@
 
 | 阅读日期 | 年份 | 论文 | 状态 |
 | --- | ---: | --- | --- |
+| 2026-11-27 | 2026 | [ScaleCurve: From Constant Scale to Consistent Motion for World-Space Human Mesh Recovery](papers/global-human-motion/2026-scalecurve-temporal-metric-calibration.md) | `skimmed` |
 | 2026-11-24 | 2026 | [DewHand: Direct Metric World-Space Hand Motion Reconstruction from Egocentric Videos](papers/global-human-motion/2026-dewhand-metric-world-hand-camera.md) | `skimmed` |
 | 2026-11-22 | 2026 | [A Diagnostic Study of World-Space Human Recovery Under High Camera Dynamics](papers/global-human-motion/2026-fastcam-camera-human-scale-mismatch.md) | `skimmed` |
 | 2026-11-21 | 2026 | [GUSH3R: Everyone Everywhere All at Once as Gaussians](papers/global-human-motion/2026-gush3r-unified-human-scene-gaussians.md) | `skimmed` |
@@ -115,6 +116,7 @@
 
 | 阅读日期 | 年份 | 论文 | 状态 |
 | --- | ---: | --- | --- |
+| 2026-11-27 | 2026 | [Less is More: Compact-Token Masked Feature Prediction for Skeleton Representation Learning](papers/motion-understanding/2026-slim-compact-token-skeleton-representation.md) | `skimmed` |
 | 2026-11-24 | 2026 | [Driver Gaze Target Identification via Gaze Estimation and Structured Driving Scene Understanding](papers/motion-understanding/2026-mfgaze-driver-gaze-target-identification.md) | `skimmed` |
 | 2026-11-22 | 2026 | [SOMA: A Benchmark for Fine-Grained Egocentric Behavior and Body-Motion Understanding](papers/motion-understanding/2026-soma-egocentric-motion-reasoning-benchmark.md) | `skimmed` |
 | 2026-11-17 | 2026 | [Beyond Motion Patterns: An Empirical Study of Physical Forces for Human Motion Understanding](papers/motion-understanding/2026-beyond-motion-patterns-physical-forces.md) | `skimmed` |
