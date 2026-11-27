@@ -101,6 +101,7 @@
 
 | 阅读日期 | 年份 | 论文 | 状态 |
 | --- | ---: | --- | --- |
+| 2026-11-28 | 2026 | [CoSphere-SLAM: Multi-Agent Panoramic Gaussian Splatting SLAM with Spherical Loop Closure](papers/360-vision/2026-cosphere-slam-multi-agent-panoramic.md) | `skimmed` |
 | 2026-11-26 | 2026 | [GeoPano: Towards Geometrically Accurate 3D Reconstruction from a Single Panorama](papers/360-vision/2026-geopano-spherical-ray-attention.md) | `skimmed` |
 | 2026-11-18 | 2026 | [OmniVLoc: Topo-metric Visual Localization for Omnidirectional Cameras](papers/360-vision/2026-omnivloc-topometric-omnidirectional-localization.md) | `skimmed` |
 | 2026-11-16 | 2025 | [Systematic Comparison of Projection Methods for Monocular 3D Human Pose Estimation on Fisheye Images](papers/360-vision/2025-fisheye-projection-fishnchips.md) | `skimmed` |
@@ -116,6 +117,7 @@
 
 | 阅读日期 | 年份 | 论文 | 状态 |
 | --- | ---: | --- | --- |
+| 2026-11-28 | 2026 | [BST: Badminton Stroke-type Transformer for Skeleton-based Action Recognition in Racket Sports](papers/motion-understanding/2026-bst-racket-sports-stroke-transformer.md) | `skimmed` |
 | 2026-11-27 | 2026 | [Less is More: Compact-Token Masked Feature Prediction for Skeleton Representation Learning](papers/motion-understanding/2026-slim-compact-token-skeleton-representation.md) | `skimmed` |
 | 2026-11-24 | 2026 | [Driver Gaze Target Identification via Gaze Estimation and Structured Driving Scene Understanding](papers/motion-understanding/2026-mfgaze-driver-gaze-target-identification.md) | `skimmed` |
 | 2026-11-22 | 2026 | [SOMA: A Benchmark for Fine-Grained Egocentric Behavior and Body-Motion Understanding](papers/motion-understanding/2026-soma-egocentric-motion-reasoning-benchmark.md) | `skimmed` |

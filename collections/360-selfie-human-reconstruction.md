@@ -15,6 +15,7 @@
 
 ## 关键论文
 
+- [CoSphere-SLAM](../papers/360-vision/2026-cosphere-slam-multi-agent-panoramic.md) — 2026-11-17 预印本：六面同中心局部跟踪 + SO(3) 球面回环 + 全局 Sim(3) cycle consensus + 逐关键帧尺度图与球面 Gaussian/SE(3) refinement；Holo360D 测试 ATE 0.150→0.082 m（Single→Multi），无逐关键帧尺度为 0.144 m。另在 360Loc 18 条独立日夜轨迹验证跨 session 合并。
 - [SAM 3D Body](../papers/3d-human-pose/2026-sam-3d-body.md) — 可作为每个 perspective view 的单目人体恢复前端。
 - [FISHnCHIPS: fisheye projection comparison](../papers/360-vision/2025-fisheye-projection-fishnchips.md) — ICRA 2025 使用 7 人、56 序列、202,240 张 fisheye 图像检验 MeTRAbs 的 pinhole、double-sphere、equidistant/cylindrical 和自适应投影，定量说明大 FoV 人体的局部/绝对误差并不总随投影选择同向变化。
 - [VGGT](../papers/multiview-geometry/2025-vggt.md) — camera/depth/geometry prior。
@@ -47,6 +48,7 @@ GeoPano 给出了同中心虚拟视角的显式 token-level 几何先验。**推
 
 ## 研究空白
 
+- **推断：**CoSphere-SLAM 补足了 `independent panoramic VO → rigid cross-agent alignment → per-keyframe Sim(3) graph → joint spherical map/pose refinement` 这一 camera-only 路线。它 mask 操作者且依赖静态场景/共视，Holo360D 由单轨迹切段；双 360 滑雪应在独立移动相机 GT 上加入人体因子并比较 joint ATE/RPE、未尺度对齐误差、W-MPJPE，不能将对齐后 ATE 当作绝对尺度验证。
 - 公开领域仍缺少与“360° 自拍 + 全身 3D GT + camera trajectory GT”完全匹配的 benchmark；Web360 提供 camera pose / distance map，360DVO 提供 camera trajectory pseudo-GT，PanoAir 提供 RTK camera GT，Holo360D 提供 dense LiDAR geometry 与连续 camera pose，但这些都不是 human-centric full-body 3D benchmark。
 - **推断：**ViPE、360DVO、PanoAir 与 Holo360D 可以分别构成 learned panorama geometry、visual-only spherical VO、visual-inertial metric SLAM 与 dense geometry supervision 四类 camera-only / scene-only baselines；将人体从“mask-out dynamic object”升级为显式 camera constraint，并比较 `visual-only / VIO / human-assisted VIO` 的 ATE/RPE，仍有清晰方法空间。
 - ERP 重采样、FoV、yaw spacing、人体有效像素与下游 3D pose 误差之间缺少系统评价。
